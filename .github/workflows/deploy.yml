@@ -2,7 +2,7 @@ name: 2 - Deploy to QA Sandbox
 
 on:
   push:
-    branches: [ main ]
+    branches: [ develop ]
     paths:
       - 'force-app/**'
 
@@ -20,31 +20,20 @@ jobs:
           node-version: 18
 
       - name: Install Salesforce CLI
-        run: |
-          npm install -g @salesforce/cli
-          sf --version
+        run: npm install -g @salesforce/cli
 
-      - name: Download Validation Artifacts (Optional)
-        uses: actions/download-artifact@v4
-        with:
-          name: validation-artifacts
-          path: .
-
-      - name: Authenticate to Salesforce Sandbox
+      - name: Authenticate
+        env:
+          SF_AUTH_URL: ${{ secrets.SF_AUTH_URL }}
         run: |
-          echo "${{ secrets.SF_AUTH_URL }}" > auth.txt
-          sf org login sfdx-url --sfdx-url-file auth.txt --alias ${{ secrets.SF_TARGET_ORG_ALIAS }} --set-default
+          echo "$SF_AUTH_URL" > auth.txt
+          sf org login sfdx-url --sfdx-url-file auth.txt --alias qa-sandbox --set-default
           rm auth.txt
-          sf org display --target-org ${{ secrets.SF_TARGET_ORG_ALIAS }}
 
-      - name: Deploy to QA Sandbox
+      - name: Deploy to Sandbox
         run: |
           sf project deploy start \
             --source-dir force-app \
-            --target-org ${{ secrets.SF_TARGET_ORG_ALIAS }} \
+            --target-org qa-sandbox \
             --test-level RunLocalTests \
-            --wait 60 \
-            --json > deploy-result.json
-
-      - name: Show Deployment Result
-        run: cat deploy-result.json | jq '.'
+            --wait 60
