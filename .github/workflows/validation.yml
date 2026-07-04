@@ -40,10 +40,10 @@ jobs:
           rm auth.txt
           sf org display --target-org qa-sandbox
 
-      - name: Basic PMD Code Scan
-        uses: pmd/pmd-github-action@master
+      - name: Basic PMD Code Scan (Fixed)
+        uses: pmd/pmd-github-action@v2   # Use stable v2 tag
         with:
-          rulesets: 'category/apex/security.xml,category/apex/bestpractices.xml'
+          rulesets: 'category/apex/security.xml,category/apex/bestpractices.xml,category/apex/performance.xml'
           source-path: 'force-app/main/default/classes'
 
       - name: Run Apex Tests & Coverage
@@ -71,7 +71,7 @@ jobs:
             --json > validate-result.json
 
       - name: Show Validation Result
-        run: cat validate-result.json | jq '.' || echo "Validation completed"
+        run: cat validate-result.json | jq '.' || echo "Validation completed (check logs above)"
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
