@@ -31,12 +31,14 @@ jobs:
           npm install -g @salesforce/cli
           sf --version
 
-      - name: Authenticate to Salesforce Sandbox (Fixed)
+      - name: Authenticate using Legacy SFDX (Most Stable)
         env:
           SF_AUTH_URL: ${{ secrets.SF_AUTH_URL }}
         run: |
-          echo "🔐 Authenticating..."
-          echo "$SF_AUTH_URL" | sf org login sfdx-url --sfdx-url-stdin --alias qa-sandbox --set-default
+          echo "🔐 Authenticating (Legacy method)..."
+          echo "$SF_AUTH_URL" > auth.txt
+          sfdx auth:sfdxurl:store -f auth.txt -a qa-sandbox -s
+          rm auth.txt
           sf org display --target-org qa-sandbox
 
       - name: Basic PMD Code Scan
