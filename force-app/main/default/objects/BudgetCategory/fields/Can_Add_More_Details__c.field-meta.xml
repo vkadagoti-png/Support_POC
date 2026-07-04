@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Can_Add_More_Details__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Will allow Budget Category Details to be added through the LWC. This setting controls the rendering of the LWC</description>
+    <label>Can Add More Details?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

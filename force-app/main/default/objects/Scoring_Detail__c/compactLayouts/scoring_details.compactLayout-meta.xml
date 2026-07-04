@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>scoring_details</fullName>
+    <fields>CreatedById</fields>
+    <fields>Auto_Calculate__c</fields>
+    <fields>Scorer_Summary__c</fields>
+    <fields>Status__c</fields>
+    <label>scoring details</label>
+</CompactLayout>

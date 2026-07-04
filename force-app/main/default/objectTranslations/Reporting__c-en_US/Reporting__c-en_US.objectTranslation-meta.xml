@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Reporting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Reporting</value>
+    </caseValues>
+    <layouts>
+        <layout>Reporting Community Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Reporting Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Select Program Activities --></label>
+        <name>Select_Program_Activities</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Fiscal Report --></label>
+        <name>Fiscal_Report</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Performance Report --></label>
+        <name>Performance_Report</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Programmatic Report --></label>
+        <name>Programmatic_Report</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Status Report --></label>
+        <name>Status_Report</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If checked, will pass the Application Id into the flow - recordId (text variable - available for input) --></help>
+    <label><!-- Pass Application Id into Flow --></label>
+    <name>Pass_Application_Id_into_Flow__c</name>
+</CustomFieldTranslation>

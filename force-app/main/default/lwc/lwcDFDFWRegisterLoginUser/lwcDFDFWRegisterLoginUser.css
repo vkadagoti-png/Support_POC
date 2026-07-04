@@ -1,0 +1,196 @@
+.main-div {
+  width: 100%;
+  padding: 12px;
+  /*background-color: #eee;*/
+}
+
+
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -5px;
+  content: "✔";
+}
+
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -5px;
+  content: "✖";
+}
+
+.input-fields {
+  margin-bottom: 10px;
+  padding: 12px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.input-border-hidden {
+  border: none;
+  box-shadow: none;
+}
+
+.uiButton {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: var(--lwc-colorTextButtonBrand, rgb(255, 255, 255));
+  cursor: pointer;
+  background-color: var(--lwc-colorBackgroundButtonBrand, #088756);
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 10px 12px;
+  font-size: 16px;
+  font-family: var(--lwc-fontFamily, Lato);
+  font-weight: 700;
+  line-height: 1.42857143;
+  border-radius: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+}
+
+.slds-form-element__control .slds-radio {
+  display: inline;
+}
+
+.slds-form-element__label {
+  hyphens: auto !important;
+  color: black !important;
+  font-size: 1rem !important;
+  font-weight: 700;
+}
+
+.error-msg {
+  color: white;
+  text-align: -webkit-center;
+  font-weight: 600;
+  background: #ef3f3f;
+  padding: 3px 10px;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  max-width: 63%;
+  width: 63%;
+  place-self: center;
+}
+
+.main-div[data-disabled='true'] {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.btn:hover {
+  color: rgb(30, 82, 107);
+  box-shadow: rgb(30, 82, 107) 0 0 4px 0;
+  background-color: #fff;
+  border: 1px solid rgb(30, 82, 107);
+}
+
+.layout-item {
+  padding: 1em;
+}
+
+.address-label {
+  font-family: "Open Sans", verdana, sans-serif;
+  font-size: 1rem;
+}
+
+.layout {
+  margin: 0 auto;
+  /* border: 1px solid rgb(212, 212, 212); */
+  border: 3px solid rgb(30, 82, 107);
+  padding: 0 32px 50px;
+  background-color: #fff;
+  border-radius: 4px;
+  width: 64%;
+}
+
+.layout-item-btn {
+  width: auto;
+  display: flex;
+  flex: auto;
+  justify-content: flex-end;
+}
+
+.form-heading {
+  font-size: 3em !important;
+  color: #333 !important;
+  font-family: "Open Sans", verdana, sans-serif !important;
+  font-weight: 700 !important;
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .form-heading {
+    font-size: 1.5em !important;
+  }
+
+  .btn {
+    padding: 0 16px !important;
+  }
+}
+
+.form-sepration {
+  border-width: 0.1rem;
+  width: 4rem;
+  border-top: 1.25px solid #285DAC;
+  margin: 8px 0 4px;
+}
+
+.slds-button_brand, .slds-button--brand {
+  text-align: center;
+  justify-content: center;
+  transition: border .15s linear;
+  background: rgb(30, 82, 107);
+  width: 100%;
+  padding: 16px 24px 16px 24px;
+  color: #FFFFFF;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 24px 16px 24px;
+  line-height: 20.7px;
+}
+
+lightning-input {
+  --slds-c-input-color-border: #313131 !important;
+  font-weight: normal;
+  --lwc-borderWidthThin: 2px;
+  }
+  
+.layout-item:nth-child(4) lightning-input {
+  --slds-c-input-color-border: #313131 !important;
+  --slds-c-input-color-background: #d4d4d4;
+  pointer-events: none;
+  font-weight: normal;
+  --lwc-borderWidthThin: 2px;
+
+  }
+  .layout-item:nth-child(4):hover{
+    cursor: no-drop;
+  }
+
+  lightning-radio-group {
+    --slds-c-radio-color-border: #313131;
+    --lwc-borderWidthThin: 2px;
+}
+
+lightning-combobox {
+  --slds-c-input-color-border: #313131 !important;
+  font-weight: normal;
+  --lwc-borderWidthThin: 2px;
+}

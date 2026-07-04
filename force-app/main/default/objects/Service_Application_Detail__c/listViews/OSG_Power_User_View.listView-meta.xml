@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OSG_Power_User_View</fullName>
+    <columns>NAME</columns>
+    <columns>Application_Number__c</columns>
+    <columns>Application_Submitted_Date__c</columns>
+    <columns>Status__c</columns>
+    <columns>Fee__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account_Name__c</field>
+        <operation>notContain</operation>
+        <value>test,Test,TEST</value>
+    </filters>
+    <label>OSG Power User View</label>
+</ListView>

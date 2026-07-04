@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ERR_Comments__c</fullName>
+    <inlineHelpText>Add HEROES number and comments to the ERR status or dates as needed here.</inlineHelpText>
+    <label>ERR Comments</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,39 @@
+<template>
+    <!-- Issued Permit Files Section (Collapsible) -->
+    <template if:true={issuedPermitFiles}>
+        <lightning-card>
+            <!-- Collapsible Header -->
+            <div class="slds-card__header slds-grid slds-grid_vertical-align-center" onclick={toggleIssuedPermitFiles}>
+                <!-- Dynamically change icon based on the state -->
+                <lightning-button-icon icon-name={issuedPermitFilesIcon} alternative-text="Toggle" size="small" variant="bare" class="slds-m-right_small"></lightning-button-icon>
+                <div class="slds-text-heading_small custom-heading-color normal-font">Download Issued Permit(s) & Related Invoice(s)</div>
+            </div>
+            <!-- Collapsible Content -->
+            <template if:true={isIssuedPermitFilesOpen}>
+                <lightning-datatable key-field="fileId" data={issuedPermitFiles} columns={columns2} onrowaction={handleRowAction} hide-checkbox-column></lightning-datatable>
+            </template>
+        </lightning-card>
+    </template>
+    <template if:false={issuedPermitFiles}>
+        <p>No issued permit files found.</p>
+    </template>
+
+    <!-- Regular Files Section (Collapsible) -->
+    <template if:true={showData}>
+        <lightning-card>
+            <!-- Collapsible Header -->
+            <div class="slds-card__header slds-grid slds-grid_vertical-align-center" onclick={toggleApplicationFiles}>
+                <!-- Dynamically change icon based on the state -->
+                <lightning-button-icon icon-name={applicationFilesIcon} alternative-text="Toggle" size="small" variant="bare" class="slds-m-right_small"></lightning-button-icon>
+                <div class="slds-text-heading_small custom-heading-color normal-font">Download Application(s) and Supporting Documents</div>
+            </div>
+            <!-- Collapsible Content -->
+            <template if:true={isApplicationFilesOpen}>
+                <lightning-datatable key-field="fileId" data={data} columns={columns} onrowaction={handleRowAction} hide-checkbox-column></lightning-datatable>
+            </template>
+        </lightning-card>
+    </template>
+    <template if:false={showData}>
+        <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+    </template>
+</template>

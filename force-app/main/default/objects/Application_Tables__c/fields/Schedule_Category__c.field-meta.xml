@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Schedule_Category__c</fullName>
+    <label>Schedule Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Site</fullName>
+                <default>false</default>
+                <label>Site</label>
+            </value>
+            <value>
+                <fullName>Construction Finance</fullName>
+                <default>false</default>
+                <label>Construction Finance</label>
+            </value>
+            <value>
+                <fullName>Plans</fullName>
+                <default>false</default>
+                <label>Plans</label>
+            </value>
+            <value>
+                <fullName>Construction Loan Closing</fullName>
+                <default>false</default>
+                <label>Construction Loan Closing</label>
+            </value>
+            <value>
+                <fullName>Construction Start</fullName>
+                <default>false</default>
+                <label>Construction Start</label>
+            </value>
+            <value>
+                <fullName>Marketing Start-Up</fullName>
+                <default>false</default>
+                <label>Marketing Start-Up</label>
+            </value>
+            <value>
+                <fullName>Construction Complete</fullName>
+                <default>false</default>
+                <label>Construction Complete</label>
+            </value>
+            <value>
+                <fullName>All Units Sold</fullName>
+                <default>false</default>
+                <label>All Units Sold</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

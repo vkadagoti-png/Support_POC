@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application_Budget_Category__c</fullName>
+    <label>Application Budget Category</label>
+    <referenceTo>Application_Budget_Category__c</referenceTo>
+    <relationshipLabel>Application Budget Details</relationshipLabel>
+    <relationshipName>Application_Budget_Details</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

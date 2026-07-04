@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>City of St%2E Louis Community Development</container>
+    <containerType>Network</containerType>
+    <label>Application</label>
+    <navigationMenuItem>
+        <label>Apply Now</label>
+        <menuItemBranding>
+            <tileImage>ApplyPortalImageResize</tileImage>
+        </menuItemBranding>
+        <position>1</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/applications</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+</NavigationMenu>

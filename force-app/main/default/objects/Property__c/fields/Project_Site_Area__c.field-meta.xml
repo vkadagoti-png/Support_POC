@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Site_Area__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Related to the utilization for proposed development. Specify sq ft or acres in the text box.</inlineHelpText>
+    <label>Project Site Area</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

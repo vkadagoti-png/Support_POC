@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check if this activity when reported on, has participant records.  This allows for cloning prior reports participants for easier data entry on the report. --></help>
+    <label><!-- Has Participants --></label>
+    <name>Has_Participants__c</name>
+</CustomFieldTranslation>

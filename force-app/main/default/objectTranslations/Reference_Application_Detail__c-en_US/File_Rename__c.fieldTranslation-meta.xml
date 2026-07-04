@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The name that will be set as the file that was uploaded --></help>
+    <label><!-- File Rename --></label>
+    <name>File_Rename__c</name>
+</CustomFieldTranslation>

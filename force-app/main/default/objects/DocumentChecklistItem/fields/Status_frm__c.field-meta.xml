@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_frm__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( App_Asgn_Total_Count__c = 0, &quot;New&quot;,
+			IF( App_Asgn_New_Count__c = App_Asgn_Total_Count__c, &quot;New&quot;,
+    IF(  App_Asgn_Pending_Count__c =  App_Asgn_Total_Count__c , &quot;Pending&quot;,
+			    IF(  App_Asgn_Approve_with_Changes_Count__c =  App_Asgn_Total_Count__c ,&quot;Pending&quot;,
+							    IF(  App_Asgn_Approved_Count__c =  App_Asgn_Total_Count__c, &quot;Ready for Signature&quot;,
+											    IF( App_Asgn_Rejected_Count__c = App_Asgn_Total_Count__c, &quot;Rejected&quot;, &quot;Draft&quot;))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Internal Approval Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Activity --></label>
+    <name>Activity__c</name>
+    <picklistValues>
+        <masterLabel>Application Submission</masterLabel>
+        <translation><!-- Application Submission --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closing</masterLabel>
+        <translation><!-- Closing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conditional Commitment</masterLabel>
+        <translation><!-- Conditional Commitment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contract</masterLabel>
+        <translation><!-- Contract --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Firm Commitment</masterLabel>
+        <translation><!-- Firm Commitment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Option</masterLabel>
+        <translation><!-- Option --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Preliminary Drawings</masterLabel>
+        <translation><!-- Preliminary Drawings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Analysis</masterLabel>
+        <translation><!-- Site Analysis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Working Drawings</masterLabel>
+        <translation><!-- Working Drawings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zoning</masterLabel>
+        <translation><!-- Zoning --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

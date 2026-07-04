@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reference_Scoring_Compact_layout</fullName>
+    <fields>CreatedById</fields>
+    <fields>Active__c</fields>
+    <fields>Days_to_complete__c</fields>
+    <fields>Name</fields>
+    <fields>API_of_object_being_scored__c</fields>
+    <label>Reference Scoring Compact layout</label>
+</CompactLayout>

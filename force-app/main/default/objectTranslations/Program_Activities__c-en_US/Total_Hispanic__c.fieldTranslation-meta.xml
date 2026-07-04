@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Totals of Program Participation with program participants --></help>
+    <label><!-- Total Hispanic --></label>
+    <name>Total_Hispanic__c</name>
+</CustomFieldTranslation>

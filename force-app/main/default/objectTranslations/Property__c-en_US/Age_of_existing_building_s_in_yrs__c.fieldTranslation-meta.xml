@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Age of existing building(s) (in yrs) --></label>
+    <name>Age_of_existing_building_s_in_yrs__c</name>
+</CustomFieldTranslation>

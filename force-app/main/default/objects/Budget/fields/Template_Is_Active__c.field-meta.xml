@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Template_Is_Active__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Defines when a template is available for selection</description>
+    <inlineHelpText>Is this budget template active for use</inlineHelpText>
+    <label>Template Is Active</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount__c</fullName>
+    <inlineHelpText>Sum of amoun on all the details</inlineHelpText>
+    <label>Amount</label>
+    <summarizedField>CostCategoryDetail__c.Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>CostCategoryDetail__c.Reallocation__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </summaryFilterItems>
+    <summaryForeignKey>CostCategoryDetail__c.FinancialActivityCostCategory__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

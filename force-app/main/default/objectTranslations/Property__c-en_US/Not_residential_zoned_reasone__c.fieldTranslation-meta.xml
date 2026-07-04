@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If no, please explain what steps have been or will be taken to obtain zoning approval --></help>
+    <label><!-- Not residential zoned reasone --></label>
+    <name>Not_residential_zoned_reasone__c</name>
+</CustomFieldTranslation>

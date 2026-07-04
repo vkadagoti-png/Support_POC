@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>City_Programs</fullName>
+    <columns>Name</columns>
+    <columns>Summary</columns>
+    <columns>StartDate</columns>
+    <columns>Status</columns>
+    <columns>ParentProgram</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RecordType</field>
+        <operation>equals</operation>
+        <value>Program.Local_Program</value>
+    </filters>
+    <label>City Programs</label>
+    <sharedTo>
+        <group>CDBG_Internal_Users</group>
+    </sharedTo>
+</ListView>

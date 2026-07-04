@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conga_Composer_Doc_Checklist_Contracts</fullName>
+    <availability>online</availability>
+    <description>Originally created by Conga Solution Manager. Date of last use of Update Button from Conga Solution record: https://stl.my.salesforce.com/a0ecs00000EL5PdAAL
+06-Apr-2026 07:04:56 PM</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>false</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>660</height>
+    <isResizable>false</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Generate Contract</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/apex/APXTConga4__Conga_Composer?SolMgr=1
+&amp;serverUrl={!API.Partner_Server_URL_520}
+&amp;Id={!DocumentChecklistItem.Id}
+
+&amp;QueryId=[Acct]0Q_025EAU358132%3Fpv0%3D{!DocumentChecklistItem.Helper_AccountId__c},
+[pi]0Q_029EAU358132%3Fpv0%3D{!DocumentChecklistItem.Id},
+[contr]0Q_026EAU358132%3Fpv0%3D{QVar0},
+[bdgt]0Q_027EAU358132%3Fpv0%3D{QVar0},
+[pc]0Q_028EAU358132%3Fpv0%3D{QVar0},
+[pj]0Q_030EAU358131%3Fpv0%3D{QVar0},
+[BCV]0Q_031EAE056862%3Fpv0%3D{!DocumentChecklistItem.ContractIDhelper__c},
+[prgm]0Q_033EAE218250%3Fpv0%3D{QVar0},
+[Pprgm]0Q_034EAE359600%3Fpv0%3D{QVar0},
+[gm]0Q_035EAE784115%3Fpv0%3D{QVar0},
+[prgmact]0Q_036EAE369897%3Fpv0%3D{QVar0},
+[ProjId]0Q_037EAE342160%3Fpv0%3D{QVar0},
+[property]0Q_038EAE320109%3Fpv0%3D{QVar0},
+[app]0Q_039EAE050311%3Fpv0%3D{QVar0},
+[OC]0Q_040EAE607963%3Fpv0%3D{QVar0},
+[FO]0Q_041EAE786393%3Fpv0%3D{QVar0},
+[bdgtRev]0Q_042EAE800893%3Fpv0%3D{QVar0},
+[BCVRev]0Q_045EAE901803%3Fpv0%3D{!DocumentChecklistItem.ContractIDhelper__c},
+[OR]0Q_046EAE682554%3Fpv0%3D{QVar0},
+[Budget]0Q_047EAE438677%3Fpv0%3D{QVar0},
+[cqp]0Q_048EAE174603%3Fpv0%3D{!DocumentChecklistItem.National_Objective_Helper__c},
+[PECqp]0Q_050EAE897397%3Fpv0%3D{!DocumentChecklistItem.Program_Eligibility_Helper__c},
+[AO]0Q_148EAI439875%3Fpv0%3D{QVar0},
+[BudAct]0Q_152EAI439876%3Fpv0%3D{!DocumentChecklistItem.ContractIDhelper__c},
+[persum]0Q_153EAI439876%3Fpv0%3D{!DocumentChecklistItem.ContractIDhelper__c},
+[AccNoTbl]0Q_154EAI439876%3Fpv0%3D{!DocumentChecklistItem.ContractIDhelper__c},
+[Prm2]0Q_155EAI439876%3Fpv0%3D{!DocumentChecklistItem.ContractIDhelper__c}
+
+&amp;DS7=0
+&amp;QVar0ID=0Q_029EAU358132
+&amp;QVar0Format=10000
+&amp;OFN={Template.Label}+-+{!DocumentChecklistItem.Contract_Name__c}+-+{!DocumentChecklistItem.Account_Name__c}
+&amp;TemplateGroup=DocumentChecklistContracts
+&amp;SC0=1
+&amp;SC1=SalesforceFile
+&amp;ReturnPath={!DocumentChecklistItem.Id}
+&amp;RM=1
+&amp;contentVisibility=InternalUsers</url>
+    <width>900</width>
+</WebLink>

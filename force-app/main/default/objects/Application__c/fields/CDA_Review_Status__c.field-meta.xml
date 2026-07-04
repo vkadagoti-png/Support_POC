@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CDA_Review_Status__c</fullName>
+    <label>CDA Review Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+                <label>Not Started</label>
+            </value>
+            <value>
+                <fullName>Completeness Review Started</fullName>
+                <default>false</default>
+                <label>Completeness Review Started</label>
+            </value>
+            <value>
+                <fullName>Completeness Review Finished-accepted</fullName>
+                <default>false</default>
+                <label>Completeness Review Finished-Accepted</label>
+            </value>
+            <value>
+                <fullName>Completeness Review Finished - Rejected</fullName>
+                <default>false</default>
+                <label>Completeness Review Finished - Rejected</label>
+            </value>
+            <value>
+                <fullName>Completeness Review Finished</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Completeness Review Finished</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

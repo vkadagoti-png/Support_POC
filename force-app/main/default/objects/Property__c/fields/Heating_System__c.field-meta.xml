@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Heating_System__c</fullName>
+    <label>Heating System</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Electric</fullName>
+                <default>false</default>
+                <label>Electric</label>
+            </value>
+            <value>
+                <fullName>Gas</fullName>
+                <default>false</default>
+                <label>Gas</label>
+            </value>
+            <value>
+                <fullName>Central Forced Air</fullName>
+                <default>false</default>
+                <label>Central Forced Air</label>
+            </value>
+            <value>
+                <fullName>Heat Pump</fullName>
+                <default>false</default>
+                <label>Heat Pump</label>
+            </value>
+            <value>
+                <fullName>Electric Baseboard</fullName>
+                <default>false</default>
+                <label>Electric Baseboard</label>
+            </value>
+            <value>
+                <fullName>Geothermal</fullName>
+                <default>false</default>
+                <label>Geothermal</label>
+            </value>
+            <value>
+                <fullName>Radiator (hot water)</fullName>
+                <default>false</default>
+                <label>Radiator (hot water)</label>
+            </value>
+            <value>
+                <fullName>Propane</fullName>
+                <default>false</default>
+                <label>Propane</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

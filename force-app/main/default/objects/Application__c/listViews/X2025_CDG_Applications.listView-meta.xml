@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X2025_CDG_Applications</fullName>
+    <columns>NAME</columns>
+    <columns>Application_Display_Name__c</columns>
+    <columns>Status__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Application_Display_Name__c</field>
+        <operation>equals</operation>
+        <value>Community Development Grant</value>
+    </filters>
+    <label>2025 CDG Applications</label>
+</ListView>

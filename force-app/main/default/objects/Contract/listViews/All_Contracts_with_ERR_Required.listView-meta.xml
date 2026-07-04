@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Contracts_with_ERR_Required</fullName>
+    <columns>CONTRACT.CONTRACT_NUMBER</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>CONTRACT.START_DATE</columns>
+    <columns>CONTRACT.END_DATE</columns>
+    <columns>CONTRACT.STATUS</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ParentProgram__c</columns>
+    <columns>CONTRACT.NAME</columns>
+    <columns>Program__c</columns>
+    <columns>ERR_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Program__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>ERR_Status__c</field>
+        <operation>equals</operation>
+        <value>Required</value>
+    </filters>
+    <label>(CC) All Contracts with ERR Required</label>
+</ListView>

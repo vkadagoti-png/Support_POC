@@ -1,0 +1,45 @@
+tr.tableRow:nth-of-type(odd) {
+    /* background-color: #f3f3f3; */
+    background-color: #dfddddb9;
+}
+
+tr.tableRow:nth-of-type(even) {
+    background-color: #ffffff;
+}
+
+.tableRow td:not(:last-child), .tableHeaderRow th:not(:last-child) {
+    border-right: 1px solid #aaaaaa;
+}
+
+.tableRow td, .tableHeaderRow th {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 18px;
+}
+
+.tableHeaderRow {
+    background-color: #cccccc;
+    border: 1px solid #444444;
+    vertical-align: middle;
+    font-size: 1.4em;
+    padding-left: 8px;
+}
+
+
+.tableStyle td {
+	border: 1px solid black;
+	text-align: center;
+}
+
+.tableStyle {
+	text-align: center;
+    overflow-x: scroll;
+}
+
+.CategoryLabel {
+    font-size: 1.2rem;
+    font-weight: 700;
+}

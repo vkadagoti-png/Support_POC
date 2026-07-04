@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Financial_Activity__c</fullName>
+    <inlineHelpText>the parent financial activity of this category record.</inlineHelpText>
+    <label>Financial Activity</label>
+    <referenceTo>FundingDisbursement</referenceTo>
+    <relationshipLabel>Financial Activity Cost Categories</relationshipLabel>
+    <relationshipName>Financial_Activity_Cost_Categories</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

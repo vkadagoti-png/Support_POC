@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Title or position of this staff person.  Upto 65 characters. --></help>
+    <label><!-- Title/Position --></label>
+    <name>Title_Position__c</name>
+</CustomFieldTranslation>

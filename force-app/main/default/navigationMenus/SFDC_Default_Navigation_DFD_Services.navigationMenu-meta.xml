@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>DFD Services</container>
+    <containerType>Network</containerType>
+    <label>Default Navigation</label>
+    <navigationMenuItem>
+        <label>My Recent Applications</label>
+        <position>1</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/my-recent-applications</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>My Permit History</label>
+        <position>2</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/my-permit-history</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+</NavigationMenu>

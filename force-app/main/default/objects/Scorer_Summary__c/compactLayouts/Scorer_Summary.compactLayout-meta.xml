@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scorer_Summary</fullName>
+    <fields>Assigned_Scorer__c</fields>
+    <fields>Points_Awarded__c</fields>
+    <fields>Status__c</fields>
+    <fields>Start_Date__c</fields>
+    <fields>Weight_This_Scorer__c</fields>
+    <fields>Max_Points__c</fields>
+    <fields>Score_Summary__c</fields>
+    <label>Scorer Summary</label>
+</CompactLayout>

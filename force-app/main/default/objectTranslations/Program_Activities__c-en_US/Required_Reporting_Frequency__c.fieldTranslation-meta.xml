@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- How often does this activity need to be reported on. --></help>
+    <label><!-- Required Reporting Frequency --></label>
+    <name>Required_Reporting_Frequency__c</name>
+    <picklistValues>
+        <masterLabel>Annually</masterLabel>
+        <translation><!-- Annually --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>As needed</masterLabel>
+        <translation><!-- As needed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monthly</masterLabel>
+        <translation><!-- Monthly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quarterly</masterLabel>
+        <translation><!-- Quarterly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Semi-Annually</masterLabel>
+        <translation><!-- Semi-Annually --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>When requested</masterLabel>
+        <translation><!-- When requested --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

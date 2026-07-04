@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Award_Compact</fullName>
+    <fields>ContractId</fields>
+    <fields>Status</fields>
+    <fields>Amount</fields>
+    <fields>TotalDisbursed__c</fields>
+    <fields>Avaialble_Funds__c</fields>
+    <fields>FundingOpportunityId</fields>
+    <label>Funding Award Compact</label>
+</CompactLayout>

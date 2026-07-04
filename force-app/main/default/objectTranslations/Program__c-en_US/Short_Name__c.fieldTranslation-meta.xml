@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Abbreviation for Program Name. --></help>
+    <label><!-- Short Name --></label>
+    <name>Short_Name__c</name>
+</CustomFieldTranslation>

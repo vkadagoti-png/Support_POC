@@ -1,0 +1,68 @@
+<template>
+    <template lwc:if={IsCurrency}>
+        <lightning-input 
+            type="number" 
+            label={Label} 
+            variant="label-hidden"
+            value={value} 
+            formatter="currency" 
+            step="0.01"
+            disabled={disabled}
+            onchange={handleInputChange}
+        ></lightning-input>
+    </template>
+    <template lwc:elseif={IsText}>
+        <lightning-input 
+            type="text" 
+            label={Label}
+            variant="label-hidden"
+            value={value}
+            required={required}
+            max-length={fieldInfo.maxLength}
+            onchange={handleInputChange}
+            disabled={disabled}
+        ></lightning-input>
+    </template>
+    <template lwc:elseif={IsTextArea}>
+        <lightning-textarea 
+            label={Label} 
+            variant="label-hidden"
+            value={value} 
+            required={required}
+            max-length={fieldInfo.maxLength}
+            onchange={handleInputChange}
+            disabled={disabled}
+        ></lightning-textarea>
+    </template>
+    <template lwc:elseif={IsDouble}>
+        <lightning-input 
+            required={required}
+            type="number" 
+            label={Label} 
+            variant="label-hidden"
+            formatter="decimal"
+            value={value} 
+            onchange={handleInputChange}
+            step={Step}
+            max={MaxNumberString}
+            disabled={disabled}
+        ></lightning-input>
+    </template>
+    <template lwc:elseif={IsPercent}>
+        <lightning-input 
+            required={required}
+            type="number" 
+            formatter="percent-fixed"
+            step={Step}
+            variant="label-hidden"
+            label={Label} 
+            value={value} 
+            onchange={handleInputChange}
+            max={MaxNumberString}
+            disabled={disabled}
+        ></lightning-input>
+    </template>
+    <template lwc:else>
+        <p>Unsupported field type: {Type}</p>
+    </template>
+</template>

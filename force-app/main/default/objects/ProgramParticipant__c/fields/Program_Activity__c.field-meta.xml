@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Activity__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Program Activity</label>
+    <referenceTo>Program_Activities__c</referenceTo>
+    <relationshipLabel>Program Participants</relationshipLabel>
+    <relationshipName>Program_Participants</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

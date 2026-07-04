@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Is there anything in proximity to the project that could have a noteworthy positive impact on the marketability of this development?  Please describe: --></help>
+    <label><!-- noteworthy positive impact --></label>
+    <name>noteworthy_positive_impact__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Program.FundingOpportunity$Status</field>
+    </columns>
+    <columns>
+        <field>Program.FundingOpportunity.FundingAward$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Program.FundingOpportunity.FundingAward$Amount</field>
+    </columns>
+    <description>Baseline report Programs grouped, with Funding Opportunites Grouped and funding awards</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Program$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Program.FundingOpportunity$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Basic Program w/Opp and w/award</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Programs_w_Funding_Opportunity_w_Funding_Award__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Program$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

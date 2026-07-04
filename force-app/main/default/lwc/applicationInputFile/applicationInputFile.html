@@ -1,0 +1,88 @@
+<template>
+	<div class={boxClass}>
+		<label class="slds-form-element__label" for="unique-id-of-input">
+			<template lwc:if={required}>
+				<span style="color: red"> *&nbsp; </span> </template
+			>{label}
+		</label>
+
+		<br />
+
+		<div class="slds-text-color_weak accepted-types">
+			Accepted Formats: {formattedAcceptedFormats}
+		</div>
+
+		<lightning-file-upload
+			name={label}
+			accept={acceptedFormats}
+			record-id={recordId}
+			onuploadfinished={handleUploadFinished}
+			disabled={readOnly}
+			multiple
+		></lightning-file-upload>
+
+		<table>
+			<template for:each={files} for:item="file">
+				<tr key={file.Id}>
+
+					<td style="width: 30px">
+						<lightning-icon size="small" icon-name={file.icon}></lightning-icon>
+					</td>
+					<td>
+						<div class="files slds-text-body_small">
+							{file.Title}.{file.FileExtension}
+						</div>
+						<div class="info">
+							<div class="slds-text-body_small">
+								Original File Name: {file.PathOnClient}
+							</div>
+							<lightning-formatted-date-time
+								key={file.Id}
+								value={file.ContentModifiedDate}
+							></lightning-formatted-date-time>
+						</div>
+					</td>
+					<td class="selector">
+						<lightning-button-icon 
+							size="small" 
+							data-id={file.Id} 
+							icon-name="utility:document_preview" 
+							icon-class="slds-icon-text-success"
+							onclick={handleView}
+						></lightning-button-icon>
+					</td>
+
+					<template lwc:if={allowDelete}>
+						<td class="selector">
+							<lightning-button-icon 
+								size="small" 
+								data-id={file.ContentDocumentId} 
+								icon-name="utility:delete" 
+								icon-class="slds-icon-text-error"
+								onclick={handleDelete}
+								disabled={disableDeleteBtn}
+							></lightning-button-icon>
+						</td>
+					</template>
+				</tr>
+			</template>
+		</table>
+	</div>
+
+	<template lwc:if={active}>
+		<section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_large" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+			<div class="slds-modal__container">
+				
+
+				<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+					<iframe src={srcFileURL} width="100%"></iframe>
+				</div>
+
+				<footer class="slds-modal__footer">
+					<lightning-button label="Close" variant="neutral" onclick={handleHideFile}></lightning-button>&nbsp;&nbsp;&nbsp;&nbsp;
+				</footer>
+			</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+	</template>
+</template>

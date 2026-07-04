@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Role_of_the_non_profit_sponsor__c</fullName>
+    <inlineHelpText>Explain the role and activities of the non-profit sponsor in the project</inlineHelpText>
+    <label>Role of the non-profit sponsor</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

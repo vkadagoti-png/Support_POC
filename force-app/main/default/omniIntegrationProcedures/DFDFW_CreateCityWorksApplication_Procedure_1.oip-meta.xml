@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;ContextId&quot;: &quot;a1ccs000007sdTNAAY&quot;
+}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>DFDFW Create CityWorks Application</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>DataMapperPostAction1</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;applicationId&quot; : &quot;%ContextId%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;OICCreatePermit&quot;,
+  &quot;bundle&quot; : &quot;DFDFWUpdateCaseNumberOnServiceApplication&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperPostAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>getServiceApplicationPayload</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DFDFWGetServiceAplicationPayload&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ {
+    &quot;inputParam&quot; : &quot;ContextId&quot;,
+    &quot;element&quot; : &quot;ContextId&quot;
+  } ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperExtractAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ResponseAction1</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : {
+    &quot;createPermitResponse&quot; : &quot;%OICCreatePermit%&quot;
+  },
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <childElements>
+            <isActive>true</isActive>
+            <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+            <level>1.0</level>
+            <name>OICCreatePermit</name>
+            <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+            <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;%getServiceApplicationPayload:payload%&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;preActionLogging&quot; : &quot;%endpoint%&quot;,
+  &quot;postActionLogging&quot; : &quot;&quot;,
+  &quot;restPath&quot; : &quot;/PERMIT/1.0/permits/create/case&quot;,
+  &quot;restMethod&quot; : &quot;PUT&quot;,
+  &quot;retryCount&quot; : 0,
+  &quot;restOptions&quot; : {
+    &quot;headers&quot; : {
+      &quot;Content-Type&quot; : &quot;application/json&quot;,
+      &quot;X-Request-Id&quot; : &quot;%getServiceApplicationPayload:requestToken%&quot;
+    },
+    &quot;params&quot; : { },
+    &quot;timeout&quot; : 60000,
+    &quot;sendBody&quot; : true,
+    &quot;xmlEscapeResponse&quot; : false,
+    &quot;clientCertificateName&quot; : &quot;&quot;,
+    &quot;isCompressed&quot; : false
+  },
+  &quot;namedCredential&quot; : &quot;DFDFW_OIC_Endpoint&quot;,
+  &quot;type&quot; : &quot;Integration&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;HTTPAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+            <sequenceNumber>1.0</sequenceNumber>
+            <type>Rest Action</type>
+        </childElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>TryCatchBlock1</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;failureResponse&quot; : {
+    &quot;ErrorMessage&quot; : &quot;%OICCreatePermit:detail%&quot;
+  },
+  &quot;remoteClass&quot; : &quot;DFDFW_OMNI_CustomFunctions&quot;,
+  &quot;remoteMethod&quot; : &quot;createErrorLog&quot;,
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnBlockError&quot; : true,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;TryCatchBlock1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>Try Catch Block</type>
+    </omniProcessElements>
+    <omniProcessKey>DFDFW_CreateCityWorksApplication</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;ttlMinutes&quot; : 5,
+  &quot;mockResponseMap&quot; : { }
+}</propertySetConfig>
+    <subType>CreateCityWorksApplication</subType>
+    <type>DFDFW</type>
+    <uniqueName>DFDFW_CreateCityWorksApplication_Procedure_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <webComponentKey>56e716c0-dc8c-c965-6336-fc283f221794</webComponentKey>
+</OmniIntegrationProcedure>

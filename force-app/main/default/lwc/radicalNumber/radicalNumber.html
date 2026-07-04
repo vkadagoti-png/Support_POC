@@ -1,0 +1,21 @@
+<template>
+    <!-- {fieldName} -->
+    <template lwc:if={disabled}>
+        <div style="text-wrap: wrap;"> 
+            <lightning-formatted-number 
+                value={recordValue}
+            ></lightning-formatted-number>
+        </div>
+    </template>
+    <template lwc:else>
+        <lightning-input 
+            name="number" 
+            type="number" 
+            step="0.01"
+            variant='label-hidden'
+            value={recordValue} 
+            onchange={handleChange}
+            onblur={handleBlur}
+        ></lightning-input>
+    </template>
+</template>

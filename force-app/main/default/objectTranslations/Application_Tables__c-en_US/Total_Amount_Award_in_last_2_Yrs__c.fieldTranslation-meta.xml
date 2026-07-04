@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Enter a numeric currency. --></help>
+    <label><!-- Total Amount Award in last 2 Yrs. --></label>
+    <name>Total_Amount_Award_in_last_2_Yrs__c</name>
+</CustomFieldTranslation>

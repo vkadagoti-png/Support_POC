@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Structural System --></label>
+    <name>Structural_System__c</name>
+    <picklistValues>
+        <masterLabel>Brick</masterLabel>
+        <translation><!-- Brick --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concrete</masterLabel>
+        <translation><!-- Concrete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Frame</masterLabel>
+        <translation><!-- Frame --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steel</masterLabel>
+        <translation><!-- Steel --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

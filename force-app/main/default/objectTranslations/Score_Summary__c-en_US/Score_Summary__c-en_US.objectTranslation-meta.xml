@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Score Summary</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Score Summaries</value>
+    </caseValues>
+    <layouts>
+        <layout>Score Summary Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Add Scorers --></label>
+        <name>Add_Scorers</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

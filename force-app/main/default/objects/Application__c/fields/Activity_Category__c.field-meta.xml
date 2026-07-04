@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activity_Category__c</fullName>
+    <description>From Application</description>
+    <label>Activity Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Economic Development</fullName>
+                <default>false</default>
+                <label>Economic Development</label>
+            </value>
+            <value>
+                <fullName>Housing</fullName>
+                <default>false</default>
+                <label>Housing</label>
+            </value>
+            <value>
+                <fullName>Public Improvements</fullName>
+                <default>false</default>
+                <label>Public Improvements or Facility Activity</label>
+            </value>
+            <value>
+                <fullName>Public Services</fullName>
+                <default>false</default>
+                <label>Public Services</label>
+            </value>
+            <value>
+                <fullName>Tornado</fullName>
+                <default>false</default>
+                <label>Tornado Disaster Recovery</label>
+            </value>
+            <value>
+                <fullName>General Administration</fullName>
+                <default>false</default>
+                <label>General Administration</label>
+            </value>
+            <value>
+                <fullName>Neighborhood Health Essentials</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Neighborhood Health Essentials</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

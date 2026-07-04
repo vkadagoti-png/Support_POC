@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Director_of_Compliance_Queue_Reference_Approval_Assignment2</fullName>
+    <filterScope>Queue</filterScope>
+    <label>CDA Director of Compliance Queue</label>
+    <queue>Director_of_Compliance_Queue</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

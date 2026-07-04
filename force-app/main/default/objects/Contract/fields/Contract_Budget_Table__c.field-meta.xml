@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_Budget_Table__c</fullName>
+    <inlineHelpText>Per unit will select the reimbusement table to display on the contract.  Actual will show the Expense Budget Categories</inlineHelpText>
+    <label>Contract Budget Table</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Per Unit</fullName>
+                <default>false</default>
+                <label>Per Unit</label>
+            </value>
+            <value>
+                <fullName>Actual</fullName>
+                <default>false</default>
+                <label>Actual</label>
+            </value>
+            <value>
+                <fullName>Administrative</fullName>
+                <default>false</default>
+                <label>Administrative</label>
+            </value>
+            <value>
+                <fullName>Municipal</fullName>
+                <default>false</default>
+                <label>Municipal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

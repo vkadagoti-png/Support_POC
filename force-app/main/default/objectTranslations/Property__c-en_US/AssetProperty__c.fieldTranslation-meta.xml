@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Asset Property (CDA) --></label>
+    <name>AssetProperty__c</name>
+    <picklistValues>
+        <masterLabel>Current Asset Property</masterLabel>
+        <translation><!-- Current Asset Property --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Former Asset Property</masterLabel>
+        <translation><!-- Former Asset Property --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Asset</masterLabel>
+        <translation><!-- Non-Asset --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Asset Property</masterLabel>
+        <translation><!-- Pending Asset Property --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

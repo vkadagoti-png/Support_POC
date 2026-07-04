@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Draw_request_greater_than_Available</fullName>
+    <active>true</active>
+    <description>Stops users from requsting more than available</description>
+    <errorConditionFormula>Total_Amount__c &gt; Max_Draw__c</errorConditionFormula>
+    <errorMessage>Cannot request more than available.</errorMessage>
+</ValidationRule>

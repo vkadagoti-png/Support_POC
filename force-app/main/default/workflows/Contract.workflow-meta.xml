@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>CDA</fullName>
+        <description>CDA - Document Approval Notification Alert to Grantee EA</description>
+        <protected>false</protected>
+        <recipients>
+            <field>GranteePrimaryContact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>no-reply@stlouis-mo.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>STL_CDA/Grantee_Receive_email_alert_when_a_document_is_apporved</template>
+    </alerts>
+    <alerts>
+        <fullName>CDA_Budget_Revision_Approval_EA</fullName>
+        <description>CDA - Budget Revision Approval EA</description>
+        <protected>false</protected>
+        <recipients>
+            <field>GranteePrimaryContact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>no-reply@stlouis-mo.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>STL_CDA/CDA_Budget_Revision_Approval</template>
+    </alerts>
+    <alerts>
+        <fullName>CDA_Budget_Revision_Rejected_EA</fullName>
+        <description>CDA - Budget Revision Rejected EA</description>
+        <protected>false</protected>
+        <recipients>
+            <field>GranteePrimaryContact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>no-reply@stlouis-mo.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>STL_CDA/CDA_Budget_Revision_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Grantee_Receive_email_alert_when_a_document_Checklist_Item_is_apporved_EA</fullName>
+        <description>Grantee - Receive email alert when a document Checklist Item is apporved EA</description>
+        <protected>false</protected>
+        <recipients>
+            <field>GranteePrimaryContact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>no-reply@stlouis-mo.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>STL_CDA/Grantee_Receive_email_alert_when_a_document_is_apporved</template>
+    </alerts>
+    <alerts>
+        <fullName>Grantee_Recieve_Email_Notification_When_a_Document_Checklist_File_is_Shared_EA</fullName>
+        <description>Grantee - Recieve Email Notification When a Document Checklist File is Shared EA</description>
+        <protected>false</protected>
+        <recipients>
+            <field>GranteePrimaryContact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>no-reply@stlouis-mo.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>STL_CDA/Grantee_Recieve_Email_Notification_When_a_Document_Checklist_File_is_Shared</template>
+    </alerts>
+    <alerts>
+        <fullName>Receive_email_alert_when_application_has_been_awarded_award_letter</fullName>
+        <description>Receive email alert when application has been awarded (award letter)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>GranteePrimaryContact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>cda@stlouis-mo.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>STL_CDA/Applicant_Award_Letter</template>
+    </alerts>
+</Workflow>

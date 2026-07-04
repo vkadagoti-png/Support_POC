@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Award Recommendation --></label>
+    <name>Award_Recommendation__c</name>
+    <picklistValues>
+        <masterLabel>Full Funding</masterLabel>
+        <translation><!-- Full Funding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Funding</masterLabel>
+        <translation><!-- No Funding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partial Funding</masterLabel>
+        <translation><!-- Partial Funding --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

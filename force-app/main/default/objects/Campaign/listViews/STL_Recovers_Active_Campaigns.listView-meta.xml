@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>STL_Recovers_Active_Campaigns</fullName>
+    <columns>CAMPAIGN.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>CAMPAIGN.START_DATE</columns>
+    <columns>CAMPAIGN.END_DATE</columns>
+    <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+    <columns>CAMPAIGN.STATUS</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CAMPAIGN.CAMPAIGN_TYPE</field>
+        <operation>equals</operation>
+        <value>Disaster Volunteer</value>
+    </filters>
+    <label>STL Recovers Active Campaigns</label>
+</ListView>

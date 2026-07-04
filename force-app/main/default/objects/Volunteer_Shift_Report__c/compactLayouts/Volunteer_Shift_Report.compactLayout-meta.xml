@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Volunteer_Shift_Report</fullName>
+    <fields>Name</fields>
+    <fields>Campaign__c</fields>
+    <fields>Total_Attendance__c</fields>
+    <fields>Total_Hours__c</fields>
+    <fields>Submission_Date__c</fields>
+    <fields>Submitted_By__c</fields>
+    <label>Volunteer Shift Report</label>
+</CompactLayout>

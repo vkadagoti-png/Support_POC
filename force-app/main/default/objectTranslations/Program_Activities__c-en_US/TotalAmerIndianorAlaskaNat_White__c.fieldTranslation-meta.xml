@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Total American Indian or Alaska Native and white --></help>
+    <label><!-- Total Amer Indian or Alaska Nat &amp; White --></label>
+    <name>TotalAmerIndianorAlaskaNat_White__c</name>
+</CustomFieldTranslation>

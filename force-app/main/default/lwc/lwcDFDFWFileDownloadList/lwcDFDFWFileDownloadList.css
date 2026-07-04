@@ -1,0 +1,21 @@
+.custom-table a {
+    color: inherit; /* Inherit the default link color */
+    text-decoration: none; /* Remove the underline from the link */
+}
+
+.custom-table a:hover {
+    color: #d42828; /* Change color on hover */
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+.normal-font {
+    font-weight: normal; /* Removes the boldness */
+}
+
+.custom-heading-color {
+    color: #2b688a !important;
+}
+
+.eighty-percent {
+    zoom: 88%;
+}

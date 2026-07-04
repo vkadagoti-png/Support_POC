@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Budget_Category_Detail_compact</fullName>
+    <fields>Name</fields>
+    <fields>Amount</fields>
+    <fields>ActualAmount</fields>
+    <fields>Available_Amount__c</fields>
+    <label>Budget Category Detail compact</label>
+</CompactLayout>

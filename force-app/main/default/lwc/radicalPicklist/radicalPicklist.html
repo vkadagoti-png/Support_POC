@@ -1,0 +1,24 @@
+<template>
+
+    <template lwc:if={disabled}>
+        <!-- <div class="slds-table_edit_container slds-is-relative">  -->
+            {recordValue}
+        <!-- </div> -->
+    </template>
+
+    <template lwc:else>
+        <!-- <div class="picklist-container"> -->
+            <!-- class="slds-popover slds-popover_edit slds-popover__body" -->
+            <lightning-combobox 
+                name="picklist" 
+                dropdown-alignment="auto"
+                variant='label-hidden'
+                value={recordValue} 
+                options={opts} 
+                onchange={handleChange}
+                disabled={disabled}
+            ></lightning-combobox>
+        <!-- </div> -->
+    </template>
+            
+</template>

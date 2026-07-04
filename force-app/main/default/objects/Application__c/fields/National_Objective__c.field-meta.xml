@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>National_Objective__c</fullName>
+    <description>Pulled from Application</description>
+    <label>National Objective</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>a. Benefit to LMI Individuals/limited clientele (at least 51% of beneficiaries must be LMI)</fullName>
+                <default>false</default>
+                <label>a. Benefit to LMI Individuals/limited clientele (at least 51% of beneficiaries must be LMI)</label>
+            </value>
+            <value>
+                <fullName>b. Benefit to LMI households for housing (100% of beneficiaries must be at or below 80% of median family income for City, as determined by HUD, for single family units)</fullName>
+                <default>false</default>
+                <label>b. Benefit to LMI households for housing (100% of beneficiaries must be at or below 80% of median family income for City, as determined by HUD, for single family units)</label>
+            </value>
+            <value>
+                <fullName>c. Benefit to LMI individuals/jobs creation or retention (at least 51% of jobs must be taken by or made available to LMI persons)</fullName>
+                <default>false</default>
+                <label>c. Benefit to LMI individuals/jobs creation or retention (at least 51% of jobs must be taken by or made available to LMI persons)</label>
+            </value>
+            <value>
+                <fullName>d. Benefits of services available to all residents in an area that is primarily residential and is located in an eligible LMI census tract(s). (Not applicable to Housing activities)</fullName>
+                <default>false</default>
+                <label>d. Benefits of services available to all residents in an area that is primarily residential and is located in an eligible LMI census tract(s). (Not applicable to Housing activities)</label>
+            </value>
+            <value>
+                <fullName>e. Prevent or eliminate slum and blight on an area basis</fullName>
+                <default>false</default>
+                <label>e. Prevent or eliminate slum and blight on an area basis</label>
+            </value>
+            <value>
+                <fullName>f. Prevent or eliminate slum and blight on a spot basis (applicable only for public facilities and improvements)</fullName>
+                <default>false</default>
+                <label>f. Prevent or eliminate slum and blight on a spot basis (applicable only for public facilities and improvements)</label>
+            </value>
+            <value>
+                <fullName>Low/Mod Assumption (Administrative Categories Only)</fullName>
+                <default>false</default>
+                <label>g. Low/Mod Assumption (Administrative Categories Only)</label>
+            </value>
+            <value>
+                <fullName>h. Urgent Need (applicable only for Tornado disaster recovery)</fullName>
+                <default>false</default>
+                <label>h. Urgent Need (applicable only for Tornado disaster recovery)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

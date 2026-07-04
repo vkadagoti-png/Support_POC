@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Search for the Budget Detail name in the popup and click the magnifying glass to search.  Or enter the ID (BCV-00000010) of the budget detail record to reallocate these funds into.  Only enter this on the line your taking the funds from. --></help>
+    <label><!-- Budget Detail To Allocate --></label>
+    <name>BudgetDetailToAllocate__c</name>
+    <relationshipLabel><!-- Cost Category Details (Budget Detail To Allocate) --></relationshipLabel>
+</CustomFieldTranslation>

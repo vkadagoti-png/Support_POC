@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContractHelper__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>this is a helper field so that conga can filter by the contract, since the standard contractID field is on the newest API.  can delete when API catches up, but must update the where filter on the Contract funging query.</inlineHelpText>
+    <label>ContractHelper</label>
+    <referenceTo>Contract</referenceTo>
+    <relationshipLabel>HELPERFunding Awards Do not use</relationshipLabel>
+    <relationshipName>Funding_Awards</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

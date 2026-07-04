@@ -1,0 +1,135 @@
+<!--
+  @description       : 
+  @author            : Sudhanshu Vijay
+  @group             : 
+  @last modified on  : 08-06-2024
+  @last modified by  : Sudhanshu Vijay
+-->
+<template>
+
+    <template if:true={showErrMsg}>
+        <div class="error-msg">
+            <h1>{errorMessage}</h1>
+        </div>
+    </template>
+    <template if:true={showForm}>
+        <div data-disabled={isDisabled} class="main-div">
+            <lightning-layout class="layout" multiple-rows="false">
+                <lightning-layout-item class="layout-item" size="12" small-device-size="12" medium-device-size="12"
+                    large-device-size="12">
+                    <h1 class="form-heading">Enter Your Personal Details</h1>
+                    <div class="form-sepration"></div>
+                </lightning-layout-item>
+                <lightning-layout-item class="layout-item" size="12" small-device-size="12" medium-device-size="12"
+                    large-device-size="6">
+                    <lightning-input type="text" name="firstName" label="First Name" onchange={handleInputChange}
+                        required value={firstName} placeholder="First Name">
+                    </lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item class="layout-item" size="12" small-device-size="12" medium-device-size="12"
+                    large-device-size="6">
+                    <lightning-input type="text" name="lastName" label="Last Name" onchange={handleInputChange} required
+                        value={lastName} placeholder="Last Name">
+                    </lightning-input>
+                </lightning-layout-item>
+
+                 <lightning-layout-item class="layout-item" size="12" small-device-size="12" medium-device-size="12"
+                    large-device-size="6">
+                    <lightning-input  class="emailAddress" type="email" name="emailAddress" label="Email Address" value={email}> 
+                    </lightning-input>
+                    
+                </lightning-layout-item>
+
+                <lightning-layout-item class="layout-item" size="12" small-device-size="12" medium-device-size="12"
+                    large-device-size="6">
+                    <lightning-input type="tel" name="cellPhone" label="Cell Phone Number" pattern="[0-9]{10}"
+                        max-length=10 onchange={handleInputChange} required value={cellPhone}
+                        placeholder="Cell Phone Number">
+                    </lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item class="layout-item" size="12" small-device-size="12" medium-device-size="12"
+                    large-device-size="6">
+                    <lightning-radio-group name="radioGroup" label="Are you a " options={options} value={value}
+                        type="radio" onchange={handleRadioChange}></lightning-radio-group>
+                </lightning-layout-item>
+                <lightning-layout-item class="layout-item" size="12" small-device-size="12" medium-device-size="12"
+                large-device-size="6">
+            </lightning-layout-item>
+                <template if:true={showBusiness}>
+                    <lightning-layout-item class="layout-item" size="12" small-device-size="12" medium-device-size="12"
+                        large-device-size="12">
+                        <lightning-input type="text" name="company" label="Business Name" onchange={handleInputChange}
+                            required value={company} placeholder="Business Name">
+                        </lightning-input>
+                    </lightning-layout-item>
+                </template>
+                
+                <!--<lightning-layout-item size="12" small-device-size="12" medium-device-size="12"
+                        large-device-size="12">
+                        <lightning-input-address class="slds-var-m-bottom_medium input" show-address-lookup show-compact-address address-label="Address"
+                            street-label="Street Address" subpremise-label="Street Line 2"
+                           city-label="City" country-options={countryOptions} country-label="Country" 
+                            province-options={stateOptions} province-label="Province/State"
+                            postal-code-label="Postal/Zip code" 
+                             data-id="strAddress" onchange={handleInputChange} 
+                            type="text" value={strAddress}
+                            >
+                        </lightning-input-address>
+                </lightning-layout-item>-->
+                <lightning-layout-item class="layout-item" size="12" small-device-size="12" medium-device-size="12"
+                    large-device-size="6">
+                    <lightning-input type="text" name="streetAddressLine1" label="Street Address"
+                        onchange={handleInputChange} required value={streetAddressLine1} placeholder="Street Address">
+                    </lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item class="layout-item" size="12" small-device-size="12" medium-device-size="12"
+                    large-device-size="6">
+                    <lightning-input type="text" name="streetAddressLine2" label="Street Address Line 2"
+                        onchange={handleInputChange} value={streetAddressLine2} placeholder="Street Address Line 2">
+                    </lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item class="layout-item" size="12" small-device-size="12" medium-device-size="12"
+                    large-device-size="6">
+                    <lightning-input type="text" name="city" label="City" onchange={handleInputChange} required
+                        value={city} placeholder="City">
+                    </lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item class="layout-item" size="12" small-device-size="12" medium-device-size="12"
+                large-device-size="6">
+               <lightning-combobox name="country" label="Country" value={selectedCountry} placeholder="Select Country" options={countries} onchange={handleCountry}> </lightning-combobox>
+               <!-- <lightning-input class="emailAddress" type="text" name="country" label="Country"
+                        value="United States" placeholder="Country" disabled>
+                    </lightning-input>-->
+            </lightning-layout-item>
+                <lightning-layout-item class="layout-item" size="12" small-device-size="12" medium-device-size="12"
+                    large-device-size="6">
+                 <lightning-combobox name="state" label="State" value={selectedState} placeholder="Select State" options={states} onchange={handleState}> </lightning-combobox>
+                </lightning-layout-item>
+
+                <lightning-layout-item class="layout-item" size="12" small-device-size="12" medium-device-size="12"
+                    large-device-size="6">
+                    <lightning-input type="text" max-length="6" name="zipCode" label="Zip Code" onchange={handleInputChange}
+                        required value={zipCode} placeholder="Zip Code">
+                    </lightning-input>
+                </lightning-layout-item>
+
+                <lightning-layout-item class="layout-item" size="12" small-device-size="12" medium-device-size="12"
+                    large-device-size="6">
+                </lightning-layout-item>
+
+                <lightning-layout-item class="layout-item-btn slds-var-m-top_medium layout-item" size="12"
+                    small-device-size="12" medium-device-size="12" large-device-size="12">
+                    <button class="slds-button slds-button_brand btn" onclick={handleButtonClick}>Create
+                        Account</button>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </template>
+    <template if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading"></lightning-spinner>
+    </template>
+</template>

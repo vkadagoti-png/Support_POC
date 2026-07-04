@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prior_Budget_Category_Value__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Prior Budget Category Value</label>
+    <referenceTo>BudgetCategoryValue</referenceTo>
+    <relationshipLabel>Budget Category Values</relationshipLabel>
+    <relationshipName>Revised_Budget_Category_Values</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

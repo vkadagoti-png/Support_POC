@@ -1,0 +1,20 @@
+<template>
+		<div style={divStyle}>
+				<template if:false={disabled}>
+						<template if:true={standardButton}>
+								<button title={label} onclick={navigate} style={buttonStyle} class={buttonClass}>{label}</button>
+						</template>
+						<template if:false={standardButton}>
+								<lightning-button variant={buttonVariant} label={label} title={label} onclick={navigate} style={buttonStyle} class={buttonClass}>{label}</lightning-button>
+						</template>
+				</template>
+				<template if:true={disabled}>
+						<template if:true={standardButton}>
+								<button title={label} onclick={navigate} style={buttonStyle} class={buttonClass} disabled="">{label}</button>
+						</template>
+						<template if:false={standardButton}>
+								<lightning-button variant={buttonVariant} label={label} title={label} onclick={navigate} style={buttonStyle} class={buttonClass} disabled="">{label}</lightning-button>
+						</template>
+				</template>
+		</div>
+</template>

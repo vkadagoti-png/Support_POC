@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>CDA Finance Level 1</name>
+    <queueMembers>
+        <users>
+            <user>thomasch@stlouis-mo.gov</user>
+            <user>eskridgel@stlouis-mo.gov</user>
+            <user>butcherm@stlouis-mo.gov</user>
+            <user>pearsonva@stlouis-mo.gov</user>
+            <user>perkinsv@stlouis-mo.gov</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>FundingAward</sobjectType>
+    </queueSobject>
+</Queue>

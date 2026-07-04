@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>Username</identityMapping>
+    <issuer>urn:cityofstlouis.us.auth0.com</issuer>
+    <loginUrl>https://cityofstlouis.us.auth0.com/samlp/RlnxAjjQ8O997YaK2JJTqCKCFxzt8MBi</loginUrl>
+    <logoutUrl>https://cityofstlouis.us.auth0.com/logout</logoutUrl>
+    <name>Auth0</name>
+    <oauthTokenEndpoint>https://stl.my.salesforce.com/services/oauth2/token</oauthTokenEndpoint>
+    <redirectBinding>false</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <requestSigningCertId>0P1820000000Kw1</requestSigningCertId>
+    <salesforceLoginUrl>https://stl.my.salesforce.com</salesforceLoginUrl>
+    <samlEntityId>https://stl.my.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <singleLogoutBinding>PostBinding</singleLogoutBinding>
+    <singleLogoutUrl>https://cityofstlouis.us.auth0.com/logout</singleLogoutUrl>
+    <useConfigRequestMethod>false</useConfigRequestMethod>
+    <useSameDigestAlgoForSigning>true</useSameDigestAlgoForSigning>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIDDzCCAfegAwIBAgIJH/t93rPYX2KvMA0GCSqGSIb3DQEBCwUAMCUxIzAhBgNVBAMTGmNpdHlvZnN0bG91aXMudXMuYXV0aDAuY29tMB4XDTIzMDIxNjE4MzcyNloXDTM2MTAyNTE4MzcyNlowJTEjMCEGA1UEAxMaY2l0eW9mc3Rsb3Vpcy51cy5hdXRoMC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCaT6RFxReO8wPiAVcqUYz/1zO6wFtDjDLABYwbj4eTrv3Je/8+uFqWRqJVky7XZC16JPVuEn7TIKdDO25/wFCpTDM5ZCbvhgmdq/S//4B3bZG50SiqV2FyslTR4MNx65/B252aiK185yFENiKGfv687CyBqYTevnv8H9noQYrkl5uJM/H9LFK0B+LUEHcJ3ZjKM354iLrf9mE5379nfKU4cCOISpekUhgLmViGo5881aPn6Yn+IMvBJTzDiUKVExLO00Bkm7CTUQO76foL/jIBbVJQmP/l3JDW1uwDXWlzi8Ow+y2cyEeIObJ9S3v5dNZeVigumg+XfXAGdG090VYjAgMBAAGjQjBAMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFJly97SYO6uaLJcD6ypC4QGOrOkDMA4GA1UdDwEB/wQEAwIChDANBgkqhkiG9w0BAQsFAAOCAQEAGraqRqO4oXvyG0nPzH6mafyikE6NHxrsMG33EHPe6MYX5BBEoFbqZ8VX/AwdTMbcqreem2hx6HQ0IGpPIkUo6akiEZ7QaOclm4OrGkBoJT/SObKb3yfObb0z6cLLaDfe8glg1B+sqfc1HKGn3ej9+J4l084PlFAaSV/Th4EK0832ljuq6sLUjqmK6i9rhUKTO3A79TjUe5VU5d/vO9FGsQK8ACuZYsh4So24hjHpuPNfVzbz2uq/YCSu+e+hZIQKbVk5QNtpSxDyRph6UZy7XNaK8CsLn3lI2Q1cPYDWEZ+6jytq37RXgsHXwX1zggT/cdjx7qwzNTgqMRSLMt5pxg==</validationCert>
+</SamlSsoConfig>

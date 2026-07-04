@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CDAProgramatic</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Contract_Compact_CGA</compactLayoutAssignment>
+    <label>CDA Programatic</label>
+    <picklistValues>
+        <picklist>CRO_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Start</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Client_Status_as_a__c</picklist>
+        <values>
+            <fullName>elderly person</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>homeless person</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Closeout_Status__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Started</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Community_Based_Dev_Organization__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ContractStatus__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Document Checklist Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Document checklist Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Routing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contract_Budget_Table__c</picklist>
+        <values>
+            <fullName>Actual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Administrative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Municipal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Per Unit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ERR_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Required</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Eligible_Activity__c</picklist>
+        <values>
+            <fullName>Affordable Housing Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disaster Recovery and Resilience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Economic Development Initiatives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planning and Administration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Program Income</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Facilities and Infrastructure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Entered_into_IDIS__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Final_Inspection__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Level_of_Environmental_Review__c</picklist>
+        <values>
+            <fullName>CENST %28Categorically Excluded Not Subject To%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CEST %28Categorically Excluded Subject To%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exempt</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>National_Objective_Contract__c</picklist>
+        <values>
+            <fullName>LMA %E2%80%93 City Wide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LMA %E2%80%93 Neighborhood-Based</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LMC %E2%80%93 Family Size and Income %28Econ%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LMC %E2%80%93 Family Size and Income %28Public%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LMC %E2%80%93 Presumed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LMC - Nature</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LMI-Limited Clientele %28Presumed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LMJ  - Creation%2FRetention</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low%2FMod Housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low%2FMod Income %E2%80%93 Limited Clientele</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low%2FMod Income-Assumption</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low-Mod Income - Area Benefit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planning%2FAdmin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Improvements</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Neigborhoods__c</picklist>
+        <values>
+            <fullName>Academy%2FSherman Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Baden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Benton Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Benton Park West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bevo Mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Botanical Heights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Boulevard Heights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carondelet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carr Square</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central West End</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cheltenham</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clayton-Tamm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clifton Heights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College Hill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Columbus Square</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compton Heights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DeBaliviere Place</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Downtown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Downtown West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dutchtown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ellendale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fairground</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forest Park Southeast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fountain Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fox Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Franz Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grand Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gravois Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greater Ville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hamilton Heights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hi-Pointe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Holly Hills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hyde Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JeffVanderLou</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kings Oak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kingsway East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kingsway West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kosciusko</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LaSalle Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lafayette Square</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lewis Place</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lindenwood Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine Villa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mark Twain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mark Twain%2FI-70 Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>McKinley Heights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midtown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mount Pleasant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Near North Riverfront</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Hampton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Point</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Riverfront</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O%E2%80%99Fallon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Old North St%2E Louis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peabody Darst Webbe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Penrose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Princeton Heights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Riverview</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shaw</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skinker-DeBaliviere</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soulard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southampton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southwest Garden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>St%2E Louis Hills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>St%2E Louis Place</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Gate District</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Hill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Ville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tiffany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tower Grove East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tower Grove South</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vandeventer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visitation Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Walnut Park East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Walnut Park West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wells%2FGoodfellow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>West End</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wydown%2FSkinker</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Recipient_Type__c</picklist>
+        <values>
+            <fullName>Grantee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subgrantee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subrecipient</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Activated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Approval Process</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Grantee_Receive_email_alert_when_drawdown_request_is_submitted</fullName>
+        <description>Grantee - Receive email alert when drawdown request is submitted</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Grantee_Primary_Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>cda@stlouis-mo.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>STL_CDA/Grantee_Receive_email_alert_when_drawdown_request_is_submitted</template>
+    </alerts>
+    <alerts>
+        <fullName>Housing_Analyst_Receive_email_alert_when_drawdown_request_is_submitted</fullName>
+        <description>Housing Analyst - Receive email alert when drawdown request is submitted</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Analyst__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>cda@stlouis-mo.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>STL_CDA/Housing_Analyst_Receive_email_alert_when_drawdown_request_is_submitted</template>
+    </alerts>
+    <alerts>
+        <fullName>Program_Monitor_Receive_email_alert_when_drawdown_request_is_submitted</fullName>
+        <description>Program Monitor - Receive email alert when drawdown request is submitted</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Program_Monitor__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>cda@stlouis-mo.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>STL_CDA/Program_Monitor_Receive_email_alert_when_drawdown_request_is_submitted</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Final_Approval</fullName>
+        <field>Approval_Step__c</field>
+        <formula>&quot;Approved&quot;</formula>
+        <name>Final Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Finance_Level_2_Approval</fullName>
+        <field>Approval_Step__c</field>
+        <formula>&quot;Finance Level 2&quot;</formula>
+        <name>Finance Level 2 Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Initiate_Approval</fullName>
+        <field>Approval_Step__c</field>
+        <formula>IF(
+    ISPICKVAL(Project_Leadxx__c, &quot;Housing Analyst&quot;),
+    &quot;Housing Analyst&quot;,
+    IF(
+        ISPICKVAL(Project_Leadxx__c, &quot;Program Monitor&quot;),
+        &quot;Program Monitor&quot;,
+        &quot;Program Admin&quot;
+    )
+)</formula>
+        <name>Initiate Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Program_Admin_Queue_Change</fullName>
+        <field>Approval_Step__c</field>
+        <formula>IF ((Total_Amount__c &gt; 100000) ,&quot;Supervisor Review&quot;, &quot;Finance Level 1&quot;)</formula>
+        <name>Program Admin Queue Change</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Program_Admin_Update</fullName>
+        <field>Approval_Step__c</field>
+        <formula>&quot;Program Admin&quot;</formula>
+        <name>Program Admin Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rejected_Disbursement_Request</fullName>
+        <field>Approval_Step__c</field>
+        <formula>&quot;Rejected&quot;</formula>
+        <name>Rejected Disbursement Request</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_approved</fullName>
+        <field>Status</field>
+        <literalValue>Approved</literalValue>
+        <name>Status approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Supervisor_Approval</fullName>
+        <field>Approval_Step__c</field>
+        <formula>&quot;Finance Level 1&quot;</formula>
+        <name>Supervisor Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Supervsor_Approve</fullName>
+        <field>Approval_Step__c</field>
+        <formula>&quot;Finance Level 1&quot;</formula>
+        <name>Supervsor Approve</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Final_reject</fullName>
+        <field>Status</field>
+        <literalValue>Returned</literalValue>
+        <name>Update Final reject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status</fullName>
+        <description>update status on financial activity</description>
+        <field>Status</field>
+        <literalValue>Pending Approval</literalValue>
+        <name>Update Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_statusOnReject1</fullName>
+        <field>Status</field>
+        <literalValue>Returned</literalValue>
+        <name>Update Status on reject1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

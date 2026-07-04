@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mortgage_Table_Display</fullName>
+    <description>Existing Mortgage on Project Properties display values that are part of the FOR SALE 2023 Application</description>
+    <displayedFields>
+        <field>Address__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Mortgage_Balance__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Mortgage Table Display</label>
+</FieldSet>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Box is checked when the revenue and expense budgets Match, and unchecked when they do not match. --></help>
+    <label><!-- Budget Match --></label>
+    <name>Budget_Match__c</name>
+</CustomFieldTranslation>

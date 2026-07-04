@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Eligible_Activity__c</fullName>
+    <inlineHelpText>(CDBG) program, administered by the U.S. Department of Housing and Urban Development (HUD), supports a range of activities aimed at improving the quality of life for low- and moderate-income individuals and families in communities across the United States. Eligible activities for CDBG grants fall into several categories.</inlineHelpText>
+    <label>Eligible Activity</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Affordable Housing Development</fullName>
+                <default>false</default>
+                <label>Affordable Housing Development</label>
+            </value>
+            <value>
+                <fullName>Public Facilities and Infrastructure</fullName>
+                <default>false</default>
+                <label>Public Facilities and Infrastructure</label>
+            </value>
+            <value>
+                <fullName>Economic Development Initiatives</fullName>
+                <default>false</default>
+                <label>Economic Development Initiatives</label>
+            </value>
+            <value>
+                <fullName>Public Services</fullName>
+                <default>false</default>
+                <label>Public Services</label>
+            </value>
+            <value>
+                <fullName>Planning and Administration</fullName>
+                <default>false</default>
+                <label>Planning and Administration</label>
+            </value>
+            <value>
+                <fullName>Program Income</fullName>
+                <default>false</default>
+                <label>Program Income</label>
+            </value>
+            <value>
+                <fullName>Disaster Recovery and Resilience</fullName>
+                <default>false</default>
+                <label>Disaster Recovery and Resilience</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

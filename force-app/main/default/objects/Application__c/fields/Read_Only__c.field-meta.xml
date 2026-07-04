@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Read_Only__c</fullName>
+    <formula>OR(
+   $Profile.Name = &quot;STL CDA Internal Grant Admin&quot;,
+   AND(
+   NOT(
+   AND(
+   Application_Returned__c = TRUE,
+   TEXT(Status__c) &lt;&gt; &quot;Submitted&quot;
+      )
+      ),
+   OR(
+      TEXT(Status__c) = &quot;Submitted&quot;,
+      TODAY() &gt; DATEVALUE(Reference_Application__r.End_Date__c)
+      )
+     )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Read Only</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

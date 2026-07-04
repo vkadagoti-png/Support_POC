@@ -1,0 +1,28 @@
+<template>
+    <template lwc:if={disabled}>
+        <div style="text-wrap: wrap;"> 
+        <!-- <div class="slds-table_edit_container slds-is-relative">  -->
+            {disabledValue}
+        </div>
+
+        <template lwc:if={isTruncated}>
+            <br />
+    
+            <a onclick={handleShowMoreClick}>{showLabel}</a>
+        </template>
+    </template>
+    <template lwc:else>
+        <!-- <div class="picklistBlock">
+            <div class="container"> -->
+                <lightning-textarea 
+                    name="textarea" 
+                    placeholder="type here..."
+                    value={recordValue} 
+                    onchange={handleChange}
+                    variant='label-hidden'
+                ></lightning-textarea>
+            <!-- </div>
+        </div> -->
+    </template>
+
+</template>

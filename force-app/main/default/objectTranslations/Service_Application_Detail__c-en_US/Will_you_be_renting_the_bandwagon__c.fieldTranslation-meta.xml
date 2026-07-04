@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Will you be renting the bandwagon? --></label>
+    <name>Will_you_be_renting_the_bandwagon__c</name>
+</CustomFieldTranslation>

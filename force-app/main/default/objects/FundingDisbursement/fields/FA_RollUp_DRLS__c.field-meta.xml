@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FA_RollUp_DRLS__c</fullName>
+    <description>Referenced in DLRS Roll-up criteria</description>
+    <formula>TEXT(Type_of_Activity__c) != &apos;Program Reporting&apos; ||
+ TEXT(Type_of_Activity__c) != &apos;Income&apos; || 
+ TEXT(Type_of_Activity__c) != &apos;Recapture&apos;</formula>
+    <inlineHelpText>Referenced in DLRS Roll-up criteria</inlineHelpText>
+    <label>FA roll-up</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

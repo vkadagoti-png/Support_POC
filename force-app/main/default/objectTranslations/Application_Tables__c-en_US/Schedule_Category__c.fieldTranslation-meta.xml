@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Schedule Category --></label>
+    <name>Schedule_Category__c</name>
+    <picklistValues>
+        <masterLabel>All Units Sold</masterLabel>
+        <translation><!-- All Units Sold --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction Complete</masterLabel>
+        <translation><!-- Construction Complete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction Finance</masterLabel>
+        <translation><!-- Construction Finance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction Loan Closing</masterLabel>
+        <translation><!-- Construction Loan Closing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction Start</masterLabel>
+        <translation><!-- Construction Start --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing Start-Up</masterLabel>
+        <translation><!-- Marketing Start-Up --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plans</masterLabel>
+        <translation><!-- Plans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site</masterLabel>
+        <translation><!-- Site --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

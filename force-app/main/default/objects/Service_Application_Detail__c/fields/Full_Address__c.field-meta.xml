@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Full_Address__c</fullName>
+    <description>Field is used to store the Event Address selected by user on DFD Portal while submitting the Special event form. Address comes from geocode API.</description>
+    <externalId>false</externalId>
+    <label>Event Address</label>
+    <length>50</length>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

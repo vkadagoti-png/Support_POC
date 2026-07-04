@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Related Permit Applications" icon-name="standard:form">
+        <div style="text-align: center;" class="slds-m-around_xx-small">
+            <template lwc:if={subApplications.length}>
+                <lightning-datatable
+                    key-field="Id"
+                    data={subApplications}
+                    columns={columns}
+                    hide-checkbox-column
+                ></lightning-datatable>
+            </template>
+            <template lwc:else>
+                <div style="margin:10px;">
+                    <p>No Related Permit Applications found.</p>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

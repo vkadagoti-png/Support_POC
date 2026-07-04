@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FundingDisbursement$Name</field>
+    </columns>
+    <columns>
+        <field>FundingDisbursement.Financial_Activity_Cost_Categories__r$Name</field>
+    </columns>
+    <columns>
+        <field>FundingDisbursement.Financial_Activity_Cost_Categories__r.Cost_Category_Details__r$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>FundingDisbursement$Total_Amount__c</field>
+    </columns>
+    <columns>
+        <field>FundingDisbursement$DateofActivity__c</field>
+    </columns>
+    <description>Grouped by approval step.  Filtered by status of Pending Approval</description>
+    <filter>
+        <criteriaItems>
+            <column>FundingDisbursement$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Pending Approval</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FundingDisbursement$Approval_Step__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FundingDisbursement$Type_of_Activity__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FundingDisbursement$Contract__c.Account</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Financial Activities groups by approval</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Financial_Activities_with_Categories_and_Details__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>FundingDisbursement$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

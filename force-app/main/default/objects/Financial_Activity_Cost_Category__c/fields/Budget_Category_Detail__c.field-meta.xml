@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Budget_Category_Detail__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Budget Category Detail</label>
+    <referenceTo>BudgetCategoryValue</referenceTo>
+    <relationshipLabel>Financial Activity Cost Categories</relationshipLabel>
+    <relationshipName>Financial_Activity_Cost_Categories</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

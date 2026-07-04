@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>App_Field_API_Name_with_Target_Record_Id__c</fullName>
+    <description>The API Name of a field on the Application record with the Id of a record to write the given field value to.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The API Name of a field on the Application record with the Id of a record to write the given field value to.</inlineHelpText>
+    <label>App Field API Name with Target Record Id</label>
+    <length>43</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Is this property in a historic district? --></label>
+    <name>Is_this_property_in_a_historic_district__c</name>
+    <picklistValues>
+        <masterLabel>Eligible</masterLabel>
+        <translation><!-- Eligible --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Historic</masterLabel>
+        <translation><!-- Historic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation><!-- No --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

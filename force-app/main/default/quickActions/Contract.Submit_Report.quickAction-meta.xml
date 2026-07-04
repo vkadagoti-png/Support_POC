@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>used to launch the &quot;Create Reporting Record&quot; which would create the Reporting record and relate to the contract</description>
+    <flowDefinition>Create_Reporting_Record</flowDefinition>
+    <label>Submit Report</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

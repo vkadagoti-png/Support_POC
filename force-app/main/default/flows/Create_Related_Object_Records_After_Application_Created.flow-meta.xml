@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Create_Child_Object_s</name>
+        <label>Create Child Object(s)</label>
+        <locationX>50</locationX>
+        <locationY>647</locationY>
+        <actionName>CreateChildObjectsInvoc</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>jsonObjectString</name>
+            <value>
+                <stringValue>[{&quot;childObjectApiName&quot;:&quot;Project__c&quot;,&quot;childFieldForRecordId&quot;:&quot;Application__c&quot;,&quot;parentFieldForChildId&quot;:&quot;Project__c&quot;},{&quot;childObjectApiName&quot;:&quot;Program_Activities__c&quot;,&quot;childFieldForRecordId&quot;:&quot;Application__c&quot;,&quot;parentFieldForChildId&quot;:&quot;Program_Activity__c&quot;}]</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>parentObjectApiName</name>
+            <value>
+                <stringValue>Application__c</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>CreateChildObjectsInvoc</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>59.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Checks if an Object Creation JSON is present to create child objects.</description>
+        <name>Check_Object_Creation_JSON</name>
+        <label>Check Object Creation JSON</label>
+        <locationX>182</locationX>
+        <locationY>539</locationY>
+        <defaultConnectorLabel>Skip</defaultConnectorLabel>
+        <rules>
+            <name>Has_Custom_Object_Creation_JSON</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Reference_Application__r.Custom_Object_Creation_JSON__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Reference_Application__r.Custom_Object_Creation_JSON__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Child_Object_s</targetReference>
+            </connector>
+            <label>Has Custom Object Creation JSON</label>
+        </rules>
+    </decisions>
+    <description>CC 1/29/25 - added Program Activity to JSON string (updated &quot; character by BP)
+SB 6/3/24 - Remove program from &apos;Create Child Objects&apos; apex action
+CC 5/15/24 - removed Program from Child Object JSON string
+BP 1/17/24: Cleaned up/simplified GETs at beginning. Updated Child Object Creation inputs for new features/format.
+CC 1/16/24 - set Account lookup logic in beginning of the flow</description>
+    <environments>Default</environments>
+    <interviewLabel>Create Related Object Records (After Application Created) {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Create Related Object Records (After Application Created)</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Running_User_s_Contact</name>
+        <label>Get Running User&apos;s Contact</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Account_Lookup_on_the_Application</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.ContactId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>AccountId</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Account_Lookup_on_the_Application</name>
+        <label>Update Account Lookup on the Application</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <connector>
+            <targetReference>Check_Object_Creation_JSON</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Account__c</field>
+            <value>
+                <elementReference>Get_Running_User_s_Contact.AccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Running_User_s_Contact</targetReference>
+        </connector>
+        <object>Application__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

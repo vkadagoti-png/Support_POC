@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Service Application Detail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Service Application Details</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- ApplicationDashboard --></label>
+        <name>ApplicationDashboard</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- MyRecentApplications --></label>
+        <name>MyRecentApplications</name>
+    </fieldSets>
+    <layouts>
+        <layout>Service Application Detail Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Permits --></label>
+        <name>DFDFW_Permits</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Resume_Application --></label>
+        <name>Resume_Application</name>
+    </webLinks>
+</CustomObjectTranslation>

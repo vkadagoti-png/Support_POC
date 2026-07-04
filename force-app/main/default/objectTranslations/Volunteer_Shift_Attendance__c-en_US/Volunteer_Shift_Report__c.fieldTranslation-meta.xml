@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Volunteer Shift Report --></label>
+    <name>Volunteer_Shift_Report__c</name>
+    <relationshipLabel><!-- Volunteer Shift Attendance --></relationshipLabel>
+</CustomFieldTranslation>

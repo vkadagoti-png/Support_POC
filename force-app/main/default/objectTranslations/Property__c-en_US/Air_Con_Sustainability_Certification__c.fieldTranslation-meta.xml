@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Air Conditioning System Sustainability Certification in Addition to EPA Energy Star? Please Detail --></help>
+    <label><!-- Air Con Sustainability Certification --></label>
+    <name>Air_Con_Sustainability_Certification__c</name>
+</CustomFieldTranslation>

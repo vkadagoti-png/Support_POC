@@ -1,0 +1,17 @@
+.dummy{
+	color : black;
+}
+.slds-dropdown {
+    min-width: 100%;
+    font-size: 1rem;
+    font-family: "Open Sans", verdana, sans-serif;
+}
+
+.slds-form-element__label{
+    white-space: nowrap;
+    font-family: "Open Sans", verdana, sans-serif;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    font-size: 1rem;
+    color: black;
+}

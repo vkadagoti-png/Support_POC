@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>Reference_Application_Section__c</columns>
+    <columns>NAME</columns>
+    <columns>Field_Label__c</columns>
+    <columns>Display_Text__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>App_Field_API_Name_with_Target_Record_Id__c</columns>
+    <columns>Target_Field_API_Name__c</columns>
+    <columns>Component_Name__c</columns>
+    <columns>Custom_Component_JSON__c</columns>
+    <columns>Flow_API_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Reference_Application_Detail__c.Input_Flow,Reference_Application_Detail__c.Custom_Component</value>
+    </filters>
+    <label>All</label>
+</ListView>

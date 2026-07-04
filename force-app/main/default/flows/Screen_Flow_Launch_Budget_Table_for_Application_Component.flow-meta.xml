@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Allows for more streamlined record creation later in the flow</description>
+        <name>Add_SOV_Budget_Categories_to_Collection</name>
+        <label>Add SOV Budget Categories to Collection</label>
+        <locationX>1106</locationX>
+        <locationY>1430</locationY>
+        <assignmentItems>
+            <assignToReference>COL_BudgetCatergories_toCreate</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>SOV_BudgetCatergories_toCreate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop2_through_templated_budget_catergory</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Copies of information from the templated budget down to the child budget</description>
+        <name>Assign_Attributes_to_the_New_Child_Budget</name>
+        <label>Assign Attributes to the New Child Budget</label>
+        <locationX>50</locationX>
+        <locationY>998</locationY>
+        <assignmentItems>
+            <assignToReference>SOV_Child_Budget_toCreate.Application__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Budget_Associated_with_Application.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SOV_Child_Budget_toCreate.AccountId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Budget_Associated_with_Application.Budget__r.AccountId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SOV_Child_Budget_toCreate.SmartSheetId__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Budget_Associated_with_Application.Budget__r.SmartSheetId__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SOV_Child_Budget_toCreate.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>FX_Child_Budget_Name</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SOV_Child_Budget_toCreate.ParentBudgetId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Budget_Associated_with_Application.Budget__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SOV_Child_Budget_toCreate.Match_Percentage__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Budget_Associated_with_Application.Budget__r.Match_Percentage__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SOV_Child_Budget_toCreate.Budget_Assignment__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Budget_Associated_with_Application.Budget__r.Budget_Assignment__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_SOV_Budget_to_Collection</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Gathers information and assigns for new catergories</description>
+        <name>Assign_Attributes_to_the_SOV_Budget_Categories</name>
+        <label>Assign Attributes to the SOV Budget Categories</label>
+        <locationX>1106</locationX>
+        <locationY>1322</locationY>
+        <assignmentItems>
+            <assignToReference>SOV_BudgetCatergories_toCreate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop2_through_templated_budget_catergory</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SOV_BudgetCatergories_toCreate.BudgetId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop1_Loop_Through_New_Child_Budgets.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SOV_BudgetCatergories_toCreate.CreatedById</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SOV_BudgetCatergories_toCreate.LastModifiedById</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SOV_BudgetCatergories_toCreate.CreatedDate</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SOV_BudgetCatergories_toCreate.LastModifiedDate</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SOV_BudgetCatergories_toCreate.LastViewedDate</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SOV_BudgetCatergories_toCreate.LastViewedDate</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SOV_BudgetCatergories_toCreate.SystemModstamp</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_SOV_Budget_Categories_to_Collection</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assign individual Budget records to a collection</description>
+        <name>Assign_SOV_Budget_to_Collection</name>
+        <label>Assign SOV Budget to Collection</label>
+        <locationX>50</locationX>
+        <locationY>1106</locationY>
+        <assignmentItems>
+            <assignToReference>COL_Child_Budgets_ToCreate</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>SOV_Child_Budget_toCreate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Modify_from_year_counter</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assignment_How_many_Child_Budget_Records_are_there</name>
+        <label>Assignment How many Child Budget Records are there</label>
+        <locationX>776</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>YearCounter</assignToReference>
+            <operator>AssignCount</operator>
+            <value>
+                <elementReference>Get_Current_Children_Budget_Records</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Decision_Create_New_Child_Budget_Tables</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Allows for more streamlined record creation later in the flow</description>
+        <name>Assignment_of_SOV_Details_to_Collection</name>
+        <label>Assignment of SOV Details to Collection</label>
+        <locationX>1106</locationX>
+        <locationY>2354</locationY>
+        <assignmentItems>
+            <assignToReference>COL_Budget_Category_Details_ToCreate</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>SOV_Budget_Catergory_Details_ToCreate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>loop4_Templated_Budget_Catergory_Details</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assignment_of_Templated_Budget_Details_to_New_Details</name>
+        <label>Assignment of Templated Budget Details to New Details</label>
+        <locationX>1106</locationX>
+        <locationY>2246</locationY>
+        <assignmentItems>
+            <assignToReference>SOV_Budget_Catergory_Details_ToCreate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>loop4_Templated_Budget_Catergory_Details</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SOV_Budget_Catergory_Details_ToCreate.Budget__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_3_Child_Categories_Budget.BudgetId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SOV_Budget_Catergory_Details_ToCreate.BudgetCategoryId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_3_Child_Categories_Budget.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assignment_of_SOV_Details_to_Collection</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>take away 1 from the counter to later check if any more child budgets need to be made</description>
+        <name>Modify_from_year_counter</name>
+        <label>Modify from year counter</label>
+        <locationX>50</locationX>
+        <locationY>1214</locationY>
+        <assignmentItems>
+            <assignToReference>YearCounter</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>year_counter_Check</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Resets year counter to allow for budget creation loop</description>
+        <name>Reset_Year_Counter</name>
+        <label>Reset Year Counter</label>
+        <locationX>446</locationX>
+        <locationY>782</locationY>
+        <assignmentItems>
+            <assignToReference>YearCounter</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>year_counter_Check</targetReference>
+        </connector>
+    </assignments>
+    <collectionProcessors>
+        <description>Filters all budget catergory details to only the current BudgetCategoryy Value to prevent duplicates</description>
+        <name>Filter_to_only_the_current_Budget_Catergory</name>
+        <elementSubtype>FilterCollectionProcessor</elementSubtype>
+        <label>Filter to only the current Budget Catergory</label>
+        <locationX>1018</locationX>
+        <locationY>2030</locationY>
+        <assignNextValueToReference>currentItem_Filter_to_only_the_current_Budget_Catergory</assignNextValueToReference>
+        <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
+        <collectionReference>Get_Templated_Budget_Categories_values</collectionReference>
+        <conditionLogic>and</conditionLogic>
+        <conditions>
+            <leftValueReference>currentItem_Filter_to_only_the_current_Budget_Catergory.Budget_Detail_Name__c</leftValueReference>
+            <operator>EqualTo</operator>
+        </conditions>
+        <connector>
+            <targetReference>loop4_Templated_Budget_Catergory_Details</targetReference>
+        </connector>
+    </collectionProcessors>
+    <decisions>
+        <description>Determine if new child budget tables need to be created to ensure that the year count on the templated budget is reached</description>
+        <name>Decision_Create_New_Child_Budget_Tables</name>
+        <label>Decision Create New Child Budget Tables</label>
+        <locationX>776</locationX>
+        <locationY>566</locationY>
+        <defaultConnector>
+            <targetReference>Get_Child_Budget_from_Parent_Application_Budget</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Skip Child Budget Creation</defaultConnectorLabel>
+        <rules>
+            <name>Outcome_1_of_Decision_Create_New_Child_Budget_Tables</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>YearCounter</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <elementReference>Get_Budget_Associated_with_Application.Funding_Opportunity__r.BudgetTemplate.Budget_Years__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Budget_RecordTypeId</targetReference>
+            </connector>
+            <label>Create New Child Budget Tables</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Verifies that a budget record is associated with the retrieved application. If no Budget is found, then presents an error message</description>
+        <name>Ensure_that_there_is_budget_assigned_to_the_application</name>
+        <label>Ensure that there is budget assigned to the application</label>
+        <locationX>776</locationX>
+        <locationY>3122</locationY>
+        <defaultConnector>
+            <targetReference>No_Budget_Table_Screen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Budget Found</defaultConnectorLabel>
+        <rules>
+            <name>Application_Budget_Found_and_Application_is_Submitted</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Budget_Associated_with_Application.Budget__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_Budget_Associated_with_Application.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Submitted</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Sub_Flow_Budget_Table_Read_Only</targetReference>
+            </connector>
+            <label>Application Budget Found and Application is Submitted</label>
+        </rules>
+        <rules>
+            <name>Application_Budget_Found_and_Application_is_Not_Submitted</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Budget_Associated_with_Application.Budget__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Sub_Flow_editable_Budget_Table</targetReference>
+            </connector>
+            <label>Application Budget Found and Application is Not Submitted</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Decision point to determine how many child budget need to be created before moving on</description>
+        <name>year_counter_Check</name>
+        <label>year counter Check</label>
+        <locationX>446</locationX>
+        <locationY>890</locationY>
+        <defaultConnector>
+            <targetReference>Create_New_Child_Budget</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>All Child Budgets have been created</defaultConnectorLabel>
+        <rules>
+            <name>Number_of_Budgets_to_create_is_greater_than_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>YearCounter</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>1.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Attributes_to_the_New_Child_Budget</targetReference>
+            </connector>
+            <label>Number of Budgets to create is greater than 0</label>
+        </rules>
+        <rules>
+            <name>Incorrect_Budget_Year_Configuration</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Budget_Associated_with_Application.Funding_Opportunity__r.BudgetTemplate.Budget_Years__c</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Incorrect_Budget_Year_Error_Screen</targetReference>
+            </connector>
+            <label>Incorrect Budget Year Configuration</label>
+        </rules>
+    </decisions>
+    <description>Flow to be used as a reference question detail in a reference application template to render the budget table component
+
+
+TNOCJP DEV // Update for asset migration to STL (will remove)
+12/09/2024 V12 - update to get reference budget ID from the Funding Opportunity as opposed to the Reference App - ATB 
+11/25/2024 V11 - QA bug to not return any budgets if the parent budget ID is null - ATB
+11/14/2024 V10 - Added in assignment of Record Type Id and Budget Assignment Values to Child Budget Flow - ATB
+11/01/24 V2 Added in return elements to ensure that the user can fill out Budget tables and then edit Budget tables as allowed - ATB
+11/04/24 V3 Added in the functionality to create child budgets - ATB
+11/05/24 V4 - Update to run without system context sharing - ATB
+11/06/24 V5 - Updates to allow for reselection of budgets tables - ATB
+11/06/24 V6 - Updates for selection to be datatable instead of radio button - ATB
+11/06/2024 v8 - Data Mapping Error - ATB
+11/14/24 V9 - Added in Match % to child budgets - ATB</description>
+    <dynamicChoiceSets>
+        <description>Allows for the selection of Child Budget For Modification Later in the flow</description>
+        <name>Choice_Child_Budget</name>
+        <dataType>String</dataType>
+        <displayField>Name</displayField>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ParentBudgetId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Budget_Associated_with_Application.Budget__c</elementReference>
+            </value>
+        </filters>
+        <object>Budget</object>
+        <valueField>Id</valueField>
+    </dynamicChoiceSets>
+    <environments>Default</environments>
+    <formulas>
+        <description>Gives Name Of Child Budget</description>
+        <name>FX_Child_Budget_Name</name>
+        <dataType>String</dataType>
+        <expression>{!Get_Budget_Associated_with_Application.Budget__r.Name} + &quot; Year &quot; +  TEXT({!YearCounter})</expression>
+    </formulas>
+    <interviewLabel>[Screen Flow] - {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>[Screen Flow] - Launch Budget Table for Application Component</label>
+    <loops>
+        <description>Loops through newly created child budgets to allow for assignment to new child categories</description>
+        <name>Loop1_Loop_Through_New_Child_Budgets</name>
+        <label>Loop1 Loop Through New Child Budgets</label>
+        <locationX>842</locationX>
+        <locationY>1106</locationY>
+        <collectionReference>COL_Child_Budgets_ToCreate</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Loop2_through_templated_budget_catergory</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Create_New_Child_Budget_Catergory</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <description>Loops through templated budget categories in order to prepare for cloning later</description>
+        <name>Loop2_through_templated_budget_catergory</name>
+        <label>Loop2 through templated budget catergory</label>
+        <locationX>1018</locationX>
+        <locationY>1214</locationY>
+        <collectionReference>Get_Templated_Budget_Categories_From_Templated_Budget</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_Attributes_to_the_SOV_Budget_Categories</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Loop1_Loop_Through_New_Child_Budgets</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <description>Goes through and assigns Budget Catergory Details attributes for the new budget category</description>
+        <name>loop4_Templated_Budget_Catergory_Details</name>
+        <label>loop4 Templated Budget Catergory Details</label>
+        <locationX>1018</locationX>
+        <locationY>2138</locationY>
+        <collectionReference>Filter_to_only_the_current_Budget_Catergory</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assignment_of_Templated_Budget_Details_to_New_Details</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Loop_3_Child_Categories_Budget</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <description>Loopiing through the child catergories budgets to create the categories</description>
+        <name>Loop_3_Child_Categories_Budget</name>
+        <label>Loop 3 Child Categories Budget</label>
+        <locationX>842</locationX>
+        <locationY>1922</locationY>
+        <collectionReference>COL_BudgetCatergories_toCreate</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Filter_to_only_the_current_Budget_Catergory</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Create_New_Child_Catergory_Details</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <description>Creates Child Budget Off of the Parent Budget Assocaited with the Application.</description>
+        <name>Create_New_Child_Budget</name>
+        <label>Create New Child Budget</label>
+        <locationX>842</locationX>
+        <locationY>998</locationY>
+        <connector>
+            <targetReference>Loop1_Loop_Through_New_Child_Budgets</targetReference>
+        </connector>
+        <inputReference>COL_Child_Budgets_ToCreate</inputReference>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_New_Child_Budget_Catergory</name>
+        <label>Create New Child Budget Catergory</label>
+        <locationX>842</locationX>
+        <locationY>1706</locationY>
+        <connector>
+            <targetReference>Get_Templated_Budget_Categories_values</targetReference>
+        </connector>
+        <inputReference>COL_BudgetCatergories_toCreate</inputReference>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_New_Child_Catergory_Details</name>
+        <label>Create New Child Catergory Details</label>
+        <locationX>842</locationX>
+        <locationY>2630</locationY>
+        <connector>
+            <targetReference>Get_Child_Budget_from_Parent_Application_Budget</targetReference>
+        </connector>
+        <inputReference>COL_Budget_Category_Details_ToCreate</inputReference>
+    </recordCreates>
+    <recordLookups>
+        <description>Grabs the current application record and gathers the budget ID to pass into the subflow if available</description>
+        <name>Get_Budget_Associated_with_Application</name>
+        <label>Get Budget Associated with Application</label>
+        <locationX>776</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Templated_Budget_Categories_From_Templated_Budget</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Application__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Grabs the Yearly Record Type Id for the Budget for Later Assignment</description>
+        <name>Get_Budget_RecordTypeId</name>
+        <label>Get Budget RecordTypeId</label>
+        <locationX>446</locationX>
+        <locationY>674</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Reset_Year_Counter</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Budget</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Total_Budget</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Grabs Child Budgets to Display for user selection</description>
+        <name>Get_Child_Budget_from_Parent_Application_Budget</name>
+        <label>Get Child Budget from Parent Application Budget</label>
+        <locationX>776</locationX>
+        <locationY>2906</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Select_Budget_for_Edit_Screen</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ParentBudgetId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Budget_Associated_with_Application.Budget__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Budget</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Grabs any child budget records from the parent budget ID associated with he application. Will be used later for checking to see if any additional child budgets need to be created</description>
+        <name>Get_Current_Children_Budget_Records</name>
+        <label>Get Current Children Budget Records</label>
+        <locationX>776</locationX>
+        <locationY>350</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assignment_How_many_Child_Budget_Records_are_there</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ParentBudgetId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Budget_Associated_with_Application.Budget__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>ParentBudgetId</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Budget</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Grabs the templated Budget Categories associated with the templated budget on the reference application</description>
+        <name>Get_Templated_Budget_Categories_From_Templated_Budget</name>
+        <label>Get Templated Budget Categories From Templated Budget</label>
+        <locationX>776</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Current_Children_Budget_Records</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>BudgetId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Budget_Associated_with_Application.Funding_Opportunity__r.BudgetTemplateId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>BudgetCategory</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Grabbing the templated budget categories values from the templated budget to create the new category values</description>
+        <name>Get_Templated_Budget_Categories_values</name>
+        <label>Get Templated Budget Categories values</label>
+        <locationX>842</locationX>
+        <locationY>1814</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_3_Child_Categories_Budget</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Budget__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Budget_Associated_with_Application.Funding_Opportunity__r.BudgetTemplateId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>BudgetCategoryValue</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <screens>
+        <description>Screen to catch if the budget year has been set to be a number that does not work</description>
+        <name>Incorrect_Budget_Year_Error_Screen</name>
+        <label>Incorrect Budget Year Error Screen</label>
+        <locationX>314</locationX>
+        <locationY>998</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Budget_Year_Error_Message_Display_Text</name>
+            <fieldText>&lt;p&gt;There has been an error when creating the budget please reach out to your system administrator for assistance&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <nextOrFinishButtonLabel>Exit Flow</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <description>Screen to be presented if no Budget Is found</description>
+        <name>No_Budget_Table_Screen</name>
+        <label>No Budget Table Screen</label>
+        <locationX>1040</locationX>
+        <locationY>3230</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Ensure_that_there_is_budget_assigned_to_the_application</targetReference>
+        </connector>
+        <fields>
+            <name>No_Budget_Display_Instruction_Text</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 22px;&quot;&gt;Active Budget Not Set&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 12px;&quot;&gt;There is currently not an Active Budget set for this contract.  To view the budget details please enter an active budget with budget periods for the contract.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <description>Allows the user to select a budget to fill out then/ edit</description>
+        <name>Select_Budget_for_Edit_Screen</name>
+        <label>Select Budget for Edit Screen</label>
+        <locationX>776</locationX>
+        <locationY>3014</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Ensure_that_there_is_budget_assigned_to_the_application</targetReference>
+        </connector>
+        <fields>
+            <name>Instruction_For_Filling_out_Budget_Display_Text</name>
+            <fieldText>&lt;p&gt;&lt;strong&gt;Please select one of the budgets below to start filling out your budget. Any budgets that are not filled out upon application submission may result in increased processing time and delay funding awarding for your project. &lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>Budget_Selection_Data_Table</name>
+            <dataTypeMappings>
+                <typeName>T</typeName>
+                <typeValue>Budget</typeValue>
+            </dataTypeMappings>
+            <extensionName>flowruntime:datatable</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Chose one of your budget to modify</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>selectionMode</name>
+                <value>
+                    <stringValue>SINGLE_SELECT</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>minRowSelection</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>shouldDisplayLabel</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>tableData</name>
+                <value>
+                    <elementReference>Get_Child_Budget_from_Parent_Application_Budget</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>maxRowSelection</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>columns</name>
+                <value>
+                    <stringValue>[{&quot;apiName&quot;:&quot;Name&quot;,&quot;guid&quot;:&quot;column-0ce0&quot;,&quot;editable&quot;:false,&quot;hasCustomHeaderLabel&quot;:false,&quot;customHeaderLabel&quot;:&quot;&quot;,&quot;wrapText&quot;:true,&quot;order&quot;:0,&quot;label&quot;:&quot;Budget Name&quot;,&quot;type&quot;:&quot;text&quot;},{&quot;apiName&quot;:&quot;Status&quot;,&quot;guid&quot;:&quot;column-b1cd&quot;,&quot;editable&quot;:false,&quot;hasCustomHeaderLabel&quot;:false,&quot;customHeaderLabel&quot;:&quot;&quot;,&quot;wrapText&quot;:true,&quot;order&quot;:1,&quot;label&quot;:&quot;Status&quot;,&quot;type&quot;:&quot;text&quot;},{&quot;apiName&quot;:&quot;Total_Planned_Amount__c&quot;,&quot;guid&quot;:&quot;column-f1ea&quot;,&quot;editable&quot;:false,&quot;hasCustomHeaderLabel&quot;:false,&quot;customHeaderLabel&quot;:&quot;&quot;,&quot;wrapText&quot;:true,&quot;order&quot;:2,&quot;label&quot;:&quot;Total Planned Amount&quot;,&quot;type&quot;:&quot;currency&quot;}]</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <nextOrFinishButtonLabel>Proceed to Fill out/Edit the Budget</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>650</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Budget_Associated_with_Application</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <description>Launches the Budget Table flow in a read-only mode</description>
+        <name>Sub_Flow_Budget_Table_Read_Only</name>
+        <label>Sub Flow Budget Table Read Only</label>
+        <locationX>512</locationX>
+        <locationY>3230</locationY>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Get_Child_Budget_from_Parent_Application_Budget</targetReference>
+        </connector>
+        <flowName>Screen_Flow_Budget_Table_Read_Only</flowName>
+        <inputAssignments>
+            <name>inputVar_BudgetId</name>
+            <value>
+                <elementReference>Budget_Selection_Data_Table.firstSelectedRow.Id</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <description>Launches the Budget Table flow in an editable mode</description>
+        <name>Sub_Flow_editable_Budget_Table</name>
+        <label>Sub Flow editable Budget Table</label>
+        <locationX>776</locationX>
+        <locationY>3230</locationY>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Get_Child_Budget_from_Parent_Application_Budget</targetReference>
+        </connector>
+        <flowName>Screen_Flow_Budget_Table</flowName>
+        <inputAssignments>
+            <name>inputVar_BudgetId</name>
+            <value>
+                <elementReference>Budget_Selection_Data_Table.firstSelectedRow.Id</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <variables>
+        <name>COL_Budget_Category_Details_ToCreate</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>BudgetCategoryValue</objectType>
+    </variables>
+    <variables>
+        <description>Collection of Budget Categories to be created</description>
+        <name>COL_BudgetCatergories_toCreate</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>BudgetCategory</objectType>
+    </variables>
+    <variables>
+        <name>COL_Child_Budgets_ToCreate</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Budget</objectType>
+    </variables>
+    <variables>
+        <name>currentItem_Filter_to_only_the_current_Budget_Catergory</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>BudgetCategoryValue</objectType>
+    </variables>
+    <variables>
+        <description>Gathers the Current Pages Record Id of the object</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>SOV_Budget_Catergory_Details_ToCreate</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>BudgetCategoryValue</objectType>
+    </variables>
+    <variables>
+        <name>SOV_BudgetCatergories_toCreate</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>BudgetCategory</objectType>
+    </variables>
+    <variables>
+        <description>Captures attributes for child budget creation</description>
+        <name>SOV_Child_Budget_toCreate</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Budget</objectType>
+    </variables>
+    <variables>
+        <description>Counter that allows for logic to determine how many child budgets will be created</description>
+        <name>YearCounter</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+        <value>
+            <numberValue>1.0</numberValue>
+        </value>
+    </variables>
+</Flow>

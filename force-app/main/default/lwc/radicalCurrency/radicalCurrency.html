@@ -1,0 +1,22 @@
+<template>
+    <template lwc:if={disabled}>
+        <div style="text-wrap: wrap;"> 
+            <lightning-formatted-number 
+                value={recordValue}
+                format-style="currency" 
+                currency-code="USD"
+            ></lightning-formatted-number>
+        </div>
+    </template>
+    <template lwc:else>
+        <lightning-input 
+            name="number" 
+            type="number" 
+            formatter="currency" 
+            step="0.01"
+            variant='label-hidden'
+            value={recordValue} 
+            onchange={handleChange}
+        ></lightning-input>
+    </template>
+</template>

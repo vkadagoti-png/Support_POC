@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tornado_Recovery_Vacant_Unit_Turns_Roll</fullName>
+    <columns>NAME</columns>
+    <columns>Application_Display_Name__c</columns>
+    <columns>Account__c</columns>
+    <columns>Status__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Created_By_Email_Address__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Application_Display_Name__c</field>
+        <operation>equals</operation>
+        <value>Tornado Recovery Vacant Unit Turns: Rolling Application</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Submitted</value>
+    </filters>
+    <label>Tornado Recovery Vacant Unit Turns: Roll</label>
+</ListView>

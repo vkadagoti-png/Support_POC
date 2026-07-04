@@ -1,0 +1,10 @@
+/* Hide the URL tooltip when hovering over the link */
+a[title]:hover::after {
+    content: '';  /* Prevent showing the URL */
+}
+
+/* Optional: Remove underline and customize link styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please describe the proposed project, development, service, or other activity to be completed. --></help>
+    <label><!-- Describe Proposed Activity --></label>
+    <name>Describe_Proposed_Activity__c</name>
+</CustomFieldTranslation>

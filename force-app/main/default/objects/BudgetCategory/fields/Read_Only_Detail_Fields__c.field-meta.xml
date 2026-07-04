@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Read_Only_Detail_Fields__c</fullName>
+    <description>Will prevent field from being modified in the budget table LWC.
+This can be used for records where you need predefined values in some columns
+
+Comma separated List
+Example:
+Field1,Field2</description>
+    <label>Read Only Detail Fields</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

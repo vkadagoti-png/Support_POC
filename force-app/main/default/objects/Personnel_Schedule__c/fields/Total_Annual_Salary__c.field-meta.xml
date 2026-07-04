@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Annual_Salary__c</fullName>
+    <formula>(Hourly_Rate__c *  Total_Number_of_Annual_Activity_Hours__c ) +(
+ Actual_Salary_Per_Pay_Period__c  *  Number_of_Pay_Periods__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Hourly Rate x Total Number of Annual Activity Hours</inlineHelpText>
+    <label>Total Annual Salary</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

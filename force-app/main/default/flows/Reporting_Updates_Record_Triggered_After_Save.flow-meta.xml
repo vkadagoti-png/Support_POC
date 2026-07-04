@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Grantee_Receive_email_alert_when_performance_report_is_submitted</name>
+        <label>Grantee - Receive email alert when performance report is submitted</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <actionName>Reporting__c.Grantee_Receive_email_alert_when_performance_report_is_submitted</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Analyst_or_Program_Monitor</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Reporting__c.Grantee_Receive_email_alert_when_performance_report_is_submitted</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Housing_Analyst_Receive_email_alert_when_performance_report_is_submitted</name>
+        <label>Housing Analyst - Receive email alert when performance report is submitted</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <actionName>Reporting__c.Housing_Analyst_Receive_email_alert_when_performance_report_is_submitted</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Reporting__c.Housing_Analyst_Receive_email_alert_when_performance_report_is_submitted</nameSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Program_Monitor_Receive_email_alert_when_performance_report_is_submitted</name>
+        <label>Program Monitor - Receive email alert when performance report is submitted</label>
+        <locationX>314</locationX>
+        <locationY>539</locationY>
+        <actionName>Reporting__c.Program_Monitor_Receive_email_alert_when_performance_report_is_submitted</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Reporting__c.Program_Monitor_Receive_email_alert_when_performance_report_is_submitted</nameSegment>
+    </actionCalls>
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Analyst_or_Program_Monitor</name>
+        <label>Analyst or Program Monitor</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnector>
+            <targetReference>Program_Monitor_Receive_email_alert_when_performance_report_is_submitted</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Program Monitor</defaultConnectorLabel>
+        <rules>
+            <name>Analyst</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Analyst__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Housing_Analyst_Receive_email_alert_when_performance_report_is_submitted</targetReference>
+            </connector>
+            <label>Analyst</label>
+        </rules>
+    </decisions>
+    <description>5/21/24 - Send email alerts to grantee, and analyst/program monitor when a performance report is submitted</description>
+    <environments>Default</environments>
+    <interviewLabel>Reporting Updates [Record-Triggered] (After-Save) {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Reporting Updates [Record-Triggered (After-Save)]</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Grantee_Receive_email_alert_when_performance_report_is_submitted</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterFormula>TEXT({!$Record.Status__c}) = &apos;Submitted&apos; &amp;&amp; {!$Record.RecordType.DeveloperName} = &apos;Performance_Report&apos;</filterFormula>
+        <object>Reporting__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used to launch the &quot;Funding Process: Additional Transaction Records Create&quot;</description>
+    <flowDefinition>Funding_Process_Additional_Transaction_Records_Create</flowDefinition>
+    <label>Create Funding Transaction</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

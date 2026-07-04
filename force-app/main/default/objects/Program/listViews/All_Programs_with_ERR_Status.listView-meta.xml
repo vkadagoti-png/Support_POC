@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Programs_with_ERR_Status</fullName>
+    <columns>Name</columns>
+    <columns>Summary</columns>
+    <columns>StartDate</columns>
+    <columns>Status</columns>
+    <columns>Environmental_Review_Required__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RecordType</field>
+        <operation>equals</operation>
+        <value>Program.Local_Program</value>
+    </filters>
+    <label>All Programs with ERR Status</label>
+</ListView>

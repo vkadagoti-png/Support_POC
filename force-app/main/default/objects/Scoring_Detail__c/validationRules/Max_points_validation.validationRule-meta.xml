@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Max_points_validation</fullName>
+    <active>true</active>
+    <description>You cannot enter more than the max number of points</description>
+    <errorConditionFormula>Awarded_Points__c &gt; Max_Points__c</errorConditionFormula>
+    <errorDisplayField>Awarded_Points__c</errorDisplayField>
+    <errorMessage>Awarded points cannot excel Max</errorMessage>
+</ValidationRule>

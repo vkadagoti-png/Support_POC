@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proposed_Output_input</fullName>
+    <description>Used in supportive services applicatoin</description>
+    <displayedFields>
+        <field>Output_Description_s__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Select_When_Activity_Will_Occur__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <label>Proposed Output input</label>
+</FieldSet>

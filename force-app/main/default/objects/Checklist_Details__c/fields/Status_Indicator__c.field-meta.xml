@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Indicator__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(  Status__c ,
+&quot;Not Started&quot;, IMAGE(&quot;/resource/1712610585000/BlueButtonPNG?&quot;, &quot;Not Started&quot;,30,30),
+&quot;In Progress&quot;,IMAGE(&quot;/resource/1712610540000/YellowButtonPNG?&quot;, &quot;In Progress&quot;,30,30),
+&quot;Accepted&quot;, IMAGE(&quot;/resource/1712610566000/GreenButtonPNG?&quot;, &quot;Accepted&quot;,30,30),
+&quot;Rejected&quot;, IMAGE(&quot;/resource/1712610507000/RedButtonPNG?&quot;, &quot;Rejected&quot;,30,30),
+&quot;Not Applicable&quot;, IMAGE(&quot;/resource/1712610507000/RedButtonPNG?&quot;, &quot;Not Applicable&quot;,30,30),
+IMAGE(&quot;/resource/1712610585000/BlueButtonPNG?&quot;, &quot;Not Started&quot;,30,30))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Status Indicator</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

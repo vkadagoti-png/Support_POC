@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Individual_Application</fullName>
+    <active>true</active>
+    <description>Create an Individual Application record type for Grantmaking and copy the Record Type Label to use later in these instructions.</description>
+    <label>Individual Application</label>
+    <picklistValues>
+        <picklist>ApplicationCategory</picklist>
+        <values>
+            <fullName>Basic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ApplicationType</picklist>
+        <values>
+            <fullName>ChangeOfCircumstance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recertification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Category</picklist>
+        <values>
+            <fullName>Benefit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>InternalStatus</picklist>
+        <values>
+            <fullName>Application Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revision Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Application Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Denied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

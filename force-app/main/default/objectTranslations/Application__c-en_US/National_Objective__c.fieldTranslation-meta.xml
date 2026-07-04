@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- National Objective --></label>
+    <name>National_Objective__c</name>
+    <picklistValues>
+        <masterLabel>a. Benefit to LMI Individuals/limited clientele (at least 51% of beneficiaries must be LMI)</masterLabel>
+        <translation><!-- a. Benefit to LMI Individuals/limited clientele (at least 51% of beneficiaries must be LMI) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>b. Benefit to LMI households for housing (100% of beneficiaries must be at or below 80% of median family income for City, as determined by HUD, for single family units)</masterLabel>
+        <translation><!-- b. Benefit to LMI households for housing (100% of beneficiaries must be at or below 80% of median family income for City, as determined by HUD, for single family units) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>c. Benefit to LMI individuals/jobs creation or retention (at least 51% of jobs must be taken by or made available to LMI persons)</masterLabel>
+        <translation><!-- c. Benefit to LMI individuals/jobs creation or retention (at least 51% of jobs must be taken by or made available to LMI persons) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>d. Benefits of services available to all residents in an area that is primarily residential and is located in an eligible LMI census tract(s). (Not applicable to Housing activities)</masterLabel>
+        <translation><!-- d. Benefits of services available to all residents in an area that is primarily residential and is located in an eligible LMI census tract(s). (Not applicable to Housing activities) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>e. Prevent or eliminate slum and blight on an area basis</masterLabel>
+        <translation><!-- e. Prevent or eliminate slum and blight on an area basis --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>f. Prevent or eliminate slum and blight on a spot basis (applicable only for public facilities and improvements)</masterLabel>
+        <translation><!-- f. Prevent or eliminate slum and blight on a spot basis (applicable only for public facilities and improvements) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>g. Low/Mod Assumption (Administrative Categories Only)</masterLabel>
+        <translation><!-- g. Low/Mod Assumption (Administrative Categories Only) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>h. Urgent Need (applicable only for Tornado disaster recovery)</masterLabel>
+        <translation><!-- h. Urgent Need (applicable only for Tornado disaster recovery) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

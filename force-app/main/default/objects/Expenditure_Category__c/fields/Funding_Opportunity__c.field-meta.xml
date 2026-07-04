@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Opportunity__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Funding Opportunity</label>
+    <referenceTo>FundingOpportunity</referenceTo>
+    <relationshipLabel>Expenditure/Eligible Categories</relationshipLabel>
+    <relationshipName>Expenditure_Eligible_Categories</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

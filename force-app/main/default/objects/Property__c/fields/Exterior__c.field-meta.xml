@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exterior__c</fullName>
+    <label>Exterior</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Wood Plank</fullName>
+                <default>false</default>
+                <label>Wood Plank</label>
+            </value>
+            <value>
+                <fullName>Brick</fullName>
+                <default>false</default>
+                <label>Brick</label>
+            </value>
+            <value>
+                <fullName>Cement Board</fullName>
+                <default>false</default>
+                <label>Cement Board</label>
+            </value>
+            <value>
+                <fullName>Vinyl</fullName>
+                <default>false</default>
+                <label>Vinyl</label>
+            </value>
+            <value>
+                <fullName>Stucco</fullName>
+                <default>false</default>
+                <label>Stucco</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

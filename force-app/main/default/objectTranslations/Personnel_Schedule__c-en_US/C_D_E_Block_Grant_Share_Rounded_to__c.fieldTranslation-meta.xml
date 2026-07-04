@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Rounded to whole dollars --></help>
+    <label><!-- (C*D*E) Block Grant Share(Rounded to $) --></label>
+    <name>C_D_E_Block_Grant_Share_Rounded_to__c</name>
+</CustomFieldTranslation>

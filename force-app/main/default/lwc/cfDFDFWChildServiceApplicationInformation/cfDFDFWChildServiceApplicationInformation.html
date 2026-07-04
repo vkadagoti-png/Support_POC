@@ -1,0 +1,179 @@
+<template>
+            <div class="slds-grid slds-wrap slds-is-relative ">
+            <div style="position: fixed;z-index: 999999;top: 0;right: 0;">
+  <omnistudio-toast class="flexcard-toast-element" theme="slds" title="" message="" styletype=""> </omnistudio-toast>
+</div>
+            <div if:true={showLoader} class="slds-is-absolute vloc-loader_override" style="height: 100%; width: 100%; min-height:50px; background: transparent; z-index: 99;">
+  <div>
+   <omnistudio-spinner
+      variant="brand"
+      alternative-text="Loading content..."
+      size="medium"
+      theme="slds"
+      ></omnistudio-spinner>
+  </div>
+</div>
+            <template if:false={hasPermission}>
+              You don't have required permissions to view this card.
+            </template>
+            <template if:true={hasPermission}>
+              <template if:true={hasRecords}>
+                        <template for:each={_records} for:item="record" for:index="rindex">
+                            <omnistudio-flex-card-state if:true={record}  key={record._flex.uniqueKey} data-recordid={record.Id} record={record} data-statue="true"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-p-around_x-small slds-m-bottom_x-small " style="      
+         ">
+          <div data-style-id="state0element0" class="slds-col    slds-size_12-of-12  " data-rindex={rindex} style="      
+         " >
+    <omnistudio-block data-style-id="state0element0_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element0" class="slds-col  slds-text-align_right  slds-size_3-of-12  condition-element" data-rindex={rindex} style="      
+         padding-top:5px;
+border-radius: 5px;
+color: #ffffff;
+margin: 2px;
+width: fit-content;
+text-wrap: nowrap;"  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-3","field":"applicationDetailID.Status","operator":"==","value":"Pending Payment","type":"custom","hasMergeField":false}]}' ><omnistudio-flex-action data-style-id="state0element0block_element0_child"  tracking-obj={_childCardTrackingObj}  class= "state0element0block_element0_child flexActionElement" 
+        data-action-element-class="state0element0block_element0_child" data-action-key="state0element0block_element0" onexecuteaction={performAction} data-show-spinner="false"
+        data-element-label="resumeapplication"   action-list='\[{"stateAction":{"id":"flex-action-1741386838581","type":"Custom","targetType":"Web Page","openUrlIn":"Current Window","hasExtraParams":true,"targetParams":{"c__ContextId":"{recordId}","c__caseApplicationId":"{applicationDetailID.CaseApplicationId}","c__applicationEmail":"{applicationDetailID.Email}"},"Web Page":{"targetName":"https://onestopgov.stlouis-mo.gov/permits/s/special-event-confirmation/?c__ContextId={recordId}&c__caseApplicationId={applicationDetailID.CaseApplicationId}&c__applicationEmail={applicationDetailID.Email}"}},"key":"1737461265421-3c7z8sx5m","label":"Resume","draggable":false,"isOpen":true,"actionIndex":0}]'  state-obj={record}  card={card}  record={record}  label="Resume Application"  icon-name="standard-default"  hide-action-icon="true"  display-as-button="true"  button-variant="brand"  disabled=""  flyout-details='\{}'  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-3","field":"applicationDetailID.Status","operator":"==","value":"Pending Payment","type":"custom","hasMergeField":false}]}'  theme="slds"  ></omnistudio-flex-action>
+      </div><div data-style-id="state0element0block_element1" class="slds-col  slds-text-align_right  slds-size_3-of-12  condition-element" data-rindex={rindex} style="      
+         padding-top:5px;
+border-radius: 5px;
+color: #ffffff;
+margin: 2px;
+width: fit-content;
+text-wrap: nowrap;"  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-3","field":"IsResumeURLPresent","operator":"==","value":"true","type":"custom","hasMergeField":false},{"id":"state-new-condition-6","field":"applicationDetailID.Status","operator":"==","value":"Draft","type":"custom","hasMergeField":false,"logicalOperator":"&&"}]}' ><omnistudio-flex-action data-style-id="state0element0block_element1_child"  tracking-obj={_childCardTrackingObj}  class= "state0element0block_element1_child flexActionElement" 
+        data-action-element-class="state0element0block_element1_child" data-action-key="state0element0block_element1" onexecuteaction={performAction} data-show-spinner="false"
+        data-element-label="action1"   state-obj={record}  card={card}  record={record}  label="Resume Application"  icon-name="standard-default"  action-list='\[{"stateAction":{"id":"flex-action-1723045068738","type":"Custom","targetType":"Web Page","openUrlIn":"Current Window","hasExtraParams":false,"Web Page":{"targetName":"{applicationDetailID.ResumeUrl}"}},"key":"1723035591051-mxhopl0lg","label":"Resume","draggable":false,"isOpen":true,"actionIndex":0}]'  display-as-button="true"  hide-action-icon="true"  button-variant="brand"  flyout-details='\{}'  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-3","field":"IsResumeURLPresent","operator":"==","value":"true","type":"custom","hasMergeField":false},{"id":"state-new-condition-6","field":"applicationDetailID.Status","operator":"==","value":"Draft","type":"custom","hasMergeField":false,"logicalOperator":"&&"}]}'  theme="slds"  ></omnistudio-flex-action>
+      </div><div data-style-id="state0element0block_element2" class="slds-col   slds-size_2-of-12 " data-rindex={rindex} style="      
+         padding-top:5px;
+border-radius: 5px;
+color: #ffffff;
+margin: 2px;
+width: fit-content;
+text-wrap: nowrap;"  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-0","field":"applicationDetailID.Status","operator":"==","value":"Pending Payment","type":"custom","hasMergeField":false},{"id":"state-new-condition-18","field":"applicationDetailID.PaymentMade","operator":"==","value":"false","type":"custom","hasMergeField":false,"logicalOperator":"&&"}]}' >
+    <omnistudio-custom-lwc-wrapper class="condition-element" element-name="c-lwc-d-f-d-f-w-payment-checkout" property='\{"permitId":"{applicationDetailID.CaseApplicationId}","email":"{applicationDetailID.Email}"}' data-rindex={rindex} records={records} record={record} record-id={recordId} card={card} ><c-lwc-d-f-d-f-w-payment-checkout   search-fee-code="OSEAPPFEE"  get-all-fees="false"  button-label="Make Payment"  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-0","field":"applicationDetailID.Status","operator":"==","value":"Pending Payment","type":"custom","hasMergeField":false},{"id":"state-new-condition-18","field":"applicationDetailID.PaymentMade","operator":"==","value":"false","type":"custom","hasMergeField":false,"logicalOperator":"&&"}]}' ></c-lwc-d-f-d-f-w-payment-checkout></omnistudio-custom-lwc-wrapper>
+    </div><div data-style-id="state0element0block_element3" class="slds-col   slds-size_2-of-12 " data-rindex={rindex} style="      
+         padding-top:5px;
+border-radius: 5px;
+color: #ffffff;
+margin: 2px;
+width: fit-content;
+text-wrap: nowrap;" >
+    <omnistudio-custom-lwc-wrapper class="" element-name="c-lwc-d-f-d-f-w-add-comment" property='\{}' data-rindex={rindex} records={records} record={record} record-id={recordId} card={card} ><c-lwc-d-f-d-f-w-add-comment   record-id={recordId} ></c-lwc-d-f-d-f-w-add-comment></omnistudio-custom-lwc-wrapper>
+    </div><div data-style-id="state0element0block_element4" class="slds-col  slds-text-align_right  slds-size_3-of-12  condition-element" data-rindex={rindex} style="      
+         padding-top:5px;
+border-radius: 5px;
+color: #ffffff;
+margin: 2px;
+width: fit-content;
+text-wrap: nowrap;"  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-3","field":"applicationDetailID.DocumentUploadAccepted","operator":"==","value":"true","type":"custom","hasMergeField":false}]}' ><omnistudio-flex-action data-style-id="state0element0block_element4_child"  tracking-obj={_childCardTrackingObj}  class= "state0element0block_element4_child flexActionElement" 
+        data-action-element-class="state0element0block_element4_child" data-action-key="state0element0block_element4" onexecuteaction={performAction} data-show-spinner="false"
+        data-element-label="block1action1clone0"   state-obj={record}  card={card}  record={record}  label="Upload Documents"  icon-name="standard-default"  action-list='\[{"stateAction":{"id":"flex-action-1733956583334","type":"Custom","targetType":"Community Named Page","openUrlIn":"Current Window","hasExtraParams":true,"Community Named Page":{"targetName":"DFDFW_File_Upload__c"},"targetParams":{"recordId":"{recordId}"}},"key":"1723035591051-mxhopl0lg","label":"File Upload","draggable":false,"isOpen":true,"actionIndex":0}]'  display-as-button="true"  hide-action-icon="true"  button-variant="brand"  flyout-details='\{}'  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-3","field":"applicationDetailID.DocumentUploadAccepted","operator":"==","value":"true","type":"custom","hasMergeField":false}]}'  theme="slds"  ></omnistudio-flex-action>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state0element1" class="slds-col   slds-text-align_right slds-p-around_xxx-small  slds-size_12-of-12  " data-rindex={rindex} style="      
+         " >
+    <omnistudio-block data-style-id="state0element1_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element1block_element0" class="slds-col   slds-size_11-of-12  " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element1block_element0_child"   card={card}  record={record}  merge-field="%3Cdiv%20class=%22slds-text-align_left%22%3E%3Cspan%20style=%22font-size:%2018pt;%22%3E%3Cstrong%3EApplication%20%3Cspan%20style=%22color:%20#333333;%22%3EDetails%3C/span%3E%3C/strong%3E%3C/span%3E%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state0element2" class="slds-col  slds-p-around_xx-small slds-m-around_xx-small  slds-size_5-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state0element2_child"   card={card}  record={record}  placeholder=""  type="text"  label="Name"  field-name="applicationDetailID.ApplicationName"  styles='\{"label":{"fontSize":"18px","textDecoration":"","color":"#000000"},"value":{"fontSize":"14px","color":"#666666"}}'  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element3" class="slds-col  slds-p-around_xx-small slds-m-around_xx-small  slds-size_5-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state0element3_child"   card={card}  record={record}  placeholder=""  type="text"  label="Case Number"  field-name="applicationDetailID.ApplicationNumber"  styles='\{"label":{"fontSize":"18px","color":"#000000"},"value":{"fontSize":"14px","color":"#666666"}}'  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element4" class="slds-col  slds-p-around_xx-small slds-m-around_xx-small  slds-size_5-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state0element4_child"   card={card}  record={record}  placeholder=""  type="date"  field-name="applicationDetailID.ApplicationSubmittedDate"  label="Application Submitted Date"  format="MM/DD/YYYY"  styles='\{"label":{"fontSize":"18px","color":"#000000"},"value":{"fontSize":"14px","color":"#666666"}}'  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element5" class="slds-col  slds-p-around_xx-small slds-m-around_xx-small  slds-size_5-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state0element5_child"   card={card}  record={record}  placeholder=""  type="currency"  label="Fees"  field-name="applicationDetailID.Fee"  field-level-help=""  styles='\{"value":{"fontSize":"14px","color":"#666666"},"label":{"fontSize":"18px","color":"#000000"}}'  locale="en-US"  currency="USD"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element6" class="slds-col  slds-p-around_xx-small slds-m-around_xx-small  slds-size_5-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state0element6_child"   card={card}  record={record}  placeholder=""  type="text"  label="Status"  field-name="applicationDetailID.Status"  field-level-help=""  styles='\{"value":{"fontSize":"14px","color":"#666666"},"label":{"fontSize":"18px","color":"#000000"}}'  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div>
+      </omnistudio-flex-card-state>
+                        </template>
+                      </template>
+                      <template if:false={hasRecords}>
+                            <omnistudio-flex-card-state  record={record} data-statue="false"  data-index="0" data-rindex={rindex} class="cf-vlocity-state-0 cf-vlocity-state slds-large-size_12-of-12 slds-medium-size_12-of-12 slds-small-size_12-of-12 slds-size_12-of-12 "  tracking-obj={_childCardTrackingObj} >
+      <div if:true={cardLoaded} class="slds-grid slds-wrap slds-card slds-p-around_x-small slds-m-bottom_x-small " style="      
+         ">
+          <div data-style-id="state0element0" class="slds-col    slds-size_12-of-12  " data-rindex={rindex} style="      
+         " >
+    <omnistudio-block data-style-id="state0element0_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element0block_element0" class="slds-col  slds-text-align_right  slds-size_3-of-12  condition-element" data-rindex={rindex} style="      
+         padding-top:5px;
+border-radius: 5px;
+color: #ffffff;
+margin: 2px;
+width: fit-content;
+text-wrap: nowrap;"  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-3","field":"applicationDetailID.Status","operator":"==","value":"Pending Payment","type":"custom","hasMergeField":false}]}' ><omnistudio-flex-action data-style-id="state0element0block_element0_child"  tracking-obj={_childCardTrackingObj}  class= "state0element0block_element0_child flexActionElement" 
+        data-action-element-class="state0element0block_element0_child" data-action-key="state0element0block_element0" onexecuteaction={performAction} data-show-spinner="false"
+        data-element-label="resumeapplication"   action-list='\[{"stateAction":{"id":"flex-action-1741386838581","type":"Custom","targetType":"Web Page","openUrlIn":"Current Window","hasExtraParams":true,"targetParams":{"c__ContextId":"{recordId}","c__caseApplicationId":"{applicationDetailID.CaseApplicationId}","c__applicationEmail":"{applicationDetailID.Email}"},"Web Page":{"targetName":"https://onestopgov.stlouis-mo.gov/permits/s/special-event-confirmation/?c__ContextId={recordId}&c__caseApplicationId={applicationDetailID.CaseApplicationId}&c__applicationEmail={applicationDetailID.Email}"}},"key":"1737461265421-3c7z8sx5m","label":"Resume","draggable":false,"isOpen":true,"actionIndex":0}]'  state-obj={record}  card={card}  record={record}  label="Resume Application"  icon-name="standard-default"  hide-action-icon="true"  display-as-button="true"  button-variant="brand"  disabled=""  flyout-details='\{}'  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-3","field":"applicationDetailID.Status","operator":"==","value":"Pending Payment","type":"custom","hasMergeField":false}]}'  theme="slds"  ></omnistudio-flex-action>
+      </div><div data-style-id="state0element0block_element1" class="slds-col  slds-text-align_right  slds-size_3-of-12  condition-element" data-rindex={rindex} style="      
+         padding-top:5px;
+border-radius: 5px;
+color: #ffffff;
+margin: 2px;
+width: fit-content;
+text-wrap: nowrap;"  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-3","field":"IsResumeURLPresent","operator":"==","value":"true","type":"custom","hasMergeField":false},{"id":"state-new-condition-6","field":"applicationDetailID.Status","operator":"==","value":"Draft","type":"custom","hasMergeField":false,"logicalOperator":"&&"}]}' ><omnistudio-flex-action data-style-id="state0element0block_element1_child"  tracking-obj={_childCardTrackingObj}  class= "state0element0block_element1_child flexActionElement" 
+        data-action-element-class="state0element0block_element1_child" data-action-key="state0element0block_element1" onexecuteaction={performAction} data-show-spinner="false"
+        data-element-label="action1"   state-obj={record}  card={card}  record={record}  label="Resume Application"  icon-name="standard-default"  action-list='\[{"stateAction":{"id":"flex-action-1723045068738","type":"Custom","targetType":"Web Page","openUrlIn":"Current Window","hasExtraParams":false,"Web Page":{"targetName":"{applicationDetailID.ResumeUrl}"}},"key":"1723035591051-mxhopl0lg","label":"Resume","draggable":false,"isOpen":true,"actionIndex":0}]'  display-as-button="true"  hide-action-icon="true"  button-variant="brand"  flyout-details='\{}'  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-3","field":"IsResumeURLPresent","operator":"==","value":"true","type":"custom","hasMergeField":false},{"id":"state-new-condition-6","field":"applicationDetailID.Status","operator":"==","value":"Draft","type":"custom","hasMergeField":false,"logicalOperator":"&&"}]}'  theme="slds"  ></omnistudio-flex-action>
+      </div><div data-style-id="state0element0block_element2" class="slds-col   slds-size_2-of-12 " data-rindex={rindex} style="      
+         padding-top:5px;
+border-radius: 5px;
+color: #ffffff;
+margin: 2px;
+width: fit-content;
+text-wrap: nowrap;"  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-0","field":"applicationDetailID.Status","operator":"==","value":"Pending Payment","type":"custom","hasMergeField":false},{"id":"state-new-condition-18","field":"applicationDetailID.PaymentMade","operator":"==","value":"false","type":"custom","hasMergeField":false,"logicalOperator":"&&"}]}' >
+    <omnistudio-custom-lwc-wrapper class="condition-element" element-name="c-lwc-d-f-d-f-w-payment-checkout" property='\{"permitId":"{applicationDetailID.CaseApplicationId}","email":"{applicationDetailID.Email}"}' data-rindex={rindex} records={records} record={record} record-id={recordId} card={card} ><c-lwc-d-f-d-f-w-payment-checkout   search-fee-code="OSEAPPFEE"  get-all-fees="false"  button-label="Make Payment"  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-0","field":"applicationDetailID.Status","operator":"==","value":"Pending Payment","type":"custom","hasMergeField":false},{"id":"state-new-condition-18","field":"applicationDetailID.PaymentMade","operator":"==","value":"false","type":"custom","hasMergeField":false,"logicalOperator":"&&"}]}' ></c-lwc-d-f-d-f-w-payment-checkout></omnistudio-custom-lwc-wrapper>
+    </div><div data-style-id="state0element0block_element3" class="slds-col   slds-size_2-of-12 " data-rindex={rindex} style="      
+         padding-top:5px;
+border-radius: 5px;
+color: #ffffff;
+margin: 2px;
+width: fit-content;
+text-wrap: nowrap;" >
+    <omnistudio-custom-lwc-wrapper class="" element-name="c-lwc-d-f-d-f-w-add-comment" property='\{}' data-rindex={rindex} records={records} record={record} record-id={recordId} card={card} ><c-lwc-d-f-d-f-w-add-comment   record-id={recordId} ></c-lwc-d-f-d-f-w-add-comment></omnistudio-custom-lwc-wrapper>
+    </div><div data-style-id="state0element0block_element4" class="slds-col  slds-text-align_right  slds-size_3-of-12  condition-element" data-rindex={rindex} style="      
+         padding-top:5px;
+border-radius: 5px;
+color: #ffffff;
+margin: 2px;
+width: fit-content;
+text-wrap: nowrap;"  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-3","field":"applicationDetailID.DocumentUploadAccepted","operator":"==","value":"true","type":"custom","hasMergeField":false}]}' ><omnistudio-flex-action data-style-id="state0element0block_element4_child"  tracking-obj={_childCardTrackingObj}  class= "state0element0block_element4_child flexActionElement" 
+        data-action-element-class="state0element0block_element4_child" data-action-key="state0element0block_element4" onexecuteaction={performAction} data-show-spinner="false"
+        data-element-label="block1action1clone0"   state-obj={record}  card={card}  record={record}  label="Upload Documents"  icon-name="standard-default"  action-list='\[{"stateAction":{"id":"flex-action-1733956583334","type":"Custom","targetType":"Community Named Page","openUrlIn":"Current Window","hasExtraParams":true,"Community Named Page":{"targetName":"DFDFW_File_Upload__c"},"targetParams":{"recordId":"{recordId}"}},"key":"1723035591051-mxhopl0lg","label":"File Upload","draggable":false,"isOpen":true,"actionIndex":0}]'  display-as-button="true"  hide-action-icon="true"  button-variant="brand"  flyout-details='\{}'  data-conditions='\{"id":"state-condition-object","isParent":true,"group":[{"id":"state-new-condition-3","field":"applicationDetailID.DocumentUploadAccepted","operator":"==","value":"true","type":"custom","hasMergeField":false}]}'  theme="slds"  ></omnistudio-flex-action>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state0element1" class="slds-col   slds-text-align_right slds-p-around_xxx-small  slds-size_12-of-12  " data-rindex={rindex} style="      
+         " >
+    <omnistudio-block data-style-id="state0element1_child"  card={card}  record={record}  label="Block"  collapsible="false"  collapsed-by-default="false"  theme="slds"  ><div class="slds-grid slds-wrap">
+          <div data-style-id="state0element1block_element0" class="slds-col   slds-size_11-of-12  " data-rindex={rindex} style="" ><omnistudio-output-field data-style-id="state0element1block_element0_child"   card={card}  record={record}  merge-field="%3Cdiv%20class=%22slds-text-align_left%22%3E%3Cspan%20style=%22font-size:%2018pt;%22%3E%3Cstrong%3EApplication%20%3Cspan%20style=%22color:%20#333333;%22%3EDetails%3C/span%3E%3C/strong%3E%3C/span%3E%3C/div%3E"  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div></omnistudio-block>
+    </div><div data-style-id="state0element2" class="slds-col  slds-p-around_xx-small slds-m-around_xx-small  slds-size_5-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state0element2_child"   card={card}  record={record}  placeholder=""  type="text"  label="Name"  field-name="applicationDetailID.ApplicationName"  styles='\{"label":{"fontSize":"18px","textDecoration":"","color":"#000000"},"value":{"fontSize":"14px","color":"#666666"}}'  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element3" class="slds-col  slds-p-around_xx-small slds-m-around_xx-small  slds-size_5-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state0element3_child"   card={card}  record={record}  placeholder=""  type="text"  label="Case Number"  field-name="applicationDetailID.ApplicationNumber"  styles='\{"label":{"fontSize":"18px","color":"#000000"},"value":{"fontSize":"14px","color":"#666666"}}'  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element4" class="slds-col  slds-p-around_xx-small slds-m-around_xx-small  slds-size_5-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state0element4_child"   card={card}  record={record}  placeholder=""  type="date"  field-name="applicationDetailID.ApplicationSubmittedDate"  label="Application Submitted Date"  format="MM/DD/YYYY"  styles='\{"label":{"fontSize":"18px","color":"#000000"},"value":{"fontSize":"14px","color":"#666666"}}'  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element5" class="slds-col  slds-p-around_xx-small slds-m-around_xx-small  slds-size_5-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state0element5_child"   card={card}  record={record}  placeholder=""  type="currency"  label="Fees"  field-name="applicationDetailID.Fee"  field-level-help=""  styles='\{"value":{"fontSize":"14px","color":"#666666"},"label":{"fontSize":"18px","color":"#000000"}}'  locale="en-US"  currency="USD"  theme="slds"  ></omnistudio-output-field>
+      </div><div data-style-id="state0element6" class="slds-col  slds-p-around_xx-small slds-m-around_xx-small  slds-size_5-of-12  " data-rindex={rindex} style="      
+         " ><omnistudio-output-field data-style-id="state0element6_child"   card={card}  record={record}  placeholder=""  type="text"  label="Status"  field-name="applicationDetailID.Status"  field-level-help=""  styles='\{"value":{"fontSize":"14px","color":"#666666"},"label":{"fontSize":"18px","color":"#000000"}}'  theme="slds"  ></omnistudio-output-field>
+      </div>
+        </div>
+      </omnistudio-flex-card-state>
+                      </template>
+            </template>
+            <template if:true={hasError}>
+            {error}
+            </template>
+            
+      <omnistudio-action action-wrapperclass="slds-hide" re-render-flyout class="action-trigger slds-col" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+      
+      </omnistudio-action>
+  
+            <omnistudio-action class="execute-action" re-render-flyout action-wrapperclass="slds-hide" onupdateos={updateOmniscript} onselectcards={updateSelectedCards} onsetvalue={updateAction} onfireactionevent={actionEvtHandler}>
+            
+            </omnistudio-action>
+            </div>
+          </template>

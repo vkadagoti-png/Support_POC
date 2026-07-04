@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used to launch the &quot;Funding Award and Transaction Record Create&quot; flow</description>
+    <flowDefinition>Funding_Award_and_Transaction_Record_Create</flowDefinition>
+    <label>Fund Contract</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

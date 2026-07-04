@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Hours__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Hours__c &gt; 0 ,  Hours__c , IF(
+  AND(
+    NOT(ISBLANK(Date_In__c)),
+    NOT(ISBLANK(Time_In__c)),
+    NOT(ISBLANK(Date_Out__c)),
+    NOT(ISBLANK(Time_Out__c))
+  ),
+  (
+    (DATETIMEVALUE(Date_Out__c) + (VALUE(MID(TEXT(Time_Out__c), 1, 2)) + VALUE(MID(TEXT(Time_Out__c), 4, 2)) / 60) / 24) -
+    (DATETIMEVALUE(Date_In__c) + (VALUE(MID(TEXT(Time_In__c), 1, 2)) + VALUE(MID(TEXT(Time_In__c), 4, 2)) / 60) / 24)
+  ) * 24,
+  0
+))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Hours</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

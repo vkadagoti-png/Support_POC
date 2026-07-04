@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Score_Summary__c</fullName>
+    <description>Creates Master Detail to Score Summary</description>
+    <label>Score Summary</label>
+    <referenceTo>Score_Summary__c</referenceTo>
+    <relationshipLabel>Scorer Summaries</relationshipLabel>
+    <relationshipName>Scorer_Summaries</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

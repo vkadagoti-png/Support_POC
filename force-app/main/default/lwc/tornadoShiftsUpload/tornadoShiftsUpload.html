@@ -1,0 +1,59 @@
+<template>
+  <lightning-card>
+    <section>
+    <div class="slds-p-around_medium">
+     <div class="slds-box slds-theme_default slds-m-bottom_medium">
+        <p class="slds-text-body_regular"><strong>Campaign Name:</strong> {disasterEvent}</p>
+        <p class="slds-text-body_regular"><strong>Submitted on:</strong> {submissionDate}</p>
+        <p class="slds-text-body_regular"><strong>Submitted by:</strong> {submittedBy}</p>
+        <p class="slds-text-body_regular"><strong>Phone:</strong> {phone}</p>
+        <p class="slds-text-body_regular"><strong>Email:</strong> {email}</p>
+      </div>
+      <div class="upload-wrapper">
+    <p class="upload-label">Upload Report</p>
+    <lightning-file-upload
+           name="fileUploader"
+      class="upload-button"
+      onuploadfinished={handleUploadFinished}
+      record-id={recordId}>
+    </lightning-file-upload>
+    </div>
+    </div>
+    </section>
+    </lightning-card>
+    
+
+     <template if:true={isModalOpen}>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <h2 class="slds-text-heading_medium">Confirm File Submission</h2>
+                </header>
+                
+                <div class="slds-modal__content slds-p-around_medium">
+                  <template if:false={isFileCSV}>
+                     <lightning-input  label="Total Hours"
+                        value={totalHours}
+                        onchange={handleTotalHours}
+                        class="initial-input"></lightning-input>
+                         <lightning-input  label="Total Attendees"
+                        value={totalAttendees}
+                        onchange={handleTotalAttendees}
+                        class="initial-input"></lightning-input>
+                  </template>
+                        <lightning-input  label="Initials"
+                        value={initial}
+                        onchange={handleInitialChange}
+                        class="initial-input"></lightning-input>
+                </div>
+
+                <footer class="slds-modal__footer">
+                    <lightning-button variant="neutral" label="Delete" onclick={closeModal}   class="slds-m-right_medium"></lightning-button>
+
+                    <lightning-button variant="brand" label="Initial and Submit" onclick={initialAndSubmit}></lightning-button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+  </template>

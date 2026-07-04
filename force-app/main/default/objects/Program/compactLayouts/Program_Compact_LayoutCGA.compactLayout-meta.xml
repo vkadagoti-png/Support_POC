@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Compact_LayoutCGA</fullName>
+    <fields>Name</fields>
+    <fields>Status</fields>
+    <fields>Funding_Year__c</fields>
+    <fields>Total_Appropriation__c</fields>
+    <fields>Total_Reserved__c</fields>
+    <fields>TotalObligated__c</fields>
+    <fields>Total_Disbursed__c</fields>
+    <label>Program Compact LayoutCGA</label>
+</CompactLayout>

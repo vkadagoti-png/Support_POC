@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Form of Site Control --></label>
+    <name>Form_of_Site_Control__c</name>
+    <picklistValues>
+        <masterLabel>CDA-Owned</masterLabel>
+        <translation><!-- CDA-Owned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Developer-owned</masterLabel>
+        <translation><!-- Developer-owned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LRA-Owned</masterLabel>
+        <translation><!-- LRA-Owned --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Option</masterLabel>
+        <translation><!-- Option --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Acquisition-not yet acquired</masterLabel>
+        <translation><!-- Private Acquisition-not yet acquired --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activity__c</fullName>
+    <label>Activity</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Schedule_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Option</fullName>
+                <default>false</default>
+                <label>Option</label>
+            </value>
+            <value>
+                <fullName>Contract</fullName>
+                <default>false</default>
+                <label>Contract</label>
+            </value>
+            <value>
+                <fullName>Closing</fullName>
+                <default>false</default>
+                <label>Closing</label>
+            </value>
+            <value>
+                <fullName>Zoning</fullName>
+                <default>false</default>
+                <label>Zoning</label>
+            </value>
+            <value>
+                <fullName>Site Analysis</fullName>
+                <default>false</default>
+                <label>Site Analysis</label>
+            </value>
+            <value>
+                <fullName>Application Submission</fullName>
+                <default>false</default>
+                <label>Application Submission</label>
+            </value>
+            <value>
+                <fullName>Conditional Commitment</fullName>
+                <default>false</default>
+                <label>Conditional Commitment</label>
+            </value>
+            <value>
+                <fullName>Firm Commitment</fullName>
+                <default>false</default>
+                <label>Firm Commitment</label>
+            </value>
+            <value>
+                <fullName>Perliminary Drawings</fullName>
+                <default>false</default>
+                <label>Preliminary Drawings</label>
+            </value>
+            <value>
+                <fullName>Woking Drawings</fullName>
+                <default>false</default>
+                <label>Working Drawings</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Site</controllingFieldValue>
+            <valueName>Option</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site</controllingFieldValue>
+            <valueName>Contract</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site</controllingFieldValue>
+            <controllingFieldValue>Construction Finance</controllingFieldValue>
+            <controllingFieldValue>Construction Loan Closing</controllingFieldValue>
+            <valueName>Closing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site</controllingFieldValue>
+            <valueName>Zoning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Site</controllingFieldValue>
+            <valueName>Site Analysis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction Finance</controllingFieldValue>
+            <valueName>Application Submission</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction Finance</controllingFieldValue>
+            <valueName>Conditional Commitment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Construction Finance</controllingFieldValue>
+            <valueName>Firm Commitment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plans</controllingFieldValue>
+            <valueName>Perliminary Drawings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plans</controllingFieldValue>
+            <valueName>Woking Drawings</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

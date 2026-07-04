@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>CDA Fiscal Manager or Accountant Manager</name>
+    <queueMembers>
+        <users>
+            <user>yochumb@stlouis-mo.gov</user>
+            <user>worths@stlouis-mo.gov</user>
+            <user>perkinsv@stlouis-mo.gov</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Approval_Assignment__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>DocumentChecklistItem</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Reference_Approval_Assignment_Details__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Reference_Approval_Assignment__c</sobjectType>
+    </queueSobject>
+</Queue>

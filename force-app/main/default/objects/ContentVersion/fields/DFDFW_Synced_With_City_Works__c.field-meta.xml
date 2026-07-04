@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DFDFW_Synced_With_City_Works__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used to determine if the file has been synced with City Works.</description>
+    <label>Synced With City Works</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

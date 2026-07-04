@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Expenses__c</fullName>
+    <formula>Personel_Salaries_and_Wages__c +
+Payroll_Taxes_and_Fringe_Benefits__c +
+RentLeaseMortgage__c +
+Utilities__c +
+Telephone__c +
+Office_Supplies__c +
+Postage__c +
+Printing_and_Copying__c +
+Travel__c + Insurance__c +
+Consultant_and_Contract_Services__c +
+Legal__c +
+Accounting__c +
+in_Kind_Expenses__c +
+Other_Expenses__c +  
+Other_1_Expense__c  +  
+Other_2_Expense__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Expenses</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

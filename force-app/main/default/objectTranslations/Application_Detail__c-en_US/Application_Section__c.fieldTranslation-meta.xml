@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Application Section --></label>
+    <name>Application_Section__c</name>
+    <relationshipLabel><!-- Application Details --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accounts_with_UEI</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Entity_Name__c</columns>
+    <columns>UEI_Number__c</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATEDBY_USER.ALIAS</field>
+        <operation>equals</operation>
+        <value>cclou</value>
+    </filters>
+    <filters>
+        <field>UEI_Number__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Accounts with UEI</label>
+    <sharedTo>
+        <group>CDBG_Internal_Users</group>
+    </sharedTo>
+</ListView>

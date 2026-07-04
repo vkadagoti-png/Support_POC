@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UserAccessPolicy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <booleanFilter>1</booleanFilter>
+    <description>Assign the permission set group based on profile equal to &quot;STL CDA Internal Grant Admin&quot;</description>
+    <masterLabel>Internal Grant Admin Group Assignment</masterLabel>
+    <order>1</order>
+    <status>Active</status>
+    <triggerType>Create</triggerType>
+    <userAccessPolicyActions>
+        <action>Grant</action>
+        <target>Internal_Grant_Admin_Permission_Set_Group</target>
+        <type>PermissionSetGroup</type>
+    </userAccessPolicyActions>
+    <userAccessPolicyFilters>
+        <operation>equals</operation>
+        <sortOrder>1</sortOrder>
+        <target>STL CDA Internal Grant Admin</target>
+        <type>Profile</type>
+    </userAccessPolicyFilters>
+</UserAccessPolicy>

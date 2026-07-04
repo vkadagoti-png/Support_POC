@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is the id of the Budget Detail record.  Select one of these id&apos;s when doing reallocations from one budget detail to another. --></help>
+    <label><!-- Detail Id --></label>
+    <name>Detail_Id__c</name>
+</CustomFieldTranslation>

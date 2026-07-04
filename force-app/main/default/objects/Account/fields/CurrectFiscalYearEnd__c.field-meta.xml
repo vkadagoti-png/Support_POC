@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CurrectFiscalYearEnd__c</fullName>
+    <formula>IF(
+    DATE(
+        YEAR(TODAY()), 
+        CASE(
+            MonthFiscalYrEnds__c,
+            &quot;Jan&quot;, 1,
+            &quot;Feb&quot;, 2,
+            &quot;Mar&quot;, 3,
+            &quot;Apr&quot;, 4,
+            &quot;May&quot;, 5,
+            &quot;Jun&quot;, 6,
+            &quot;Jul&quot;, 7,
+            &quot;Aug&quot;, 8,
+            &quot;Sept&quot;, 9,
+            &quot;Oct&quot;, 10,
+            &quot;Nov&quot;, 11,
+            &quot;Dec&quot;, 12,
+            &quot;&quot;,NULL,
+            0 /* Default value if none of the above matches */
+        ), 
+        CASE(
+            MonthFiscalYrEnds__c,
+            &quot;Jan&quot;, 31,
+            &quot;Feb&quot;, IF(MOD(YEAR(TODAY()), 4) = 0, 29, 28),
+            &quot;Mar&quot;, 31,
+            &quot;Apr&quot;, 30,
+            &quot;May&quot;, 31,
+            &quot;Jun&quot;, 30,
+            &quot;Jul&quot;, 31,
+            &quot;Aug&quot;, 31,
+            &quot;Sept&quot;, 30,
+            &quot;Oct&quot;, 31,
+            &quot;Nov&quot;, 30,
+            &quot;Dec&quot;, 31,
+            &quot;&quot;,NULL,
+            0 /* Default value if none of the above matches */
+        )
+    ) &lt; TODAY(),
+    DATE(
+        YEAR(TODAY()) + 1, 
+        CASE(
+            MonthFiscalYrEnds__c,
+            &quot;Jan&quot;, 1,
+            &quot;Feb&quot;, 2,
+            &quot;Mar&quot;, 3,
+            &quot;Apr&quot;, 4,
+            &quot;May&quot;, 5,
+            &quot;Jun&quot;, 6,
+            &quot;Jul&quot;, 7,
+            &quot;Aug&quot;, 8,
+            &quot;Sept&quot;, 9,
+            &quot;Oct&quot;, 10,
+            &quot;Nov&quot;, 11,
+            &quot;Dec&quot;, 12,
+            &quot;&quot;,NULL,
+            0 /* Default value if none of the above matches */
+        ), 
+        CASE(
+            MonthFiscalYrEnds__c,
+            &quot;Jan&quot;, 31,
+            &quot;Feb&quot;, IF(MOD(YEAR(TODAY()) + 1, 4) = 0, 29, 28),
+            &quot;Mar&quot;, 31,
+            &quot;Apr&quot;, 30,
+            &quot;May&quot;, 31,
+            &quot;Jun&quot;, 30,
+            &quot;Jul&quot;, 31,
+            &quot;Aug&quot;, 31,
+            &quot;Sept&quot;, 30,
+            &quot;Oct&quot;, 31,
+            &quot;Nov&quot;, 30,
+            &quot;Dec&quot;, 31,
+            &quot;&quot;,NULL,
+            0 /* Default value if none of the above matches */
+        )
+    ),
+    DATE(
+        YEAR(TODAY()), 
+        CASE(
+            MonthFiscalYrEnds__c,
+            &quot;Jan&quot;, 1,
+            &quot;Feb&quot;, 2,
+            &quot;Mar&quot;, 3,
+            &quot;Apr&quot;, 4,
+            &quot;May&quot;, 5,
+            &quot;Jun&quot;, 6,
+            &quot;Jul&quot;, 7,
+            &quot;Aug&quot;, 8,
+            &quot;Sept&quot;, 9,
+            &quot;Oct&quot;, 10,
+            &quot;Nov&quot;, 11,
+            &quot;Dec&quot;, 12,
+            &quot;&quot;,NULL,
+            0 /* Default value if none of the above matches */
+        ), 
+        CASE(
+            MonthFiscalYrEnds__c,
+            &quot;Jan&quot;, 31,
+            &quot;Feb&quot;, IF(MOD(YEAR(TODAY()), 4) = 0, 29, 28),
+            &quot;Mar&quot;, 31,
+            &quot;Apr&quot;, 30,
+            &quot;May&quot;, 31,
+            &quot;Jun&quot;, 30,
+            &quot;Jul&quot;, 31,
+            &quot;Aug&quot;, 31,
+            &quot;Sept&quot;, 30,
+            &quot;Oct&quot;, 31,
+            &quot;Nov&quot;, 30,
+            &quot;Dec&quot;, 31,
+            &quot;&quot;,NULL,
+            0 /* Default value if none of the above matches */
+        )
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Currect Fiscal Year End</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

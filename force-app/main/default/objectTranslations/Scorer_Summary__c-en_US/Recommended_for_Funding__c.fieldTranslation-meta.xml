@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Recommended for Funding --></label>
+    <name>Recommended_for_Funding__c</name>
+    <picklistValues>
+        <masterLabel>Not Recommended</masterLabel>
+        <translation><!-- Not Recommended --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recommended</masterLabel>
+        <translation><!-- Recommended --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

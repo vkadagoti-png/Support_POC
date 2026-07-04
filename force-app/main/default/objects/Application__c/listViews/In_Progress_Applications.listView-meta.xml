@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>In_Progress_Applications</fullName>
+    <columns>NAME</columns>
+    <columns>Application_Display_Name__c</columns>
+    <columns>Status__c</columns>
+    <columns>Reference_Application__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Created_By_Email_Address__c</columns>
+    <columns>Account__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>In Progress</value>
+    </filters>
+    <label>In Progress Applications</label>
+    <sharedTo>
+        <roleAndSubordinatesInternal>CDA</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

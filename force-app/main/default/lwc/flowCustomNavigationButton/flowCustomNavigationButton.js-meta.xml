@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="urn:metadata.tooling.soap.sforce.com" fqn="flowCustomNavigationButton">
+    <apiVersion>50.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="label" type="String" role="inputOnly"/>
+            <property name="divStyle" type="String" role="inputOnly"/>
+            <property name="buttonVariant" type="String" role="inputOnly"/>
+            <property name="buttonStyle" type="String" role="inputOnly"/>
+            <property name="buttonClass" type="String" role="inputOnly"/>
+            <property name="standardButton" type="Boolean" role="inputOnly"/>
+            <property name="disabled" type="Boolean" role="inputOnly"/>
+            <property name="previous" type="Boolean" role="inputOnly"/>
+            <property name="finish" type="Boolean" role="inputOnly"/>
+            <property name="redirect" type="Boolean" role="inputOnly"/>
+            <property name="redirectURL" type="String" role="inputOnly"/>
+						<property name="openNewTab" type="Boolean" role="inputOnly" description="Input a 'redirectURL' and leave 'redirect' false"/>
+            <property name="flag" type="Boolean" role="outputOnly"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Audit_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>Audit_Status__c</fields>
+    <fields>AuditDueDate__c</fields>
+    <fields>Contract__c</fields>
+    <label>Audit Compact Layout</label>
+</CompactLayout>

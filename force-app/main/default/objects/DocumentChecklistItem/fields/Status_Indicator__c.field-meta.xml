@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_Indicator__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Status_frm__c ,
+					&quot;New&quot;,IMAGE(&quot;/resource/1712610540000/YellowButtonPNG?&quot;, &quot;New&quot;,30,30),
+					&quot;Pending&quot;,IMAGE(&quot;/resource/1712610540000/YellowButtonPNG?&quot;, &quot;Pending&quot;,30,30),
+					&quot;Ready for Signature&quot;, IMAGE(&quot;/resource/1712610566000/GreenButtonPNG?&quot;, &quot;Ready for Signature&quot;,30,30),
+					&quot;Rejected&quot;, IMAGE(&quot;/resource/1712610507000/RedButtonPNG?&quot;, &quot;Rejected&quot;,30,30),
+					IMAGE(&quot;/resource/1712610585000/BlueButtonPNG?&quot;, &quot;Draft&quot;,30,30))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Internal Approval Status Indicator</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DFDFW_All_Waiting_On_Customer_Applications</fullName>
+    <columns>NAME</columns>
+    <columns>Application_Submitted_Date__c</columns>
+    <columns>Application_Number__c</columns>
+    <columns>Full_Address__c</columns>
+    <columns>Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Waiting on customer</value>
+    </filters>
+    <label>Waiting on customer</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used to launch the &quot;Reference Checklist Process&quot; flow</description>
+    <flowDefinition>Reference_Checklist_Process</flowDefinition>
+    <label>Start Checklist Review</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Budget_Detail_Name__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Name of this budget line item.  If no details on this category create a detail with the same name as the category.  Max 65 characters.</inlineHelpText>
+    <label>Budget Detail Name</label>
+    <length>65</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

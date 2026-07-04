@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Checklist Type --></label>
+    <name>Checklist_Type__c</name>
+    <picklistValues>
+        <masterLabel>Bluesheet Review</masterLabel>
+        <translation><!-- Bluesheet Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closeout Review</masterLabel>
+        <translation><!-- Closeout Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Completeness Review</masterLabel>
+        <translation><!-- Completeness Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Document Review</masterLabel>
+        <translation><!-- Document Review --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inspection Review</masterLabel>
+        <translation><!-- Inspection Review --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

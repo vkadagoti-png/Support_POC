@@ -1,0 +1,15 @@
+<template>
+    <template if:true={showTable}>
+        <lightning-datatable key-field="id" data={data} columns={columns} hide-checkbox-column="true"></lightning-datatable>
+    </template>
+    <template if:true={showNoHistory}>
+        <div class="info-red">
+            <span><img src={closeIcon} alt-text="closeIcon"></span>
+            <label>Error</label>
+            <p>{errorMessage}</p>
+        </div>
+    </template>
+    <template if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+    </template>
+</template>

@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="City Review Status" icon-name="standard:task">
+        <div style="text-align: center;" class="slds-m-around_xx-small">
+            <template lwc:if={loading}>
+                <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+            </template>
+            <template lwc:else>
+                <template lwc:if={showError}>
+                    <p>{errorMessage}</p>
+                </template>
+                <template lwc:else>
+                    <lightning-datatable
+                            key-field="id"
+                            data={data}
+                            columns={columns}
+                            hide-checkbox-column>
+                    </lightning-datatable>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

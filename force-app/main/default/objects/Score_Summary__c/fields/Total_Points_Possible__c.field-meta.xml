@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Points_Possible__c</fullName>
+    <label>Total Points Possible</label>
+    <summarizedField>Scorer_Summary__c.Max_Points__c</summarizedField>
+    <summaryForeignKey>Scorer_Summary__c.Score_Summary__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

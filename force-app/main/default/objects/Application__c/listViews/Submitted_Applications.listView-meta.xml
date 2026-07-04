@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Submitted_Applications</fullName>
+    <columns>NAME</columns>
+    <columns>Application_Display_Name__c</columns>
+    <columns>Account__c</columns>
+    <columns>Project__c</columns>
+    <columns>Status__c</columns>
+    <columns>CDA_Review_Status__c</columns>
+    <columns>Score_Summary__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Created_By_Email_Address__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Submitted</value>
+    </filters>
+    <label>Submitted Applications</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+        <roleAndSubordinatesInternal>CDA</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

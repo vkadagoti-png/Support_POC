@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="urn:metadata.tooling.soap.sforce.com" fqn="operatingBudgetTables">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="readOnly" type="Boolean" role="inputOnly" default="false"/>
+            <property name="subCategoryTemplate" type="String" role="inputOnly"/>
+            <property name="budgetCategories" type="@salesforce/schema/BudgetCategory[]" role="inputOnly"/>
+            <property name="budgetCategoryDetails" type="@salesforce/schema/BudgetCategoryValue[]" role="inputOnly"/>
+
+            <property name="newDetails" type="@salesforce/schema/BudgetCategoryValue[]" role="outputOnly"/>
+            <property name="existingDetails" type="@salesforce/schema/BudgetCategoryValue[]" role="outputOnly"/>
+            <property name="detailsToDelete" type="@salesforce/schema/BudgetCategoryValue[]" role="outputOnly"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

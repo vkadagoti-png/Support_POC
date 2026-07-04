@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UserAccessPolicy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <booleanFilter>1 AND 2</booleanFilter>
+    <description>Assign &quot;CDA Grantee Portal Permission Set Group&quot; when a contract is activated and a user is checked to true on the field &quot;Enable CDA Portal Grantee&quot;</description>
+    <masterLabel>CDA Grantee Permission Set Group Assignment</masterLabel>
+    <order>2</order>
+    <status>Active</status>
+    <triggerType>CreateAndUpdate</triggerType>
+    <userAccessPolicyActions>
+        <action>Grant</action>
+        <target>CDA_Grantee_Portal_Permission_Set_Group</target>
+        <type>PermissionSetGroup</type>
+    </userAccessPolicyActions>
+    <userAccessPolicyActions>
+        <action>Grant</action>
+        <target>Grantee_Community_Portal_User</target>
+        <type>Group</type>
+    </userAccessPolicyActions>
+    <userAccessPolicyFilters>
+        <operation>equals</operation>
+        <sortOrder>1</sortOrder>
+        <target>STL CDA Portal User</target>
+        <type>Profile</type>
+    </userAccessPolicyFilters>
+    <userAccessPolicyFilters>
+        <columnName>Grantee__c</columnName>
+        <operation>equalsIgnoreCase</operation>
+        <sortOrder>2</sortOrder>
+        <target>User</target>
+        <type>User</type>
+        <value>true</value>
+    </userAccessPolicyFilters>
+</UserAccessPolicy>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BCD_Rollup__c</fullName>
+    <description>Used for &apos;Budget Category Detail - Actual Amount&apos; DLRS rollup criteria</description>
+    <formula>(Activity_Type__c != &apos;Program Reporting&apos; || Activity_Type__c != &apos;Income&apos; || Activity_Type__c != &apos;Recapture&apos; || Activity_Type__c != &apos;Expense Report&apos;) 
+&amp;&amp; (FA_Status__c = &apos;Approved&apos; || FA_Status__c = &apos;Processing&apos; || FA_Status__c = &apos;Scheduled&apos; || FA_Status__c = &apos;Paid&apos;)</formula>
+    <inlineHelpText>Rollup to &apos;Budget Category Detail - Actual Amount&apos; (DLRS) when equal to True</inlineHelpText>
+    <label>BCD Rollup</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

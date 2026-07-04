@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Email_Remainder</name>
+        <label>Send Email Remainder</label>
+        <locationX>50</locationX>
+        <locationY>360</locationY>
+        <actionName>Service_Application_Detail__c.DFDS001_Special_Event_Draft_Reminder</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Service_Application_Detail__c.DFDS001_Special_Event_Draft_Reminder</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Check_if_Reminder_should_be_sent</name>
+        <label>Check if Reminder should be sent</label>
+        <locationX>182</locationX>
+        <locationY>252</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>X7_14_or_21_days_since_Submitted_Date</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SendReminder</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Email_Remainder</targetReference>
+            </connector>
+            <label>7, 14, or 21 days since Submitted Date</label>
+        </rules>
+    </decisions>
+    <description>This flow send draft application reminder emails to the user 1, 2, and 3 weeks after draft has been submitted</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>SendReminder</name>
+        <dataType>Boolean</dataType>
+        <expression>({!$Record.Application_Submitted_Date__c} = (TODAY() - 7)) ||
+({!$Record.Application_Submitted_Date__c} = (TODAY() - 14)) ||
+({!$Record.Application_Submitted_Date__c} = (TODAY() - 21))</expression>
+    </formulas>
+    <interviewLabel>DFDFW Send Reminder For Draft Applications {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>DFDFW Send Reminder For Draft Applications</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_if_Reminder_should_be_sent</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Draft</stringValue>
+            </value>
+        </filters>
+        <object>Service_Application_Detail__c</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2024-12-18</startDate>
+            <startTime>06:52:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Personnel Schedule</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Personnel Schedules</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Full Time Schedule Display --></label>
+        <name>Full_Time_Schedule_Display</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Full Time Schedule Input --></label>
+        <name>Full_Time_Schedule_Input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Part Time Schedule Display --></label>
+        <name>Part_Time_Schedule_Display</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Part Time Schedule Input --></label>
+        <name>Part_Time_Schedule_Input</name>
+    </fieldSets>
+    <layouts>
+        <layout>Personnel Schedule Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Full-Time --></label>
+        <name>Full_Time</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Part-Time --></label>
+        <name>Part_Time</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Application Tables</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Application Tables</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Activity Input --></label>
+        <name>Activity_Input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Activity Table --></label>
+        <name>Activity_Table</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Board Member input --></label>
+        <name>Board_Member_input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Board Member table --></label>
+        <name>Board_Member_table</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Development Schedule Table --></label>
+        <name>Development_Schedule_Table</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Development Schedule input --></label>
+        <name>Development_Schedule_input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Development Team Table Display --></label>
+        <name>Development_Team_Table_Display</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Development Team Table Input --></label>
+        <name>Development_Team_Table_Input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Funding Sources input --></label>
+        <name>Funding_Sources_input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Funding Sources table --></label>
+        <name>Funding_Sources_table</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- General Partner Table Display --></label>
+        <name>General_Partner_Table_Display</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- General Partner Table Input --></label>
+        <name>General_Partner_Table_Input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Grant Experience Input --></label>
+        <name>Grant_Experience_Input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Grant Experience Table --></label>
+        <name>Grant_Experience_Table</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- HOME-ARP Activites table --></label>
+        <name>HOME_ARP_Activites_table</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- HOME-ARP activities input --></label>
+        <name>HOME_ARP_activities_input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Home Pricing and Market Assistance Table Display --></label>
+        <name>HomePricing_MarketAssistance_Table_Displ</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Home Pricing and Market Assistance Table Input --></label>
+        <name>HomePricing_MarketAssistance_Table_Input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Location of Proposed Activity Display --></label>
+        <name>Location_of_Proposed_Activity_Display</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Location of Proposed Activity Input --></label>
+        <name>Location_of_Proposed_Activity_Input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Management functions input --></label>
+        <name>Management_functions_input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Management functions table --></label>
+        <name>Management_functions_table</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Mortgage Table Display --></label>
+        <name>Mortgage_Table_Display</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Mortgage Table Input --></label>
+        <name>Mortgage_Table_Input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Org Team --></label>
+        <name>Org_Team</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Org team table --></label>
+        <name>Org_team_table</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Output and Criteria --></label>
+        <name>Output_and_Criteria</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Property Information Table Input --></label>
+        <name>Property_Information_Table_Input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Property Information Table Torando Recovery Display --></label>
+        <name>Property_Information_Table_Torando_Recov</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Property Management Track Record Display --></label>
+        <name>Property_Management_Track_Record_Display</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Property Management Track Record Input --></label>
+        <name>Property_Management_Track_Record_Input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Proposed Actions table --></label>
+        <name>Proposed_Actions_table</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Proposed Output input --></label>
+        <name>Proposed_Output_input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Proposed Output table --></label>
+        <name>Proposed_Output_table</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Proposed Project Display --></label>
+        <name>Proposed_Project_Display</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Proposed Project HOME-ARP Table Display --></label>
+        <name>Proposed_Project_HOME_ARP_Table_Display</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Proposed Project HOME-ARP Table Input --></label>
+        <name>Proposed_Project_HOME_ARP_Table_Input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Proposed Project Input --></label>
+        <name>Proposed_Project_Input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Proposed Project PRO Housing Table Display --></label>
+        <name>Proposed_Project_PRO_Housing_Table_Displ</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Proposed Project PRO Housing Table Input --></label>
+        <name>Proposed_Project_PRO_Housing_Table_Input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Proposed Project Tornado Recovery Display --></label>
+        <name>Proposed_Project_Tornado_Recovery_Displa</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Proposed Project Tornado Recovery Input --></label>
+        <name>Proposed_Project_Tornado_Recovery_Input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Proposed actions input --></label>
+        <name>Proposed_actions_input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Recent Projects Table Display --></label>
+        <name>Recent_Projects_Table_Display</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Recent Projects Table Display for SS --></label>
+        <name>Recent_Projects_Table_Display_for_SS</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Recent Projects Table Input --></label>
+        <name>Recent_Projects_Table_Input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Recent Projects Table Input for SS --></label>
+        <name>Recent_Projects_Table_Input_for_SS</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Staff Table --></label>
+        <name>Staff_Table</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Staff input --></label>
+        <name>Staff_input</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Track Record Table Display --></label>
+        <name>Track_Record_Table_Display</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Track Record Table Input --></label>
+        <name>Track_Record_Table_Input</name>
+    </fieldSets>
+    <layouts>
+        <layout>Application Tables Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Activities --></label>
+        <name>Activities</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used on CDBG application --></description>
+        <label><!-- Addresses and Location of Proposed Activity --></label>
+        <name>Addresses_and_Location_of_Proposed_Activity</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Board Members --></label>
+        <name>Board_Members</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- To store development schedule of the project --></description>
+        <label><!-- Development Schedule --></label>
+        <name>Development_Schedule</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Development Team --></label>
+        <name>Development_Team</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Application funding sources --></description>
+        <label><!-- Funding Sources --></label>
+        <name>Funding_Sources</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- General Partner --></label>
+        <name>General_Partner</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Grant Experience --></label>
+        <name>Grant_Experience</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Home-ARP Activities --></label>
+        <name>Home_ARP_Activities</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Home Pricing and Market Assessment --></label>
+        <name>Home_Pricing_and_Market_Assessment</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Fields to collect management functions on application --></description>
+        <label><!-- Management Functions --></label>
+        <name>Management_Functions</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Mortgage --></label>
+        <name>Mortgage</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used on Tornado Recovery Vacant Unit Turns Application --></description>
+        <label><!-- Property Information Table Tornado Recovery --></label>
+        <name>Property_Information_Table_Tornado_Recovery</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Property Management Track Record Table --></label>
+        <name>Property_Management_Track_Record_Table</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Proposed actions and activities --></description>
+        <label><!-- Proposed Actions --></label>
+        <name>Proposed_Actions</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Proposed Output --></label>
+        <name>Proposed_Output</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- New application section in NOFA Housing applications --></description>
+        <label><!-- Proposed Project --></label>
+        <name>Proposed_Project</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Created for PRO Housing Applications --></description>
+        <label><!-- Proposed Project PRO Housing --></label>
+        <name>Proposed_Project_PRO_Housing</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used on Tornado Recovery Vacant Unit Turns Application --></description>
+        <label><!-- Proposed Project Tornado Recovery --></label>
+        <name>Proposed_Project_Tornado_Recovery</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Recent Projects --></label>
+        <name>Recent_Projects</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Staff --></label>
+        <name>Staff</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Team Organizations --></label>
+        <name>Team_Organizations</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Track Record --></label>
+        <name>Track_Record</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- used on supportive services application --></description>
+        <label><!-- output and criteria --></label>
+        <name>output_and_criteria</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

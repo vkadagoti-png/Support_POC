@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conga_Composer_Create_pdf</fullName>
+    <availability>online</availability>
+    <description>Originally created by Conga Solution Manager. Date of last use of Update Button from Conga Solution record: https://stl.my.salesforce.com/a0e82000000OqNJAA0
+01-Oct-2025 01:30:41 PM</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>false</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>660</height>
+    <isResizable>false</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Create pdf</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/apex/APXTConga4__Conga_Composer?SolMgr=1
+&amp;serverUrl={!API.Partner_Server_URL_520}
+&amp;Id={!Application__c.Id}
+
+&amp;QueryId=[q1]0Q_000EAI578497%3Fpv0%3D{!Application__c.Id},
+[accnt1]0Q_002EAI610150%3Fpv0%3D{!Application__c.Id},
+[Prop1]0Q_003EAI078179%3Fpv0%3D{!Application__c.Id},
+[TrkR]0Q_019EAI317518%3Fpv0%3D{!Application__c.Id},
+[TmO]0Q_018EAI317518%3Fpv0%3D{!Application__c.Id},
+[Stf]0Q_017EAI317518%3Fpv0%3D{!Application__c.Id},
+[PropO]0Q_016EAI317518%3Fpv0%3D{!Application__c.Id},
+[PropA]0Q_015EAI317518%3Fpv0%3D{!Application__c.Id},
+[OutP]0Q_014EAI317519%3Fpv0%3D{!Application__c.Id},
+[MgFun]0Q_013EAI317519%3Fpv0%3D{!Application__c.Id},
+[HmARP]0Q_012EAI317519%3Fpv0%3D{!Application__c.Id},
+[HmP]0Q_011EAI317519%3Fpv0%3D{!Application__c.Id},
+[GntX]0Q_010EAI317519%3Fpv0%3D{!Application__c.Id},
+[FunS]0Q_009EAI317519%3Fpv0%3D{!Application__c.Id},
+[DevT]0Q_008EAI317519%3Fpv0%3D{!Application__c.Id},
+[BM]0Q_006EAI317519%3Fpv0%3D{!Application__c.Id},
+[Act]0Q_005EAI317541%3Fpv0%3D{!Application__c.Id},
+[DevS]0Q_007EAI317519%3Fpv0%3D{!Application__c.Id},
+[Conta]0Q_020EAI303825%3Fpv0%3D{!Application__c.AccountId__c},
+[Photo]0Q_022EAI939497%3Fpv0%3D{!Application__c.Id},
+[Sig]0Q_023EAI833162%3Fpv0%3D{!Application__c.Id},
+[q2]0Q_024EAI315196%3Fpv0%3D{!Application__c.Id},
+[PropP]0Q_140EAI089907%3Fpv0%3D{!Application__c.Id},
+[RecP]0Q_004EAI704357%3Fpv0%3D{!Application__c.Id},
+[AppOp]0Q_141EAI380432%3Fpv0%3D{!Application__c.Id},
+[AppCr]0Q_142EAI096528%3Fpv0%3D{!Application__c.Id},
+[FullT]0Q_144EAI410561%3Fpv0%3D{!Application__c.Id},
+[PartT]0Q_145EAI526269%3Fpv0%3D{!Application__c.Id},
+[AppR]0Q_147EAI340078%3Fpv0%3D{!Application__c.Id}
+
+&amp;Qvar0Id=a0Y82000000OeBIEA0?pv0={!Application__c.Id}
+&amp;TemplateId=a0g82000000O7xQAAS,a0g82000000PifgAAC,a0g82000000PifqAAC,a0g82000000QApFAAW,{Qvar0}
+&amp;Qvar0format=10000
+&amp;SC0=1
+&amp;WordStripIfs=1
+&amp;SC1=SalesforceFile
+&amp;DefaultPDF=0
+&amp;SelectTemplates=1
+&amp;ZipFiles=1
+&amp;MTOFN={Template.Label}+-+{!Application__c.Name}+-{!Application__c.Account__c}</url>
+    <width>900</width>
+</WebLink>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>City_Department_to_Administer__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Up to 65 characters</inlineHelpText>
+    <label>City Department to Administer</label>
+    <length>65</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

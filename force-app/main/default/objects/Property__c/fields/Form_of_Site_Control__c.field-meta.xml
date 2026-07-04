@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Form_of_Site_Control__c</fullName>
+    <label>Form of Site Control</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Developer-owned</fullName>
+                <default>false</default>
+                <label>Developer-owned</label>
+            </value>
+            <value>
+                <fullName>Private Acquisition-not yet acquired</fullName>
+                <default>false</default>
+                <label>Private Acquisition-not yet acquired</label>
+            </value>
+            <value>
+                <fullName>CDA-Owned</fullName>
+                <default>false</default>
+                <label>CDA-Owned</label>
+            </value>
+            <value>
+                <fullName>LRA-Owned</fullName>
+                <default>false</default>
+                <label>LRA-Owned</label>
+            </value>
+            <value>
+                <fullName>Option</fullName>
+                <default>false</default>
+                <label>Option</label>
+            </value>
+            <value>
+                <fullName>Contract</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contract</label>
+            </value>
+            <value>
+                <fullName>Deed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Deed</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

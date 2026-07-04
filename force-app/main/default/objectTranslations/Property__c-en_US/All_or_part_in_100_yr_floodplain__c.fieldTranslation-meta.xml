@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- All or part in 100-yr. floodplain --></label>
+    <name>All_or_part_in_100_yr_floodplain__c</name>
+</CustomFieldTranslation>

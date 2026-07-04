@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Rental_Units_planned_for_this_site__c</fullName>
+    <externalId>false</externalId>
+    <formula>Number_of_Market_Rate_units__c +
+Number_of_Low_Mod_Units_at_80__c +
+Number_of_Low_Mod_Units_at_60__c +
+Number_of_Low_Mod_Units_at_30__c +
+Homeless__c +
+At_Risk_of_Homelessness__c +
+Domestic_Violence_Sexual_Assault_Traffic__c +
+Other_as_defined_in_the_NOFA__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Rental Units planned for this site</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

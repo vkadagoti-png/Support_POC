@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- the parent financial activity of this category record. --></help>
+    <label><!-- Financial Activity --></label>
+    <name>Financial_Activity__c</name>
+    <relationshipLabel><!-- Financial Activity Cost Categories --></relationshipLabel>
+</CustomFieldTranslation>

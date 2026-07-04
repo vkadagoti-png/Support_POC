@@ -1,0 +1,11 @@
+<template>
+    <template lwc:if={isCheckboxField}>
+        <lightning-input type={fieldType} label={fieldLabel} checked={fieldValue} disabled="true" field-level-help={fieldLevelHelp}></lightning-input>
+    </template>
+    <template lwc:elseif={isPhoneField}>
+        <lightning-input type={fieldType} label={fieldLabel} value={fieldValue} disabled="true" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" field-level-help={fieldLevelHelp}></lightning-input>
+    </template>
+    <template lwc:else>
+        <lightning-input type={fieldType} label={fieldLabel} value={fieldValue} disabled="true" field-level-help={fieldLevelHelp}></lightning-input>
+    </template>
+</template>

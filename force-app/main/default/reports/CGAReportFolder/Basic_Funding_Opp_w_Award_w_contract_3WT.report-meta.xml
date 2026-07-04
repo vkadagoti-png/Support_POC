@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FundingOpportunity.FundingAward$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>FundingOpportunity.FundingAward$Amount</field>
+    </columns>
+    <columns>
+        <field>FundingOpportunity.FundingAward$Contract.Status</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>FundingOpportunity.FundingAward$Contract.Total_Funding__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>FundingOpportunity.FundingAward$Contract.Total_Budget__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>FundingOpportunity.FundingAward$Contract.Total_Disbursed__c</field>
+    </columns>
+    <description>Funding Opportunities with the awards with the contract and the amounts</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FundingOpportunity$Program</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FundingOpportunity$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Basic Funding Opp w Award w contract</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Funding_Opportunity_w_Award_and_Contract__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>FundingOpportunity$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>This is the contract this is a budget for.  On contract there is a lookup/link field to the Active Budget, as budget revisions could take place there will/can be many related inactive budgets related to this contract.</inlineHelpText>
+    <label>Contract</label>
+    <referenceTo>Contract</referenceTo>
+    <relationshipLabel>Budgets</relationshipLabel>
+    <relationshipName>Budgets</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

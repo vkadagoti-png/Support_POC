@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>File_Category__c</fullName>
+    <label>File Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Emergency Plan</fullName>
+                <default>false</default>
+                <label>Emergency Plan</label>
+            </value>
+            <value>
+                <fullName>Approval Letter from Alderperson</fullName>
+                <default>false</default>
+                <label>Approval Letter from Alderperson</label>
+            </value>
+            <value>
+                <fullName>Certificate of Insurance</fullName>
+                <default>false</default>
+                <label>Certificate of Insurance</label>
+            </value>
+            <value>
+                <fullName>Event Site Map</fullName>
+                <default>false</default>
+                <label>Event Site Map</label>
+            </value>
+            <value>
+                <fullName>Traffic Control Plan</fullName>
+                <default>false</default>
+                <label>Traffic Control Plan</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Food and Food Truck Vendor Names</fullName>
+                <default>false</default>
+                <label>Food and Food Truck Vendor Names</label>
+            </value>
+            <value>
+                <fullName>Alcohol Vendor Names</fullName>
+                <default>false</default>
+                <label>Alcohol Vendor Names</label>
+            </value>
+            <value>
+                <fullName>Map of your Parade, Run/Walk/Ride Route</fullName>
+                <default>false</default>
+                <label>Map of your Parade, Run/Walk/Ride Route</label>
+            </value>
+            <value>
+                <fullName>Issued Permit</fullName>
+                <default>false</default>
+                <label>Issued Permit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

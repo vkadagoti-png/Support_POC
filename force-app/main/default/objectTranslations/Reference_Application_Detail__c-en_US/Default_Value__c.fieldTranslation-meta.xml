@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>
+        <!-- Provides a default value for inputs.
+For Currencies use regular numbers (Ex 12.99) will set a default value of $12.99 
+For Date/Datetime use &quot;TODAY&quot; so set the default to the current date. -->
+    </help>
+    <label><!-- Default Value --></label>
+    <name>Default_Value__c</name>
+</CustomFieldTranslation>

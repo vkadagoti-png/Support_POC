@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is calculated based on points awarded on the details or completed scoring details, and add&apos;s the % of weighting for the total. --></help>
+    <label><!-- Points Awarded --></label>
+    <name>Points_Awarded__c</name>
+</CustomFieldTranslation>

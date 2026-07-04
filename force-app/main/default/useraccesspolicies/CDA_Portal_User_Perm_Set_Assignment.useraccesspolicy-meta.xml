@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UserAccessPolicy xmlns="http://soap.sforce.com/2006/04/metadata">
+    <booleanFilter>1</booleanFilter>
+    <masterLabel>CDA Portal User Perm Set Assignment</masterLabel>
+    <order>2</order>
+    <status>Active</status>
+    <triggerType>Create</triggerType>
+    <userAccessPolicyActions>
+        <action>Grant</action>
+        <target>STL_CDA_Portal_Permission_Set</target>
+        <type>PermissionSet</type>
+    </userAccessPolicyActions>
+    <userAccessPolicyFilters>
+        <operation>equals</operation>
+        <sortOrder>1</sortOrder>
+        <target>STL CDA Portal User</target>
+        <type>Profile</type>
+    </userAccessPolicyFilters>
+</UserAccessPolicy>

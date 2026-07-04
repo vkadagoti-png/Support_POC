@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>Account</object>
+        <objectField>Id</objectField>
+        <userField>Contact.Account</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>Application__c</object>
+        <objectField>Account__c</objectField>
+        <userField>Contact.Account</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Read</accessLevel>
+        <object>Budget</object>
+        <objectField>Account</objectField>
+        <userField>Contact.Account</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Read</accessLevel>
+        <object>Project__c</object>
+        <objectField>Account__c</objectField>
+        <userField>Contact.Account</userField>
+    </accessMappings>
+    <name>Community User Access by Account</name>
+    <profiles>STL CDA Portal User</profiles>
+</SharingSet>

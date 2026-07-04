@@ -1,0 +1,34 @@
+<template>
+    <template lwc:if={renderPage}>
+        <template for:each={tables} for:item="table">
+            <div key={table.category}>
+                <c-dynamic-budget-table
+                    category-data={table} 
+                ></c-dynamic-budget-table>
+                <br/>
+            </div>
+        </template>
+        <footer>
+            <div style="text-align:right;">
+                <template lwc:if={showPreviousButton}>
+                    <lightning-button
+                        label="Previous"
+                        onclick={handlePrevious}
+                    ></lightning-button>
+                    &nbsp;
+                </template>
+                <template lwc:if={showNextButton}>
+                    <lightning-button
+                        label="Save"
+                        variant="brand"
+                        onclick={handleConfirm}
+                    ></lightning-button>
+                </template>
+            </div>
+        </footer>
+    </template>
+
+    <template lwc:if={showSpinner}>
+        <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+    </template>
+</template>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Race --></label>
+    <name>Race__c</name>
+    <picklistValues>
+        <masterLabel>American Indian or Alaska Native</masterLabel>
+        <translation><!-- American Indian or Alaska Native --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>American Indian or Alaska Native and Black or African American</masterLabel>
+        <translation><!-- American Indian or Alaska Native and Black or African American --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>American Indian or Alaska Native and White</masterLabel>
+        <translation><!-- American Indian or Alaska Native and White --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asian</masterLabel>
+        <translation><!-- Asian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asian and White</masterLabel>
+        <translation><!-- Asian and White --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Black or African American</masterLabel>
+        <translation><!-- Black or African American --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Black or African American and White</masterLabel>
+        <translation><!-- Black or African American and White --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Native Hawaiian or Pacific Islander</masterLabel>
+        <translation><!-- Native Hawaiian or Pacific Islander --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Multi Racial</masterLabel>
+        <translation><!-- Other Multi Racial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>White</masterLabel>
+        <translation><!-- White --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

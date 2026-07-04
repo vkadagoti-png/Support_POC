@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Housing_Analyst_CDA_Case_Submitted</fullName>
+        <description>Housing Analyst - CDA Case Submitted</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Analyst__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>cda@stlouis-mo.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>STL_CDA/Housing_Analyst_CDA_Case_Submitted</template>
+    </alerts>
+    <alerts>
+        <fullName>Program_Monitor_CDA_Case_Submitted</fullName>
+        <description>Program Monitor - CDA Case Submitted</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Program_Monitor__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>cda@stlouis-mo.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>STL_CDA/Program_Monitor_CDA_Case_Submitted</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>ChangePriorityToHigh</fullName>
+        <field>Priority</field>
+        <literalValue>High</literalValue>
+        <name>Changes the case priority to high.</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

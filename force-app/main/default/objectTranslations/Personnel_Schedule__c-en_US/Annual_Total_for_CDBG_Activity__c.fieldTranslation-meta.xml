@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Total Annual Salary x Percent Charged to CDBG Activity --></help>
+    <label><!-- Annual Total for CDBG Activity --></label>
+    <name>Annual_Total_for_CDBG_Activity__c</name>
+</CustomFieldTranslation>

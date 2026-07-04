@@ -1,0 +1,11 @@
+<template>
+    <template lwc:if={loading}>
+        <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+    </template>
+    <div class="buttonsClass">
+        <template lwc:if={nextButton}>
+            <lightning-button class="nextButtonClass" variant="brand" label={nextButtonLabel} aria-label={nextButtonLabel} title="Next" onclick={handleNext} name="NextButton"></lightning-button>
+        </template>
+        <lightning-button class="paymentButtonClass" variant="brand" label={buttonLabel} aria-label={buttonLabel} title="Payment" onclick={handlePaymentCheckout} name="PaymentButton"></lightning-button>
+    </div>
+</template>

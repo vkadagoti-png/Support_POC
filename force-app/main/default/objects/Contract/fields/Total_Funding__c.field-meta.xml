@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Funding__c</fullName>
+    <inlineHelpText>This is the current Contract allocation.  This is originally brought over from the Award Amount on the Project when the start contracting button has been pushed to start the contracting process.  Funding the contract sill needs to happen.</inlineHelpText>
+    <label>Contract Allocation</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

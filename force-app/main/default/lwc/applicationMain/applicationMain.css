@@ -1,0 +1,22 @@
+.backgroundInverse {
+	background-color: #1f4f9760;
+}
+
+.wrapper {
+	text-align: center;
+}
+
+.btn-container {
+	display: block;
+	margin: 10px;
+}
+
+.btn-responsive-width {
+	width: 300px;
+}
+
+@media only screen and (max-width: 500px) {
+	.btn-responsive-width {
+		width: 95%;
+	}
+}

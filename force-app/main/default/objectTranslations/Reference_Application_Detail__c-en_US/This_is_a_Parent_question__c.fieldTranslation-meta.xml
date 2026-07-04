@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check true when this question is used as a parent question for subsequent/dependent questions. --></help>
+    <label><!-- This is a Parent question --></label>
+    <name>This_is_a_Parent_question__c</name>
+</CustomFieldTranslation>

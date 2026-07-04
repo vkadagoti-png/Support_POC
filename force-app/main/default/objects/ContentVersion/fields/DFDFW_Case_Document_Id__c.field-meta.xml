@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DFDFW_Case_Document_Id__c</fullName>
+    <description>This is the external Id field for the documents synced with city works. The field in city works / OIC is CA_REL_DOC_ID</description>
+    <externalId>true</externalId>
+    <label>Case Document Id</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

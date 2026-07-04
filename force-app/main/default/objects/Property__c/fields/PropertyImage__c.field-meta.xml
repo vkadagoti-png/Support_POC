@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PropertyImage__c</fullName>
+    <externalId>false</externalId>
+    <formula>IMAGE( 
+
+IF(ISBLANK(URL_of_Property_Image__c),&quot;/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Jpg&amp;versionId=068BZ000002A2hi&amp;operationContext=CHATTER&amp;contentId=05TBZ000007esku&quot;,
+URL_of_Property_Image__c),
+&quot;Property&quot;, 85,85)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Property Image</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

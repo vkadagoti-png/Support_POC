@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Application Detail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Application Details</value>
+    </caseValues>
+    <layouts>
+        <layout>Custom Component</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Display Rich Text</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Display Text</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Input Address</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Input Checkbox</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Input Checkbox Group</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Input Currency</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Input Date</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Input Date Time</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Input Email</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Input File</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Input Flow</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Input Lookup</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Input Number</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Input Picklist</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Input Radio Group</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Input Record List</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Input Text</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Input Text Long Area</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Custom Component --></label>
+        <name>Custom_Component</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Display Rich Text --></label>
+        <name>Display_Rich_Text</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Display Text --></label>
+        <name>Display_Text</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Input Address --></label>
+        <name>Input_Address</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Input Checkbox --></label>
+        <name>Input_Checkbox</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Input Checkbox Group --></label>
+        <name>Input_Checkbox_Group</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Input Currency --></label>
+        <name>Input_Currency</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Input Date --></label>
+        <name>Input_Date</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Input Date Time --></label>
+        <name>Input_Date_Time</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Input Email --></label>
+        <name>Input_Email</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Input File --></label>
+        <name>Input_File</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Input Flow --></label>
+        <name>Input_Flow</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Input Lookup --></label>
+        <name>Input_Lookup</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Input Number --></label>
+        <name>Input_Number</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Input Picklist --></label>
+        <name>Input_Picklist</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Input Radio Group --></label>
+        <name>Input_Radio_Group</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Input Record List --></label>
+        <name>Input_Record_List</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Input Text --></label>
+        <name>Input_Text</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Input Text Area Long --></label>
+        <name>Input_Text_Area_Long</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Scorer Summary --></label>
+    <name>Scorer_Summary__c</name>
+    <relationshipLabel><!-- Scoring Details --></relationshipLabel>
+</CustomFieldTranslation>

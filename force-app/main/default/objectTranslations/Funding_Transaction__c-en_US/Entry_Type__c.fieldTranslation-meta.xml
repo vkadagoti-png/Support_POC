@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Entry Type --></label>
+    <name>Entry_Type__c</name>
+    <picklistValues>
+        <masterLabel>Deobligation</masterLabel>
+        <translation><!-- Deobligation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Obligation</masterLabel>
+        <translation><!-- Obligation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

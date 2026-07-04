@@ -1,0 +1,3364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;applicationId&quot; : &quot;a1fcn0000001cxhAAA&quot;,
+  &quot;DFDDRCreateServiceApplicationStatus&quot; : true,
+  &quot;getOmniInstanceId&quot; : [ ],
+  &quot;getOmniInstanceIdStatus&quot; : true,
+  &quot;getAccountDetails&quot; : {
+    &quot;ContactLastName&quot; : &quot;UAT1&quot;,
+    &quot;ContactName&quot; : &quot;Sudhanshu UAT1&quot;,
+    &quot;ContactFirstName&quot; : &quot;Sudhanshu&quot;,
+    &quot;ContactEmail&quot; : &quot;ssvjuat1@yopmail.com&quot;,
+    &quot;userAccountId&quot; : &quot;001cn000004bRdQAAU&quot;
+  },
+  &quot;getAccountDetailsStatus&quot; : true,
+  &quot;sInstanceId&quot; : &quot;&quot;,
+  &quot;Acknowledgement&quot; : {
+    &quot;VendorPermitsAcknowledgement&quot; : {
+      &quot;VendorPermitsAcknowledgementInitials&quot; : &quot;dsa&quot;
+    },
+    &quot;ADAAcknowledgement&quot; : {
+      &quot;ADAAcknowledgementInitials&quot; : &quot;sad&quot;
+    },
+    &quot;NotifyingofImpact&quot; : {
+      &quot;NotifyingofImpactInitials&quot; : &quot;asd&quot;
+    },
+    &quot;CityAgreement&quot; : {
+      &quot;CityAgreementInitials&quot; : &quot;asd&quot;
+    },
+    &quot;ParkPermitsAcknowledgement&quot; : {
+      &quot;ParkPermitsAcknowledgementInitials&quot; : &quot;ads&quot;
+    }
+  },
+  &quot;DocumentUpload&quot; : {
+    &quot;FileUpload&quot; : { },
+    &quot;DynamicFileText&quot; : &quot;&lt;li&gt;Approval Letter from Alderperson&lt;/li&gt; &lt;li&gt;Certificate of Insurance&lt;/li&gt; &lt;li&gt;Emergency Plan&lt;/li&gt; &lt;li&gt;Event Site Map&lt;/li&gt;&lt;li&gt;Alcohol Vendor Names&lt;/li&gt;&lt;li&gt;Food and Food Truck Vendor Names&lt;/li&gt;&lt;li&gt;Map of your Parade, Run/Walk/Ride Route&lt;/li&gt;&lt;li&gt;Traffic Control Plan&lt;/li&gt;&quot;
+  },
+  &quot;MapRoute&quot; : true,
+  &quot;Publicity&quot; : {
+    &quot;FinancialInfo&quot; : {
+      &quot;AdmissionCharged&quot; : &quot;Yes&quot;
+    },
+    &quot;InquiryPhone&quot; : &quot;1321321321&quot;,
+    &quot;InquiryEmail&quot; : &quot;qwe@adad.dgfd&quot;,
+    &quot;PublicizeEvent&quot; : &quot;qweq&quot;
+  },
+  &quot;SecuritySafetyProcedures&quot; : {
+    &quot;EmergencyMedicalServices&quot; : &quot;Yes&quot;,
+    &quot;OffDutyOfficer&quot; : &quot;Yes&quot;,
+    &quot;SecurityEvent&quot; : &quot;Yes&quot;,
+    &quot;EmergencyPhoneNumber&quot; : &quot;1321313132&quot;,
+    &quot;EmergencyContactPerson&quot; : &quot;13asd&quot;,
+    &quot;EmergencyAgencyName&quot; : &quot;asds&quot;,
+    &quot;Messaging9&quot; : null,
+    &quot;Policearmed&quot; : &quot;Yes&quot;,
+    &quot;overnightSecurity&quot; : &quot;Yes&quot;,
+    &quot;NumberOfPolicePersonnel&quot; : 3,
+    &quot;offdutypoliceofficerPhone&quot; : &quot;1232332313&quot;,
+    &quot;offdutypoliceofficerLastName&quot; : &quot;sada&quot;,
+    &quot;offdutypoliceofficerFirstName&quot; : &quot;adsad&quot;,
+    &quot;NumberSecurityPersonnel&quot; : 12,
+    &quot;SecurityCompanyPhone&quot; : &quot;1321312313&quot;,
+    &quot;SecurityCompanyName&quot; : &quot;asd&quot;,
+    &quot;Messaging11&quot; : null,
+    &quot;Messaging10&quot; : null
+  },
+  &quot;TrashandSanitationRecycling&quot; : {
+    &quot;ResponsiblePartyForRecycling&quot; : {
+      &quot;RecyclingPersonPhone&quot; : &quot;1321313123&quot;,
+      &quot;RecyclingPersonLastName&quot; : &quot;asdad&quot;,
+      &quot;RecyclingPersonFirstName&quot; : &quot;asd&quot;,
+      &quot;RecyclingPersonEmail&quot; : &quot;ssvjuat1@yopmail.com&quot;
+    },
+    &quot;ResponsiblePartyForTrash&quot; : {
+      &quot;TrashPersonPhone&quot; : &quot;2133132132&quot;,
+      &quot;TrashPersonLastName&quot; : &quot;adsa&quot;,
+      &quot;TrashPersonFirstName&quot; : &quot;asda&quot;,
+      &quot;TrashPersonEmail&quot; : &quot;ssvjuat1@yopmail.com&quot;
+    },
+    &quot;ResponsiblePartyForCleaning&quot; : {
+      &quot;CleaningPersonPhone&quot; : &quot;1231321313&quot;,
+      &quot;CleaningPersonEmail&quot; : &quot;ssvjuat1@yopmail.com&quot;,
+      &quot;CleaningPersonLastName&quot; : &quot;dsa&quot;,
+      &quot;CleaningPersonFirstName&quot; : &quot;sadas&quot;
+    },
+    &quot;PortableRestrooms&quot; : &quot;Yes&quot;,
+    &quot;Location&quot; : &quot;adsd&quot;,
+    &quot;VendorInformation&quot; : &quot;asdsa&quot;,
+    &quot;HowManyRooms&quot; : &quot;12&quot;
+  },
+  &quot;ClosureofInterstatesHighwaysRoutes&quot; : {
+    &quot;EventRampHighways&quot; : &quot;Yes&quot;
+  },
+  &quot;UsePublicStreets&quot; : {
+    &quot;EventClose&quot; : &quot;Yes&quot;,
+    &quot;NameTrafficControlCompany&quot; : &quot;asdasd&quot;,
+    &quot;ContactTrafficControlCompany&quot; : &quot;asda&quot;,
+    &quot;StreetDataRepeatableBlock&quot; : {
+      &quot;NumberOfDays&quot; : &quot;asd&quot;,
+      &quot;Blocks&quot; : &quot;sad&quot;,
+      &quot;Blockswithparkingmeters&quot; : &quot;dasds&quot;,
+      &quot;TrafficLanes&quot; : &quot;adad&quot;,
+      &quot;ParkingLanes&quot; : &quot;adsasd&quot;,
+      &quot;StreettoReopenTime&quot; : &quot;12:30 am&quot;,
+      &quot;StreettoReopenDate&quot; : &quot;2024-12-03&quot;,
+      &quot;StreettoCloseTime&quot; : &quot;12:00 am&quot;,
+      &quot;StreettoCloseDate&quot; : &quot;2024-12-01&quot;,
+      &quot;Reasonforblocking&quot; : &quot;adsads&quot;,
+      &quot;CrossStreet2&quot; : &quot;adad&quot;,
+      &quot;BetweenCrossStreet1&quot; : &quot;adasd&quot;,
+      &quot;StreetToBeBlocked&quot; : &quot;asdad&quot;
+    },
+    &quot;DescribeParadeWalkDirection&quot; : &quot;asdad&quot;,
+    &quot;Messaging24&quot; : null
+  },
+  &quot;UseOfPublicPark&quot; : {
+    &quot;EventParkSpaceRequire&quot; : &quot;Yes&quot;,
+    &quot;ParksDivisionEquipmentRequest&quot; : {
+      &quot;LargeBandwagonEquipment&quot; : &quot;1&quot;,
+      &quot;SmallBandwagonEquipment&quot; : &quot;1&quot;,
+      &quot;SpeakersStandEquipment&quot; : &quot;1&quot;,
+      &quot;TentsEquipment&quot; : &quot;1&quot;,
+      &quot;TrashContainersEquipment&quot; : &quot;1&quot;,
+      &quot;PicnicTablesEquipment&quot; : &quot;1&quot;,
+      &quot;EquipmentDeliveryLocation&quot; : &quot;adsad&quot;
+    },
+    &quot;EquipmentDeparmentRequest&quot; : &quot;Yes&quot;,
+    &quot;LocationinPark&quot; : &quot;dasd&quot;,
+    &quot;ParkList-Block&quot; : {
+      &quot;Id&quot; : &quot;m0Jcn000000aQf8EAE&quot;,
+      &quot;ParkName&quot; : &quot;Alaska Park&quot;,
+      &quot;ParkList&quot; : &quot;Alaska Park&quot;
+    },
+    &quot;Messaging25&quot; : null
+  },
+  &quot;EventDetails&quot; : {
+    &quot;Food&quot; : {
+      &quot;FoodSold&quot; : &quot;Yes, sell&quot;,
+      &quot;FoodPropane&quot; : &quot;Yes&quot;
+    },
+    &quot;OtherDetails&quot; : {
+      &quot;NotifiedAlderManforEvent&quot; : &quot;Yes&quot;,
+      &quot;volunteersEvent&quot; : &quot;Yes&quot;,
+      &quot;merchandisesold&quot; : &quot;Yes&quot;,
+      &quot;NameCoordinator&quot; : &quot;asd&quot;,
+      &quot;volunteersRole&quot; : &quot;dasd&quot;
+    },
+    &quot;Beverage&quot; : {
+      &quot;AlcoholicBeverages&quot; : &quot;Yes, sell&quot;,
+      &quot;acholicFormula&quot; : true
+    },
+    &quot;BuildingDetails&quot; : {
+      &quot;TemporaryEvent&quot; : &quot;Yes&quot;,
+      &quot;WilltentsErected&quot; : &quot;Yes&quot;,
+      &quot;WillConstructed&quot; : &quot;Yes&quot;,
+      &quot;WillGeneratorsUsed&quot; : &quot;Yes&quot;,
+      &quot;TemporaryContactName&quot; : &quot;asd&quot;,
+      &quot;TemporaryEventSize&quot; : &quot;12&quot;,
+      &quot;Typeoftent&quot; : &quot;Self Standing&quot;,
+      &quot;HowmanyTents&quot; : 12,
+      &quot;TentProviderName&quot; : &quot;sad&quot;,
+      &quot;TentFootage&quot; : &quot;12&quot;,
+      &quot;StageSize&quot; : &quot;21&quot;,
+      &quot;ProvideName&quot; : &quot;asd&quot;,
+      &quot;Providevendorname&quot; : &quot;dasd&quot;,
+      &quot;HowManyGenerator&quot; : &quot;dsa&quot;,
+      &quot;GeneratorSize&quot; : &quot;21&quot;,
+      &quot;EventActivites&quot; : &quot;Pyrotechnics/Fireworks;Carnival Rides&quot;
+    },
+    &quot;EventTypeEstimateAttendanceFormula&quot; : false,
+    &quot;HowManyPeopleAttendEvent&quot; : 123,
+    &quot;largeNumberOfPeople&quot; : &quot;Yes&quot;,
+    &quot;StreetFormulaforRunAndParade&quot; : true,
+    &quot;ParkEventTypeFormula&quot; : false,
+    &quot;EventTypeRunWalkRideFormula&quot; : true,
+    &quot;EventType&quot; : &quot;Run_Walk_Ride;Parade&quot;
+  },
+  &quot;EventDateTimeDetails&quot; : {
+    &quot;LiabilityInsuranceCoverage&quot; : {
+      &quot;InitialAgree&quot; : &quot;ads&quot;
+    },
+    &quot;EventBreakdownEndTime&quot; : &quot;01:00 am&quot;,
+    &quot;EventBreakdownStartTime&quot; : &quot;12:30 am&quot;,
+    &quot;EventBreakdownDate&quot; : &quot;2025-01-23&quot;,
+    &quot;EventDateTime&quot; : [ {
+      &quot;EndTime1&quot; : &quot;02:00 am&quot;,
+      &quot;StartTime1&quot; : &quot;12:00 am&quot;,
+      &quot;StartDate1&quot; : &quot;2025-01-15&quot;
+    }, {
+      &quot;EndTime1&quot; : &quot;01:30 am&quot;,
+      &quot;StartTime1&quot; : &quot;12:00 am&quot;,
+      &quot;StartDate1&quot; : &quot;2025-01-16&quot;
+    }, {
+      &quot;EndTime1&quot; : &quot;01:30 am&quot;,
+      &quot;StartTime1&quot; : &quot;12:00 am&quot;,
+      &quot;StartDate1&quot; : &quot;2025-01-17&quot;
+    }, {
+      &quot;EndTime1&quot; : &quot;01:30 am&quot;,
+      &quot;StartTime1&quot; : &quot;12:00 am&quot;,
+      &quot;StartDate1&quot; : &quot;2025-01-18&quot;
+    }, {
+      &quot;EndTime1&quot; : &quot;01:30 am&quot;,
+      &quot;StartTime1&quot; : &quot;12:00 am&quot;,
+      &quot;StartDate1&quot; : &quot;2025-01-19&quot;
+    } ],
+    &quot;EventSetupEndTime&quot; : &quot;01:00 am&quot;,
+    &quot;EventSetupStartTime&quot; : &quot;12:00 am&quot;,
+    &quot;EventSetupDate&quot; : &quot;2025-01-15&quot;,
+    &quot;Messaging21&quot; : true,
+    &quot;ValidateBreakdownDatewithStart&quot; : false,
+    &quot;Messaging1&quot; : true,
+    &quot;ValidateDateForSetupBreakdown&quot; : false,
+    &quot;eventMoreThanFiveDays&quot; : true,
+    &quot;EventDateBlockformula&quot; : true,
+    &quot;Messaging6&quot; : true,
+    &quot;ValidateSetupDatewithStart&quot; : false
+  },
+  &quot;EventInformation&quot; : {
+    &quot;EventDescription&quot; : &quot;asdad&quot;,
+    &quot;AttendanceTime&quot; : &quot;12:00 am&quot;,
+    &quot;EstimatedAttendance&quot; : &quot;0 – 200&quot;,
+    &quot;EventHeldPast&quot; : &quot;Yes&quot;,
+    &quot;EventName&quot; : &quot;sda&quot;,
+    &quot;EstimatedAttendanceRange5000&quot; : false,
+    &quot;EstimatedAttendanceRange500&quot; : false,
+    &quot;PastEventLocation&quot; : &quot;add&quot;,
+    &quot;PastEventDate&quot; : &quot;2024-12-01&quot;
+  },
+  &quot;GeneralInformation&quot; : {
+    &quot;PrimaryContactInformation&quot; : {
+      &quot;PrimaryContactPhone&quot; : &quot;1321213131&quot;,
+      &quot;PrimaryContactEmail&quot; : &quot;ssvjuat1@yopmail.com&quot;,
+      &quot;PrimaryContactLastName&quot; : &quot;adsad&quot;,
+      &quot;PrimaryContactFirstName&quot; : &quot;asdsad&quot;
+    },
+    &quot;PersonalDetails&quot; : {
+      &quot;ZipCode&quot; : &quot;4478hhh&quot;,
+      &quot;StreetAddressLine2&quot; : &quot;Unit 2&quot;,
+      &quot;StreetAddressLine1&quot; : &quot;Alta Street&quot;,
+      &quot;City&quot; : &quot;St. Louis&quot;,
+      &quot;MobilePhone&quot; : &quot;2825553695&quot;,
+      &quot;ContactLastName&quot; : &quot;UAT1&quot;,
+      &quot;State&quot; : &quot;Alabama&quot;,
+      &quot;ContactEmail&quot; : &quot;ssvjuat1@yopmail.com&quot;,
+      &quot;ContactFirstName&quot; : &quot;Sudhanshu&quot;
+    },
+    &quot;IsHostPresent&quot; : &quot;Yes&quot;,
+    &quot;CompanyOrganizationInformation&quot; : {
+      &quot;CompanyOrganizationPhoneNumber&quot; : &quot;1321313131&quot;,
+      &quot;CompanyOrganizationAddress&quot; : &quot;asda&quot;,
+      &quot;CompanyOrganizationName&quot; : &quot;asdas&quot;
+    }
+  },
+  &quot;IsPersonAccount&quot; : &quot;Yes&quot;,
+  &quot;ParkDocumentTemplate&quot; : {
+    &quot;Type&quot; : &quot;MicrosoftWord&quot;,
+    &quot;parkPermitDocName&quot; : &quot;Park_Application&quot;,
+    &quot;Id&quot; : &quot;2dtcn0000000J5tAAE&quot;,
+    &quot;DocumentGenerationMechanism&quot; : &quot;ClientSide&quot;,
+    &quot;VersionNumber&quot; : 1
+  },
+  &quot;StreetDocumentTemplate&quot; : {
+    &quot;Type&quot; : &quot;MicrosoftWord&quot;,
+    &quot;streetPermitDocName&quot; : &quot;Street_Closing_Application&quot;,
+    &quot;Id&quot; : &quot;2dtcn0000000J7VAAU&quot;,
+    &quot;DocumentGenerationMechanism&quot; : &quot;ClientSide&quot;,
+    &quot;VersionNumber&quot; : 1
+  },
+  &quot;SpecialDocumentTemplate&quot; : {
+    &quot;Type&quot; : &quot;MicrosoftWord&quot;,
+    &quot;specialEventDocName&quot; : &quot;Special_Event_Application&quot;,
+    &quot;Id&quot; : &quot;2dtcn0000000J4HAAU&quot;,
+    &quot;DocumentGenerationMechanism&quot; : &quot;ClientSide&quot;,
+    &quot;VersionNumber&quot; : 1
+  },
+  &quot;nextClick&quot; : true,
+  &quot;AddressValidation&quot; : {
+    &quot;searchAddressLWC&quot; : {
+      &quot;key&quot; : &quot;896599.79852054222&quot;,
+      &quot;y&quot; : &quot;1019162.4250790704&quot;,
+      &quot;x&quot; : &quot;896599.79852054222&quot;,
+      &quot;address&quot; : &quot;300 S GRAND AVE, 63103&quot;
+    },
+    &quot;AddressErrorMessage&quot; : null,
+    &quot;AddressError&quot; : false
+  },
+  &quot;serviceRecordType&quot; : [ {
+    &quot;Id&quot; : &quot;012cn000000FNqlAAG&quot;,
+    &quot;DeveloperName&quot; : &quot;Permits&quot;
+  } ],
+  &quot;recordTypeID&quot; : &quot;Permits&quot;,
+  &quot;ContactIsPersonAccount&quot; : true,
+  &quot;Street&quot; : &quot;Alta Street, Unit 2&quot;,
+  &quot;ContactName&quot; : &quot;Sudhanshu UAT1&quot;,
+  &quot;StreetPreview&quot; : { },
+  &quot;ParkPermitPreview&quot; : { },
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userProfile&quot; : &quot;DFD Portal User Profile&quot;,
+  &quot;eventType&quot; : &quot;Special Event Permit&quot;,
+  &quot;confirmationPageUrl&quot; : null,
+  &quot;caseApplicationId&quot; : null,
+  &quot;applicationEmail&quot; : null,
+  &quot;streetDocumentTitle&quot; : null,
+  &quot;streetSelectedTemplate&quot; : null,
+  &quot;parkDocumentTitle&quot; : null,
+  &quot;parkSelectedTemplate&quot; : null,
+  &quot;specialDocumentTitle&quot; : null,
+  &quot;specialSelectedTemplate&quot; : null,
+  &quot;ContextId&quot; : null,
+  &quot;selectedStreet&quot; : &quot;300 S GRAND AVE, 63103&quot;
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;VendorPermitsAcknowledgementInitials&quot; : &quot;dsa&quot;,
+  &quot;ADAAcknowledgementInitials&quot; : &quot;sad&quot;,
+  &quot;NotifyingofImpactInitials&quot; : &quot;asd&quot;,
+  &quot;CityAgreementInitials&quot; : &quot;asd&quot;,
+  &quot;ParkPermitsAcknowledgementInitials&quot; : &quot;ads&quot;,
+  &quot;AdmissionCharged&quot; : &quot;Yes&quot;,
+  &quot;InquiryPhone&quot; : &quot;1321321321&quot;,
+  &quot;InquiryEmail&quot; : &quot;qwe@adad.dgfd&quot;,
+  &quot;PublicizeEvent&quot; : &quot;qweq&quot;,
+  &quot;EmergencyMedicalServices&quot; : &quot;Yes&quot;,
+  &quot;OffDutyOfficer&quot; : &quot;Yes&quot;,
+  &quot;SecurityEvent&quot; : &quot;Yes&quot;,
+  &quot;EmergencyPhoneNumber&quot; : &quot;1321313132&quot;,
+  &quot;EmergencyContactPerson&quot; : &quot;13asd&quot;,
+  &quot;EmergencyAgencyName&quot; : &quot;asds&quot;,
+  &quot;Messaging9&quot; : null,
+  &quot;Policearmed&quot; : &quot;Yes&quot;,
+  &quot;overnightSecurity&quot; : &quot;Yes&quot;,
+  &quot;NumberOfPolicePersonnel&quot; : 3,
+  &quot;offdutypoliceofficerPhone&quot; : &quot;1232332313&quot;,
+  &quot;offdutypoliceofficerLastName&quot; : &quot;sada&quot;,
+  &quot;offdutypoliceofficerFirstName&quot; : &quot;adsad&quot;,
+  &quot;NumberSecurityPersonnel&quot; : 12,
+  &quot;SecurityCompanyPhone&quot; : &quot;1321312313&quot;,
+  &quot;SecurityCompanyName&quot; : &quot;asd&quot;,
+  &quot;Messaging11&quot; : null,
+  &quot;Messaging10&quot; : null,
+  &quot;RecyclingPersonPhone&quot; : &quot;1321313123&quot;,
+  &quot;RecyclingPersonLastName&quot; : &quot;asdad&quot;,
+  &quot;RecyclingPersonFirstName&quot; : &quot;asd&quot;,
+  &quot;RecyclingPersonEmail&quot; : &quot;ssvjuat1@yopmail.com&quot;,
+  &quot;TrashPersonPhone&quot; : &quot;2133132132&quot;,
+  &quot;TrashPersonLastName&quot; : &quot;adsa&quot;,
+  &quot;TrashPersonFirstName&quot; : &quot;asda&quot;,
+  &quot;TrashPersonEmail&quot; : &quot;ssvjuat1@yopmail.com&quot;,
+  &quot;CleaningPersonPhone&quot; : &quot;1231321313&quot;,
+  &quot;CleaningPersonEmail&quot; : &quot;ssvjuat1@yopmail.com&quot;,
+  &quot;CleaningPersonLastName&quot; : &quot;dsa&quot;,
+  &quot;CleaningPersonFirstName&quot; : &quot;sadas&quot;,
+  &quot;PortableRestrooms&quot; : &quot;Yes&quot;,
+  &quot;Location&quot; : &quot;adsd&quot;,
+  &quot;VendorInformation&quot; : &quot;asdsa&quot;,
+  &quot;HowManyRooms&quot; : &quot;12&quot;,
+  &quot;EventRampHighways&quot; : &quot;Yes&quot;,
+  &quot;EventClose&quot; : &quot;Yes&quot;,
+  &quot;NameTrafficControlCompany&quot; : &quot;asdasd&quot;,
+  &quot;ContactTrafficControlCompany&quot; : &quot;asda&quot;,
+  &quot;StreetDataRepeatableBlock&quot; : {
+    &quot;NumberOfDays&quot; : &quot;asd&quot;,
+    &quot;Blocks&quot; : &quot;sad&quot;,
+    &quot;Blockswithparkingmeters&quot; : &quot;dasds&quot;,
+    &quot;TrafficLanes&quot; : &quot;adad&quot;,
+    &quot;ParkingLanes&quot; : &quot;adsasd&quot;,
+    &quot;StreettoReopenTime&quot; : &quot;12:30 am&quot;,
+    &quot;StreettoReopenDate&quot; : &quot;2024-12-03&quot;,
+    &quot;StreettoCloseTime&quot; : &quot;12:00 am&quot;,
+    &quot;StreettoCloseDate&quot; : &quot;2024-12-01&quot;,
+    &quot;Reasonforblocking&quot; : &quot;adsads&quot;,
+    &quot;CrossStreet2&quot; : &quot;adad&quot;,
+    &quot;BetweenCrossStreet1&quot; : &quot;adasd&quot;,
+    &quot;StreetToBeBlocked&quot; : &quot;asdad&quot;
+  },
+  &quot;DescribeParadeWalkDirection&quot; : &quot;asdad&quot;,
+  &quot;EventParkSpaceRequire&quot; : &quot;Yes&quot;,
+  &quot;ParksDivisionEquipmentRequest&quot; : {
+    &quot;LargeBandwagonEquipment&quot; : &quot;1&quot;,
+    &quot;SmallBandwagonEquipment&quot; : &quot;1&quot;,
+    &quot;SpeakersStandEquipment&quot; : &quot;1&quot;,
+    &quot;TentsEquipment&quot; : &quot;1&quot;,
+    &quot;TrashContainersEquipment&quot; : &quot;1&quot;,
+    &quot;PicnicTablesEquipment&quot; : &quot;1&quot;,
+    &quot;EquipmentDeliveryLocation&quot; : &quot;adsad&quot;
+  },
+  &quot;EquipmentDeparmentRequest&quot; : &quot;Yes&quot;,
+  &quot;LocationinPark&quot; : &quot;dasd&quot;,
+  &quot;Id&quot; : &quot;m0Jcn000000aQf8EAE&quot;,
+  &quot;ParkName&quot; : &quot;Alaska Park&quot;,
+  &quot;ParkList&quot; : &quot;Alaska Park&quot;,
+  &quot;FoodSold&quot; : &quot;Yes, sell&quot;,
+  &quot;FoodPropane&quot; : &quot;Yes&quot;,
+  &quot;NotifiedAlderManforEvent&quot; : &quot;Yes&quot;,
+  &quot;volunteersEvent&quot; : &quot;Yes&quot;,
+  &quot;merchandisesold&quot; : &quot;Yes&quot;,
+  &quot;NameCoordinator&quot; : &quot;asd&quot;,
+  &quot;volunteersRole&quot; : &quot;dasd&quot;,
+  &quot;AlcoholicBeverages&quot; : &quot;Yes, sell&quot;,
+  &quot;acholicFormula&quot; : true,
+  &quot;TemporaryEvent&quot; : &quot;Yes&quot;,
+  &quot;WilltentsErected&quot; : &quot;Yes&quot;,
+  &quot;WillConstructed&quot; : &quot;Yes&quot;,
+  &quot;WillGeneratorsUsed&quot; : &quot;Yes&quot;,
+  &quot;TemporaryContactName&quot; : &quot;asd&quot;,
+  &quot;TemporaryEventSize&quot; : &quot;12&quot;,
+  &quot;Typeoftent&quot; : &quot;Self Standing&quot;,
+  &quot;HowmanyTents&quot; : 12,
+  &quot;TentProviderName&quot; : &quot;sad&quot;,
+  &quot;TentFootage&quot; : &quot;12&quot;,
+  &quot;StageSize&quot; : &quot;21&quot;,
+  &quot;ProvideName&quot; : &quot;asd&quot;,
+  &quot;Providevendorname&quot; : &quot;dasd&quot;,
+  &quot;HowManyGenerator&quot; : &quot;dsa&quot;,
+  &quot;GeneratorSize&quot; : &quot;21&quot;,
+  &quot;EventActivites&quot; : &quot;Pyrotechnics/Fireworks;Carnival Rides&quot;,
+  &quot;EventTypeEstimateAttendanceFormula&quot; : false,
+  &quot;HowManyPeopleAttendEvent&quot; : 123,
+  &quot;largeNumberOfPeople&quot; : &quot;Yes&quot;,
+  &quot;StreetFormulaforRunAndParade&quot; : true,
+  &quot;ParkEventTypeFormula&quot; : false,
+  &quot;EventTypeRunWalkRideFormula&quot; : true,
+  &quot;EventType&quot; : &quot;Run_Walk_Ride;Parade&quot;,
+  &quot;InitialAgree&quot; : &quot;ads&quot;,
+  &quot;EventBreakdownEndTime&quot; : &quot;01:00 am&quot;,
+  &quot;EventBreakdownStartTime&quot; : &quot;12:30 am&quot;,
+  &quot;EventBreakdownDate&quot; : &quot;2025-01-23&quot;,
+  &quot;EventSetupEndTime&quot; : &quot;01:00 am&quot;,
+  &quot;EventSetupStartTime&quot; : &quot;12:00 am&quot;,
+  &quot;EventSetupDate&quot; : &quot;2025-01-15&quot;,
+  &quot;Messaging21&quot; : true,
+  &quot;ValidateBreakdownDatewithStart&quot; : false,
+  &quot;Messaging1&quot; : true,
+  &quot;ValidateDateForSetupBreakdown&quot; : false,
+  &quot;eventMoreThanFiveDays&quot; : true,
+  &quot;EventDateBlockformula&quot; : true,
+  &quot;Messaging6&quot; : true,
+  &quot;ValidateSetupDatewithStart&quot; : false,
+  &quot;EventDescription&quot; : &quot;asdad&quot;,
+  &quot;AttendanceTime&quot; : &quot;12:00 am&quot;,
+  &quot;EstimatedAttendance&quot; : &quot;0 – 200&quot;,
+  &quot;EventHeldPast&quot; : &quot;Yes&quot;,
+  &quot;EventName&quot; : &quot;sda&quot;,
+  &quot;EstimatedAttendanceRange5000&quot; : false,
+  &quot;EstimatedAttendanceRange500&quot; : false,
+  &quot;PastEventLocation&quot; : &quot;add&quot;,
+  &quot;PastEventDate&quot; : &quot;2024-12-01&quot;,
+  &quot;PrimaryContactPhone&quot; : &quot;1321213131&quot;,
+  &quot;PrimaryContactEmail&quot; : &quot;ssvjuat1@yopmail.com&quot;,
+  &quot;PrimaryContactLastName&quot; : &quot;adsad&quot;,
+  &quot;PrimaryContactFirstName&quot; : &quot;asdsad&quot;,
+  &quot;ZipCode&quot; : &quot;4478hhh&quot;,
+  &quot;StreetAddressLine2&quot; : &quot;Unit 2&quot;,
+  &quot;StreetAddressLine1&quot; : &quot;Alta Street&quot;,
+  &quot;City&quot; : &quot;St. Louis&quot;,
+  &quot;MobilePhone&quot; : &quot;2825553695&quot;,
+  &quot;ContactLastName&quot; : &quot;UAT1&quot;,
+  &quot;State&quot; : &quot;Alabama&quot;,
+  &quot;ContactEmail&quot; : &quot;ssvjuat1@yopmail.com&quot;,
+  &quot;ContactFirstName&quot; : &quot;Sudhanshu&quot;,
+  &quot;IsHostPresent&quot; : &quot;Yes&quot;,
+  &quot;CompanyOrganizationPhoneNumber&quot; : &quot;1321313131&quot;,
+  &quot;CompanyOrganizationAddress&quot; : &quot;asda&quot;,
+  &quot;CompanyOrganizationName&quot; : &quot;asdas&quot;,
+  &quot;key&quot; : &quot;896599.79852054222&quot;,
+  &quot;y&quot; : &quot;1019162.4250790704&quot;,
+  &quot;x&quot; : &quot;896599.79852054222&quot;,
+  &quot;address&quot; : &quot;300 S GRAND AVE, 63103&quot;
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DFDFWGetSpecialEventTransform</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform9521309335876387</globalKey>
+        <inputFieldName>TrashandSanitationRecycling:ResponsiblePartyForRecycling:RecyclingPersonLastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecyclingPersonLastName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransformCustom5721</globalKey>
+        <inputFieldName>applicationName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>applicationName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform32187070751338553</globalKey>
+        <inputFieldName>Publicity:FinancialInfo:AdmissionCharged</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AdmissionCharged</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform7586284851343503</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventDateTime|1:StartTime1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>StartTime1</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform3532105996563042</globalKey>
+        <inputFieldName>EventDetails:EventTypeRunWalkRideFormula</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EventTypeRunWalkRideFormula</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform26766400540971924</globalKey>
+        <inputFieldName>CleaningPersonName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CleaningPersonName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform6796285813604641</globalKey>
+        <inputFieldName>SecuritySafetyProcedures:EmergencyContactPerson</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EmergencyContactPerson</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:TrashandSanitationRecycling:ResponsiblePartyForCleaning:CleaningPersonFirstName &apos;/\/\/&apos; var:TrashandSanitationRecycling:ResponsiblePartyForCleaning:CleaningPersonLastName CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(TrashandSanitationRecycling:ResponsiblePartyForCleaning:CleaningPersonFirstName, &apos; &apos;, TrashandSanitationRecycling:ResponsiblePartyForCleaning:CleaningPersonLastName)</formulaExpression>
+        <formulaResultPath>CleaningPersonName</formulaResultPath>
+        <formulaSequence>6.0</formulaSequence>
+        <globalKey>DFDFWGetSpecialEventTransform9443333805451553</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform2505644113472729</globalKey>
+        <inputFieldName>SecuritySafetyProcedures:NumberSecurityPersonnel</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>NumberSecurityPersonnel</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform9485178056419712</globalKey>
+        <inputFieldName>EventDetails:BuildingDetails:HowmanyTents</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HowmanyTents</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform9655972789648897</globalKey>
+        <inputFieldName>EventDetails:OtherDetails:volunteersRole</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>volunteersRole</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform7044241137333989</globalKey>
+        <inputFieldName>offdutypoliceofficerName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>offdutypoliceofficerName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform34622153877992856</globalKey>
+        <inputFieldName>SecuritySafetyProcedures:NumberOfPolicePersonnel</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>NumberOfPolicePersonnel</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform4461150119222679</globalKey>
+        <inputFieldName>GeneralInformation:PersonalDetails:ZipCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ZipCode</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform8897573729193795</globalKey>
+        <inputFieldName>TrashandSanitationRecycling:VendorInformation</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>VendorInformation</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransformCustom3884</globalKey>
+        <inputFieldName>applicationSubmissionDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(MM/dd/yyyy)</outputFieldFormat>
+        <outputFieldName>applicationSubmissionDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransformCustom8922</globalKey>
+        <inputFieldName>ContactEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ContactEmail</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform9636146061610549</globalKey>
+        <inputFieldName>EventDetails:BuildingDetails:WilltentsErected</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>WilltentsErected</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform010501930899943668</globalKey>
+        <inputFieldName>EventDetails:OtherDetails:NotifiedAlderManforEvent</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>NotifiedAlderManforEvent</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform9345217808865094</globalKey>
+        <inputFieldName>PrimaryContactName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PrimaryContactName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform4179170639253351</globalKey>
+        <inputFieldName>GeneralInformation:PersonalDetails:ContactFirstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ContactFirstName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform7197532468929642</globalKey>
+        <inputFieldName>EventDetails:EventType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EventType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform26742470138117436</globalKey>
+        <inputFieldName>Acknowledgement:ADAAcknowledgement:ADAAcknowledgementInitials</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ADAAcknowledgementInitials</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform06960484350223295</globalKey>
+        <inputFieldName>Acknowledgement:NotifyingofImpact:NotifyingofImpactInitials</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>NotifyingofImpactInitials</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform48968090399836117</globalKey>
+        <inputFieldName>Acknowledgement:VendorPermitsAcknowledgement:VendorPermitsAcknowledgementInitials</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>VendorPermitsAcknowledgementInitials</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform8190542671781056</globalKey>
+        <inputFieldName>TrashandSanitationRecycling:ResponsiblePartyForTrash:TrashPersonLastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TrashPersonLastName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransformCustom2865</globalKey>
+        <inputFieldName>GeneralInformation:IsHostPresentPersonAccount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IsHostPresent</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform07164335974361813</globalKey>
+        <inputFieldName>applicationId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>applicationId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform16802284406279955</globalKey>
+        <inputFieldName>EventDetails:Beverage:acholicFormula</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>acholicFormula</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform13706340654644844</globalKey>
+        <inputFieldName>TrashandSanitationRecycling:ResponsiblePartyForTrash:TrashPersonEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TrashPersonEmail</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:SecuritySafetyProcedures:offdutypoliceofficerFirstName &apos;/\/\/&apos; var:SecuritySafetyProcedures:offdutypoliceofficerLastName CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(SecuritySafetyProcedures:offdutypoliceofficerFirstName, &apos; &apos;, SecuritySafetyProcedures:offdutypoliceofficerLastName)</formulaExpression>
+        <formulaResultPath>offdutypoliceofficerName</formulaResultPath>
+        <formulaSequence>7.0</formulaSequence>
+        <globalKey>DFDFWGetSpecialEventTransform6769504710020882</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform8631168573897015</globalKey>
+        <inputFieldName>EventDetails:Food:FoodPropane</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FoodPropane</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:TrashandSanitationRecycling:ResponsiblePartyForTrash:TrashPersonFirstName &apos;/\/\/&apos; var:TrashandSanitationRecycling:ResponsiblePartyForTrash:TrashPersonLastName CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(TrashandSanitationRecycling:ResponsiblePartyForTrash:TrashPersonFirstName, &apos; &apos;, TrashandSanitationRecycling:ResponsiblePartyForTrash:TrashPersonLastName)</formulaExpression>
+        <formulaResultPath>TrashPersonName</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>DFDFWGetSpecialEventTransform4923198550837742</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform9813141065857782</globalKey>
+        <inputFieldName>SecuritySafetyProcedures:OffDutyOfficer</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>OffDutyOfficer</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform8270556258817225</globalKey>
+        <inputFieldName>TrashandSanitationRecycling:ResponsiblePartyForTrash:TrashPersonFirstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TrashPersonFirstName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform5545856148949189</globalKey>
+        <inputFieldName>TrashandSanitationRecycling:PortableRestrooms</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PortableRestrooms</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform28150340455870326</globalKey>
+        <inputFieldName>Festival_With_Public_Park_Usage</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Festival_With_Public_Park_Usage</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform45247569036016855</globalKey>
+        <inputFieldName>UseOfPublicPark:ParkRepeatableBlock:ParkList-Block:ParkName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>UseOfPublicPark:ParkName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform5377371630072323</globalKey>
+        <inputFieldName>TrashandSanitationRecycling:Location</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Location</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform04069403195705257</globalKey>
+        <inputFieldName>EventActivitiesValues</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EventActivitiesValues</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform026460435250354797</globalKey>
+        <inputFieldName>GeneralInformation:IsHostPresent</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IsHostPresent</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform15389447722293292</globalKey>
+        <inputFieldName>GeneralInformation:PersonalDetails:StreetAddressLine1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>StreetAddressLine1</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform8155403821923555</globalKey>
+        <inputFieldName>EventInformation:EventDescription</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EventDescription</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform32363460999506</globalKey>
+        <inputFieldName>EventDetails:BuildingDetails:HowManyGenerator</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HowManyGenerator</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform773020206504071</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventDateTime|4:StartDate1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(MM/dd/yyyy)</outputFieldFormat>
+        <outputFieldName>StartDate4</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform08402808168720188</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventSetupStartTime</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EventSetupStartTime</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform19786098758070936</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventDateTime|1:StartDate1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(MM/dd/yyyy)</outputFieldFormat>
+        <outputFieldName>StartDate1</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform8918427157968769</globalKey>
+        <inputFieldName>AddressValidation:searchAddressLWC:address</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>address</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform737046342357685</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventDateTime|2:StartDate1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(MM/dd/yyyy)</outputFieldFormat>
+        <outputFieldName>StartDate2</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform6307892769107544</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventBreakdownStartDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(MM/dd/yyyy)</outputFieldFormat>
+        <outputFieldName>EventBreakdownStartDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform2764753318166171</globalKey>
+        <inputFieldName>GeneralInformation:PersonalDetails:MobilePhone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MobilePhone</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform8591950129184418</globalKey>
+        <inputFieldName>SecuritySafetyProcedures:Messaging9</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Messaging9</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform5409480529569024</globalKey>
+        <inputFieldName>EventInformation:EstimatedAttendanceRange5000</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EstimatedAttendanceRange5000</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform6482563431287949</globalKey>
+        <inputFieldName>SecuritySafetyProcedures:offdutypoliceofficerPhone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>offdutypoliceofficerPhone</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform822755785225167</globalKey>
+        <inputFieldName>UseOfPublicPark:ParkRepeatableBlock:LocationinPark</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>UseOfPublicPark:LocationinPark</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform7296186165209533</globalKey>
+        <inputFieldName>GeneralInformation:CompanyOrganizationInformation:CompanyOrganizationPhoneNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CompanyOrganizationPhoneNumber</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:UseOfPublicPark:EventParkSpaceRequire &quot;Yes&quot; == var:UseOfPublicPark:EventParkSpaceRequireWithoutEvent &quot;Yes&quot; == || &quot;Yes&quot; &quot;No&quot; IF</formulaConverted>
+        <formulaExpression>IF(UseOfPublicPark:EventParkSpaceRequire == &quot;Yes&quot; || UseOfPublicPark:EventParkSpaceRequireWithoutEvent == &quot;Yes&quot;, &quot;Yes&quot;, &quot;No&quot;)</formulaExpression>
+        <formulaResultPath>EventParkSpaceRequire</formulaResultPath>
+        <formulaSequence>11.0</formulaSequence>
+        <globalKey>DFDFWGetSpecialEventTransformCustom7415</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform3266763660754022</globalKey>
+        <inputFieldName>AddressValidation:searchAddressLWC:x</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>x</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:UsePublicStreets:EventClose &quot;Yes&quot; == var:UsePublicStreets:EventCloseWithoutEventType &quot;Yes&quot; == || &quot;Yes&quot; &quot;No&quot; IF</formulaConverted>
+        <formulaExpression>IF(UsePublicStreets:EventClose == &quot;Yes&quot; || UsePublicStreets:EventCloseWithoutEventType == &quot;Yes&quot;, &quot;Yes&quot;, &quot;No&quot;)</formulaExpression>
+        <formulaResultPath>EventClose</formulaResultPath>
+        <formulaSequence>10.0</formulaSequence>
+        <globalKey>DFDFWGetSpecialEventTransformCustom7336</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform35332283218979277</globalKey>
+        <inputFieldName>SecuritySafetyProcedures:SecurityCompanyName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SecurityCompanyName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform830797239839153</globalKey>
+        <inputFieldName>EventDetails:OtherDetails:volunteersEvent</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>volunteersEvent</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform3237232719715577</globalKey>
+        <inputFieldName>Publicity:InquiryPhone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InquiryPhone</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransformCustom7806</globalKey>
+        <inputFieldName>UseOfPublicPark:EventParkSpaceRequireWithoutEvent</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EventParkSpaceRequireWithoutEvent</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform25141733508339437</globalKey>
+        <inputFieldName>EventDetails:BuildingDetails:GeneratorSize</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>GeneratorSize</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform6781661552748939</globalKey>
+        <inputFieldName>TrashandSanitationRecycling:ResponsiblePartyForCleaning:CleaningPersonEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CleaningPersonEmail</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform9145283255098846</globalKey>
+        <inputFieldName>TrashandSanitationRecycling:ResponsiblePartyForTrash:TrashPersonPhone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TrashPersonPhone</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransformCustom4644</globalKey>
+        <inputFieldName>UsePublicStreets:EventCloseWithoutEventType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EventClose</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform5522804558450602</globalKey>
+        <inputFieldName>EventDateTimeDetails:LiabilityInsuranceCoverage:InitialAgree</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InitialAgree</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform9563214349274791</globalKey>
+        <inputFieldName>EventDetails:BuildingDetails:Providevendorname</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Providevendorname</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform5574641257256354</globalKey>
+        <inputFieldName>EventInformation:PastEventDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(MM/dd/yyyy)</outputFieldFormat>
+        <outputFieldName>PastEventDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransformCustom3462</globalKey>
+        <inputFieldName>selectedStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>selectedStreet</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform49947761028210236</globalKey>
+        <inputFieldName>SecuritySafetyProcedures:overnightSecurity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>overnightSecurity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform6793195259690679</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventDateTime|3:StartTime1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>StartTime3</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform9153711166316709</globalKey>
+        <inputFieldName>SecuritySafetyProcedures:EmergencyPhoneNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EmergencyPhoneNumber</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform5907708171566535</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventSetupEndTime</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EventSetupEndTime</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransformCustom6723</globalKey>
+        <inputFieldName>UseOfPublicPark:IsEquipmentDeparmentRequestYes</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IsEquipmentDeparmentRequestYes</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform16460247402095707</globalKey>
+        <inputFieldName>EventDetails:BuildingDetails:ProvideName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ProvideName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransformCustom184</globalKey>
+        <inputFieldName>TrashandSanitationRecycling:ResponsiblePartyForCleaning:CleaningPersonBusinessName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CleaningPersonBusinessName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform03845833378048935</globalKey>
+        <inputFieldName>UseOfPublicPark:ParkRepeatableBlock:EquipmentDeparmentRequest</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>UseOfPublicPark:EquipmentDeparmentRequest</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform24558052314619783</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventDateTime|4:StartTime1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>StartTime4</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform47577583262745726</globalKey>
+        <inputFieldName>GeneralInformation:PersonalDetails:ContactLastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ContactLastName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform45926098289653106</globalKey>
+        <inputFieldName>SecuritySafetyProcedures:EmergencyMedicalServices</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EmergencyMedicalServices</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform7684070067148991</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventBreakdownStartTime</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EventBreakdownStartTime</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform3213494968248556</globalKey>
+        <inputFieldName>TrashandSanitationRecycling:ResponsiblePartyForRecycling:RecyclingPersonPhone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecyclingPersonPhone</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform4593796480754584</globalKey>
+        <inputFieldName>Parade</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Parade</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform43806548027968195</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventDateTime|1:EndTime1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EndTime1</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform6864972558010602</globalKey>
+        <inputFieldName>RecyclingPersonName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecyclingPersonName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform18847794290196385</globalKey>
+        <inputFieldName>UsePublicStreets:DescribeParadeWalkDirection</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>DescribeParadeWalkDirection</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Yes</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform7394308823023101</globalKey>
+        <inputFieldName>UseOfPublicPark:EventParkSpaceRequire</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EventParkSpaceRequire</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:EventDetails:BuildingDetails:EventActivites &apos;;&apos; SPLIT</formulaConverted>
+        <formulaExpression>SPLIT(EventDetails:BuildingDetails:EventActivites, &apos;;&apos;)</formulaExpression>
+        <formulaResultPath>EventActivitiesValues</formulaResultPath>
+        <formulaSequence>8.0</formulaSequence>
+        <globalKey>DFDFWGetSpecialEventTransform695291987180076</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform2798332834741779</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventDateTime|3:EndTime1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EndTime3</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform4070434787697479</globalKey>
+        <inputFieldName>EventDetails:HowManyPeopleAttendEvent</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HowManyPeopleAttendEvent</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform9141944728871947</globalKey>
+        <inputFieldName>EventDetails:EventTypeEstimateAttendanceFormula</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EventTypeEstimateAttendanceFormula</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform7664953123387654</globalKey>
+        <inputFieldName>Pyrotechnics_Fireworks</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Pyrotechnics_Fireworks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform33162771152737847</globalKey>
+        <inputFieldName>GeneralInformation:CompanyOrganizationInformation:CompanyOrganizationAddress</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CompanyOrganizationAddress</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform10453092578489742</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventBreakdownEndDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(MM/dd/yyyy)</outputFieldFormat>
+        <outputFieldName>EventBreakdownEndDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform5673663864523106</globalKey>
+        <inputFieldName>GeneralInformation:PrimaryContactInformation:PrimaryContactLastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PrimaryContactLastName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform4902358227160786</globalKey>
+        <inputFieldName>SecuritySafetyProcedures:offdutypoliceofficerLastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>offdutypoliceofficerLastName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform989266510554117</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventSetupEndDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(MM/dd/yyyy)</outputFieldFormat>
+        <outputFieldName>EventSetupEndDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform5455996068428437</globalKey>
+        <inputFieldName>Run_Walk_Ride</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Run_Walk_Ride</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:GeneralInformation:PrimaryContactInformation:PrimaryContactFirstName &apos;/\/\/&apos; var:GeneralInformation:PrimaryContactInformation:PrimaryContactLastName CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(GeneralInformation:PrimaryContactInformation:PrimaryContactFirstName, &apos; &apos;, GeneralInformation:PrimaryContactInformation:PrimaryContactLastName)</formulaExpression>
+        <formulaResultPath>PrimaryContactName</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DFDFWGetSpecialEventTransform024427270803425216</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform39705677614452095</globalKey>
+        <inputFieldName>Festival_With_Street_Closures</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Festival_With_Street_Closures</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform08482394270224591</globalKey>
+        <inputFieldName>GeneralInformation:CompanyOrganizationInformation:CompanyOrganizationName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CompanyOrganizationName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform25590684999164326</globalKey>
+        <inputFieldName>EventInformation:EventHeldPast</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EventHeldPast</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform6971441483194594</globalKey>
+        <inputFieldName>EventInformation:AttendanceTime</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AttendanceTime</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform19312617727971926</globalKey>
+        <inputFieldName>SecuritySafetyProcedures:SecurityCompanyPhone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SecurityCompanyPhone</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform19833142922516211</globalKey>
+        <inputFieldName>GeneralInformation:PrimaryContactInformation:PrimaryContactFirstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PrimaryContactFirstName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform9221431039967394</globalKey>
+        <inputFieldName>Publicity:PublicizeEvent</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PublicizeEvent</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform984059321719466</globalKey>
+        <inputFieldName>EventDetails:BuildingDetails:TemporaryEvent</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TemporaryEvent</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform04469123634370198</globalKey>
+        <inputFieldName>EventDetails:BuildingDetails:TentFootage</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TentFootage</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform2156512358006386</globalKey>
+        <inputFieldName>EventInformation:PastEventLocation</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PastEventLocation</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform6121282970061419</globalKey>
+        <inputFieldName>EventDetails:BuildingDetails:EventActivites</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EventActivites</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform8939542133772496</globalKey>
+        <inputFieldName>TrashandSanitationRecycling:HowManyRooms</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>HowManyRooms</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform9728026435939456</globalKey>
+        <inputFieldName>TrashPersonName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TrashPersonName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:TrashandSanitationRecycling:ResponsiblePartyForRecycling:RecyclingPersonFirstName &apos;/\/\/&apos; var:TrashandSanitationRecycling:ResponsiblePartyForRecycling:RecyclingPersonLastName CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(TrashandSanitationRecycling:ResponsiblePartyForRecycling:RecyclingPersonFirstName, &apos; &apos;, TrashandSanitationRecycling:ResponsiblePartyForRecycling:RecyclingPersonLastName)</formulaExpression>
+        <formulaResultPath>RecyclingPersonName</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>DFDFWGetSpecialEventTransform012885241843370254</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform48818860266726305</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventDateTime|2:StartTime1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>StartTime2</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform5930785950559812</globalKey>
+        <inputFieldName>EventDetails:Food:FoodSold</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FoodSold</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:GeneralInformation:PersonalDetails:ContactFirstName &apos;/\/\/&apos; var:GeneralInformation:PersonalDetails:ContactLastName CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(GeneralInformation:PersonalDetails:ContactFirstName, &apos; &apos;, GeneralInformation:PersonalDetails:ContactLastName)</formulaExpression>
+        <formulaResultPath>ContactName</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DFDFWGetSpecialEventTransform38812296366796195</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform263015211795399</globalKey>
+        <inputFieldName>Acknowledgement:ParkPermitsAcknowledgement:ParkPermitsAcknowledgementInitials</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ParkPermitsAcknowledgementInitials</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform35539429754846075</globalKey>
+        <inputFieldName>EventDetails:BuildingDetails:TentProviderName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TentProviderName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform20196287269131785</globalKey>
+        <inputFieldName>EventDetails:OtherDetails:NameCoordinator</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>NameCoordinator</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform04737450256233888</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventDateTime|5:StartTime1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>StartTime5</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform4544597764472038</globalKey>
+        <inputFieldName>UsePublicStreets:EventClose</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EventClose</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform004468374860174373</globalKey>
+        <inputFieldName>UseOfPublicPark:ParkRepeatableBlock:ParkList-Block:ParkList</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>UseOfPublicPark:ParkList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform3541004051232637</globalKey>
+        <inputFieldName>AddressValidation:searchAddressLWC:y</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>y</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform061315011978838374</globalKey>
+        <inputFieldName>EventDetails:Beverage:AlcoholicBeverages</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AlcoholicBeverages</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform35437493214841354</globalKey>
+        <inputFieldName>TrashandSanitationRecycling:ResponsiblePartyForCleaning:CleaningPersonLastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CleaningPersonLastName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform35981243072584723</globalKey>
+        <inputFieldName>GeneralInformation:PersonalDetails:State</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>State</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform6937713183382832</globalKey>
+        <inputFieldName>ClosureofInterstatesHighwaysRoutes:EventRampHighways</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EventRampHighways</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform39668003094000737</globalKey>
+        <inputFieldName>EventDetails:BuildingDetails:TemporaryEventSize</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TemporaryEventSize</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform10147846582919384</globalKey>
+        <inputFieldName>SF_Case_Number</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SF_Case_Number</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform7117272098404848</globalKey>
+        <inputFieldName>EventDetails:BuildingDetails:Typeoftent</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Typeoftent</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform6777755487489583</globalKey>
+        <inputFieldName>UsePublicStreets:NameTrafficControlCompany</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>NameTrafficControlCompany</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform016186646014411554</globalKey>
+        <inputFieldName>None_Of_The_Above</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>None_Of_The_Above</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:GeneralInformation:PersonalDetails:StreetAddressLine1 &apos;,/\/\/&apos; var:GeneralInformation:PersonalDetails:StreetAddressLine2 CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(GeneralInformation:PersonalDetails:StreetAddressLine1 ,&apos;, &apos;,GeneralInformation:PersonalDetails:StreetAddressLine2)</formulaExpression>
+        <formulaResultPath>StreetAddress</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DFDFWGetSpecialEventTransform23101900265284803</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform018065141649703298</globalKey>
+        <inputFieldName>EventInformation:EstimatedAttendance</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EstimatedAttendance</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform21105431540790232</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventDateTime|3:StartDate1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(MM/dd/yyyy)</outputFieldFormat>
+        <outputFieldName>StartDate3</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform7128204528167315</globalKey>
+        <inputFieldName>GeneralInformation:PersonalDetails:StreetAddressLine2</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>StreetAddressLine2</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform1342802327250221</globalKey>
+        <inputFieldName>EventDetails:OtherDetails:merchandisesold</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>merchandisesold</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform11155197051974897</globalKey>
+        <inputFieldName>Publicity:InquiryEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InquiryEmail</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:GeneralInformation:IsHostPresent &quot;Yes&quot; == var:GeneralInformation:IsHostPresentPersonAccount &quot;Yes&quot; == || &quot;Yes&quot; &quot;No&quot; IF</formulaConverted>
+        <formulaExpression>IF(GeneralInformation:IsHostPresent == &quot;Yes&quot; || GeneralInformation:IsHostPresentPersonAccount == &quot;Yes&quot;, &quot;Yes&quot;, &quot;No&quot;)</formulaExpression>
+        <formulaResultPath>IsHostPresent</formulaResultPath>
+        <formulaSequence>9.0</formulaSequence>
+        <globalKey>DFDFWGetSpecialEventTransform04096820732261808</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform482489759467444</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventBreakdownEndTime</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EventBreakdownEndTime</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform8206515464802171</globalKey>
+        <inputFieldName>GeneralInformation:PrimaryContactInformation:PrimaryContactPhone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PrimaryContactPhone</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform9735810005551049</globalKey>
+        <inputFieldName>UsePublicStreets:ContactTrafficControlCompany</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ContactTrafficControlCompany</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform07882158028398378</globalKey>
+        <inputFieldName>EventDetails:BuildingDetails:TemporaryContactName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TemporaryContactName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform3269987050529044</globalKey>
+        <inputFieldName>EventDetails:BuildingDetails:WillConstructed</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>WillConstructed</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform4988048546949706</globalKey>
+        <inputFieldName>AddressValidation:searchAddressLWC:key</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>key</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform6132212421721668</globalKey>
+        <inputFieldName>TrashandSanitationRecycling:ResponsiblePartyForRecycling:RecyclingPersonEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecyclingPersonEmail</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform7664699026290929</globalKey>
+        <inputFieldName>SecuritySafetyProcedures:SecurityEvent</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SecurityEvent</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransformCustom6562</globalKey>
+        <inputFieldName>TrashandSanitationRecycling:ResponsiblePartyForTrash:TrashPersonBusinessName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TrashPersonBusinessName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform25304617483017866</globalKey>
+        <inputFieldName>TrashandSanitationRecycling:ResponsiblePartyForRecycling:RecyclingPersonFirstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecyclingPersonFirstName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform07168149230225662</globalKey>
+        <inputFieldName>ContactName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ContactName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform2977195731932849</globalKey>
+        <inputFieldName>SecuritySafetyProcedures:EmergencyAgencyName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EmergencyAgencyName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform671058206020571</globalKey>
+        <inputFieldName>EventInformation:EstimatedAttendanceRange500</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EstimatedAttendanceRange500</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform0967697729214152</globalKey>
+        <inputFieldName>EventDetails:BuildingDetails:WillGeneratorsUsed</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>WillGeneratorsUsed</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform26197390645658825</globalKey>
+        <inputFieldName>EventDetails:StreetFormulaforRunAndParade</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>StreetFormulaforRunAndParade</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform8848035198700765</globalKey>
+        <inputFieldName>SecuritySafetyProcedures:Messaging11</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Messaging11</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform33202093346854245</globalKey>
+        <inputFieldName>GeneralInformation:PersonalDetails:ContactEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ContactEmail</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform5472249397006619</globalKey>
+        <inputFieldName>EventDetails:ParkEventTypeFormula</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ParkEventTypeFormula</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform8474783670235586</globalKey>
+        <inputFieldName>Acknowledgement:CityAgreement:CityAgreementInitials</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CityAgreementInitials</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform771359588777385</globalKey>
+        <inputFieldName>TrashandSanitationRecycling:ResponsiblePartyForCleaning:CleaningPersonFirstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CleaningPersonFirstName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform4837646326105405</globalKey>
+        <inputFieldName>Carnival_Rides</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Carnival_Rides</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform5415770859753508</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventDateTime|2:EndTime1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EndTime2</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform9506466648648761</globalKey>
+        <inputFieldName>EventDetails:BuildingDetails:StageSize</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>StageSize</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform9122797079667795</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventDateTime|5:EndTime1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EndTime5</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform8546854131870971</globalKey>
+        <inputFieldName>TrashandSanitationRecycling:ResponsiblePartyForCleaning:CleaningPersonPhone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CleaningPersonPhone</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform39470173489540006</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventSetupStartDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(MM/dd/yyyy)</outputFieldFormat>
+        <outputFieldName>EventSetupStartDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform17532547539922105</globalKey>
+        <inputFieldName>ParkDocumentTemplate:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform33427127811054635</globalKey>
+        <inputFieldName>EventInformation:EventName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EventName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform4039731027981286</globalKey>
+        <inputFieldName>EventDetails:largeNumberOfPeople</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>largeNumberOfPeople</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform15758508352199674</globalKey>
+        <inputFieldName>GeneralInformation:PrimaryContactInformation:PrimaryContactEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PrimaryContactEmail</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform555348883494315</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventDateTime|5:StartDate1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(MM/dd/yyyy)</outputFieldFormat>
+        <outputFieldName>StartDate5</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform6019000149962657</globalKey>
+        <inputFieldName>StreetAddress</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>StreetAddress</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform9920816508489918</globalKey>
+        <inputFieldName>GeneralInformation:PersonalDetails:City</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>City</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform7493325555626298</globalKey>
+        <inputFieldName>SecuritySafetyProcedures:Policearmed</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Policearmed</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransformCustom1224</globalKey>
+        <inputFieldName>TrashandSanitationRecycling:ResponsiblePartyForRecycling:RecyclingPersonBusinessName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecyclingPersonBusinessName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform4586619808895205</globalKey>
+        <inputFieldName>EventDateTimeDetails:EventDateTime|4:EndTime1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EndTime4</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform2589752699955121</globalKey>
+        <inputFieldName>EventDateTimeDetails:eventMoreThanFiveDays</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>eventMoreThanFiveDays</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform8914980689962102</globalKey>
+        <inputFieldName>SecuritySafetyProcedures:offdutypoliceofficerFirstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>offdutypoliceofficerFirstName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DFDFWGetSpecialEventTransform9588604128999363</globalKey>
+        <inputFieldName>SecuritySafetyProcedures:Messaging10</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DFDFWGetSpecialEventTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Messaging10</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;applicationId&quot; : &quot;a1fcn0000001cxhAAA&quot;,
+  &quot;DFDDRCreateServiceApplicationStatus&quot; : true,
+  &quot;getOmniInstanceId&quot; : [ ],
+  &quot;getOmniInstanceIdStatus&quot; : true,
+  &quot;getAccountDetails&quot; : {
+    &quot;ContactLastName&quot; : &quot;UAT1&quot;,
+    &quot;ContactName&quot; : &quot;Sudhanshu UAT1&quot;,
+    &quot;ContactFirstName&quot; : &quot;Sudhanshu&quot;,
+    &quot;ContactEmail&quot; : &quot;ssvjuat1@yopmail.com&quot;,
+    &quot;userAccountId&quot; : &quot;001cn000004bRdQAAU&quot;
+  },
+  &quot;getAccountDetailsStatus&quot; : true,
+  &quot;sInstanceId&quot; : &quot;&quot;,
+  &quot;Acknowledgement&quot; : {
+    &quot;VendorPermitsAcknowledgement&quot; : {
+      &quot;VendorPermitsAcknowledgementInitials&quot; : &quot;dsa&quot;
+    },
+    &quot;ADAAcknowledgement&quot; : {
+      &quot;ADAAcknowledgementInitials&quot; : &quot;sad&quot;
+    },
+    &quot;NotifyingofImpact&quot; : {
+      &quot;NotifyingofImpactInitials&quot; : &quot;asd&quot;
+    },
+    &quot;CityAgreement&quot; : {
+      &quot;CityAgreementInitials&quot; : &quot;asd&quot;
+    },
+    &quot;ParkPermitsAcknowledgement&quot; : {
+      &quot;ParkPermitsAcknowledgementInitials&quot; : &quot;ads&quot;
+    }
+  },
+  &quot;DocumentUpload&quot; : {
+    &quot;FileUpload&quot; : { },
+    &quot;DynamicFileText&quot; : &quot;&lt;li&gt;Approval Letter from Alderperson&lt;/li&gt; &lt;li&gt;Certificate of Insurance&lt;/li&gt; &lt;li&gt;Emergency Plan&lt;/li&gt; &lt;li&gt;Event Site Map&lt;/li&gt;&lt;li&gt;Alcohol Vendor Names&lt;/li&gt;&lt;li&gt;Food and Food Truck Vendor Names&lt;/li&gt;&lt;li&gt;Map of your Parade, Run/Walk/Ride Route&lt;/li&gt;&lt;li&gt;Traffic Control Plan&lt;/li&gt;&quot;
+  },
+  &quot;MapRoute&quot; : true,
+  &quot;Publicity&quot; : {
+    &quot;FinancialInfo&quot; : {
+      &quot;AdmissionCharged&quot; : &quot;Yes&quot;
+    },
+    &quot;InquiryPhone&quot; : &quot;1321321321&quot;,
+    &quot;InquiryEmail&quot; : &quot;qwe@adad.dgfd&quot;,
+    &quot;PublicizeEvent&quot; : &quot;qweq&quot;
+  },
+  &quot;SecuritySafetyProcedures&quot; : {
+    &quot;EmergencyMedicalServices&quot; : &quot;Yes&quot;,
+    &quot;OffDutyOfficer&quot; : &quot;Yes&quot;,
+    &quot;SecurityEvent&quot; : &quot;Yes&quot;,
+    &quot;EmergencyPhoneNumber&quot; : &quot;1321313132&quot;,
+    &quot;EmergencyContactPerson&quot; : &quot;13asd&quot;,
+    &quot;EmergencyAgencyName&quot; : &quot;asds&quot;,
+    &quot;Messaging9&quot; : null,
+    &quot;Policearmed&quot; : &quot;Yes&quot;,
+    &quot;overnightSecurity&quot; : &quot;Yes&quot;,
+    &quot;NumberOfPolicePersonnel&quot; : 3,
+    &quot;offdutypoliceofficerPhone&quot; : &quot;1232332313&quot;,
+    &quot;offdutypoliceofficerLastName&quot; : &quot;sada&quot;,
+    &quot;offdutypoliceofficerFirstName&quot; : &quot;adsad&quot;,
+    &quot;NumberSecurityPersonnel&quot; : 12,
+    &quot;SecurityCompanyPhone&quot; : &quot;1321312313&quot;,
+    &quot;SecurityCompanyName&quot; : &quot;asd&quot;,
+    &quot;Messaging11&quot; : null,
+    &quot;Messaging10&quot; : null
+  },
+  &quot;TrashandSanitationRecycling&quot; : {
+    &quot;ResponsiblePartyForRecycling&quot; : {
+      &quot;RecyclingPersonPhone&quot; : &quot;1321313123&quot;,
+      &quot;RecyclingPersonLastName&quot; : &quot;asdad&quot;,
+      &quot;RecyclingPersonFirstName&quot; : &quot;asd&quot;,
+      &quot;RecyclingPersonEmail&quot; : &quot;ssvjuat1@yopmail.com&quot;
+    },
+    &quot;ResponsiblePartyForTrash&quot; : {
+      &quot;TrashPersonPhone&quot; : &quot;2133132132&quot;,
+      &quot;TrashPersonLastName&quot; : &quot;adsa&quot;,
+      &quot;TrashPersonFirstName&quot; : &quot;asda&quot;,
+      &quot;TrashPersonEmail&quot; : &quot;ssvjuat1@yopmail.com&quot;
+    },
+    &quot;ResponsiblePartyForCleaning&quot; : {
+      &quot;CleaningPersonPhone&quot; : &quot;1231321313&quot;,
+      &quot;CleaningPersonEmail&quot; : &quot;ssvjuat1@yopmail.com&quot;,
+      &quot;CleaningPersonLastName&quot; : &quot;dsa&quot;,
+      &quot;CleaningPersonFirstName&quot; : &quot;sadas&quot;
+    },
+    &quot;PortableRestrooms&quot; : &quot;Yes&quot;,
+    &quot;Location&quot; : &quot;adsd&quot;,
+    &quot;VendorInformation&quot; : &quot;asdsa&quot;,
+    &quot;HowManyRooms&quot; : &quot;12&quot;
+  },
+  &quot;ClosureofInterstatesHighwaysRoutes&quot; : {
+    &quot;EventRampHighways&quot; : &quot;Yes&quot;
+  },
+  &quot;UsePublicStreets&quot; : {
+    &quot;EventClose&quot; : &quot;Yes&quot;,
+    &quot;NameTrafficControlCompany&quot; : &quot;asdasd&quot;,
+    &quot;ContactTrafficControlCompany&quot; : &quot;asda&quot;,
+    &quot;StreetDataRepeatableBlock&quot; : {
+      &quot;NumberOfDays&quot; : &quot;asd&quot;,
+      &quot;Blocks&quot; : &quot;sad&quot;,
+      &quot;Blockswithparkingmeters&quot; : &quot;dasds&quot;,
+      &quot;TrafficLanes&quot; : &quot;adad&quot;,
+      &quot;ParkingLanes&quot; : &quot;adsasd&quot;,
+      &quot;StreettoReopenTime&quot; : &quot;12:30 am&quot;,
+      &quot;StreettoReopenDate&quot; : &quot;2024-12-03&quot;,
+      &quot;StreettoCloseTime&quot; : &quot;12:00 am&quot;,
+      &quot;StreettoCloseDate&quot; : &quot;2024-12-01&quot;,
+      &quot;Reasonforblocking&quot; : &quot;adsads&quot;,
+      &quot;CrossStreet2&quot; : &quot;adad&quot;,
+      &quot;BetweenCrossStreet1&quot; : &quot;adasd&quot;,
+      &quot;StreetToBeBlocked&quot; : &quot;asdad&quot;
+    },
+    &quot;DescribeParadeWalkDirection&quot; : &quot;asdad&quot;,
+    &quot;Messaging24&quot; : null
+  },
+  &quot;UseOfPublicPark&quot; : {
+    &quot;EventParkSpaceRequire&quot; : &quot;Yes&quot;,
+    &quot;ParksDivisionEquipmentRequest&quot; : {
+      &quot;LargeBandwagonEquipment&quot; : &quot;1&quot;,
+      &quot;SmallBandwagonEquipment&quot; : &quot;1&quot;,
+      &quot;SpeakersStandEquipment&quot; : &quot;1&quot;,
+      &quot;TentsEquipment&quot; : &quot;1&quot;,
+      &quot;TrashContainersEquipment&quot; : &quot;1&quot;,
+      &quot;PicnicTablesEquipment&quot; : &quot;1&quot;,
+      &quot;EquipmentDeliveryLocation&quot; : &quot;adsad&quot;
+    },
+    &quot;EquipmentDeparmentRequest&quot; : &quot;Yes&quot;,
+    &quot;LocationinPark&quot; : &quot;dasd&quot;,
+    &quot;ParkList-Block&quot; : {
+      &quot;Id&quot; : &quot;m0Jcn000000aQf8EAE&quot;,
+      &quot;ParkName&quot; : &quot;Alaska Park&quot;,
+      &quot;ParkList&quot; : &quot;Alaska Park&quot;
+    },
+    &quot;Messaging25&quot; : null
+  },
+  &quot;EventDetails&quot; : {
+    &quot;Food&quot; : {
+      &quot;FoodSold&quot; : &quot;Yes, sell&quot;,
+      &quot;FoodPropane&quot; : &quot;Yes&quot;
+    },
+    &quot;OtherDetails&quot; : {
+      &quot;NotifiedAlderManforEvent&quot; : &quot;Yes&quot;,
+      &quot;volunteersEvent&quot; : &quot;Yes&quot;,
+      &quot;merchandisesold&quot; : &quot;Yes&quot;,
+      &quot;NameCoordinator&quot; : &quot;asd&quot;,
+      &quot;volunteersRole&quot; : &quot;dasd&quot;
+    },
+    &quot;Beverage&quot; : {
+      &quot;AlcoholicBeverages&quot; : &quot;Yes, sell&quot;,
+      &quot;acholicFormula&quot; : true
+    },
+    &quot;BuildingDetails&quot; : {
+      &quot;TemporaryEvent&quot; : &quot;Yes&quot;,
+      &quot;WilltentsErected&quot; : &quot;Yes&quot;,
+      &quot;WillConstructed&quot; : &quot;Yes&quot;,
+      &quot;WillGeneratorsUsed&quot; : &quot;Yes&quot;,
+      &quot;TemporaryContactName&quot; : &quot;asd&quot;,
+      &quot;TemporaryEventSize&quot; : &quot;12&quot;,
+      &quot;Typeoftent&quot; : &quot;Self Standing&quot;,
+      &quot;HowmanyTents&quot; : 12,
+      &quot;TentProviderName&quot; : &quot;sad&quot;,
+      &quot;TentFootage&quot; : &quot;12&quot;,
+      &quot;StageSize&quot; : &quot;21&quot;,
+      &quot;ProvideName&quot; : &quot;asd&quot;,
+      &quot;Providevendorname&quot; : &quot;dasd&quot;,
+      &quot;HowManyGenerator&quot; : &quot;dsa&quot;,
+      &quot;GeneratorSize&quot; : &quot;21&quot;,
+      &quot;EventActivites&quot; : &quot;Pyrotechnics/Fireworks;Carnival Rides&quot;
+    },
+    &quot;EventTypeEstimateAttendanceFormula&quot; : false,
+    &quot;HowManyPeopleAttendEvent&quot; : 123,
+    &quot;largeNumberOfPeople&quot; : &quot;Yes&quot;,
+    &quot;StreetFormulaforRunAndParade&quot; : true,
+    &quot;ParkEventTypeFormula&quot; : false,
+    &quot;EventTypeRunWalkRideFormula&quot; : true,
+    &quot;EventType&quot; : &quot;Run_Walk_Ride;Parade&quot;
+  },
+  &quot;EventDateTimeDetails&quot; : {
+    &quot;LiabilityInsuranceCoverage&quot; : {
+      &quot;InitialAgree&quot; : &quot;ads&quot;
+    },
+    &quot;EventBreakdownEndTime&quot; : &quot;01:00 am&quot;,
+    &quot;EventBreakdownStartTime&quot; : &quot;12:30 am&quot;,
+    &quot;EventBreakdownDate&quot; : &quot;2025-01-23&quot;,
+    &quot;EventDateTime&quot; : [ {
+      &quot;EndTime1&quot; : &quot;02:00 am&quot;,
+      &quot;StartTime1&quot; : &quot;12:00 am&quot;,
+      &quot;StartDate1&quot; : &quot;2025-01-15&quot;
+    }, {
+      &quot;EndTime1&quot; : &quot;01:30 am&quot;,
+      &quot;StartTime1&quot; : &quot;12:00 am&quot;,
+      &quot;StartDate1&quot; : &quot;2025-01-16&quot;
+    }, {
+      &quot;EndTime1&quot; : &quot;01:30 am&quot;,
+      &quot;StartTime1&quot; : &quot;12:00 am&quot;,
+      &quot;StartDate1&quot; : &quot;2025-01-17&quot;
+    }, {
+      &quot;EndTime1&quot; : &quot;01:30 am&quot;,
+      &quot;StartTime1&quot; : &quot;12:00 am&quot;,
+      &quot;StartDate1&quot; : &quot;2025-01-18&quot;
+    }, {
+      &quot;EndTime1&quot; : &quot;01:30 am&quot;,
+      &quot;StartTime1&quot; : &quot;12:00 am&quot;,
+      &quot;StartDate1&quot; : &quot;2025-01-19&quot;
+    } ],
+    &quot;EventSetupEndTime&quot; : &quot;01:00 am&quot;,
+    &quot;EventSetupStartTime&quot; : &quot;12:00 am&quot;,
+    &quot;EventSetupDate&quot; : &quot;2025-01-15&quot;,
+    &quot;Messaging21&quot; : true,
+    &quot;ValidateBreakdownDatewithStart&quot; : false,
+    &quot;Messaging1&quot; : true,
+    &quot;ValidateDateForSetupBreakdown&quot; : false,
+    &quot;eventMoreThanFiveDays&quot; : true,
+    &quot;EventDateBlockformula&quot; : true,
+    &quot;Messaging6&quot; : true,
+    &quot;ValidateSetupDatewithStart&quot; : false
+  },
+  &quot;EventInformation&quot; : {
+    &quot;EventDescription&quot; : &quot;asdad&quot;,
+    &quot;AttendanceTime&quot; : &quot;12:00 am&quot;,
+    &quot;EstimatedAttendance&quot; : &quot;0 – 200&quot;,
+    &quot;EventHeldPast&quot; : &quot;Yes&quot;,
+    &quot;EventName&quot; : &quot;sda&quot;,
+    &quot;EstimatedAttendanceRange5000&quot; : false,
+    &quot;EstimatedAttendanceRange500&quot; : false,
+    &quot;PastEventLocation&quot; : &quot;add&quot;,
+    &quot;PastEventDate&quot; : &quot;2024-12-01&quot;
+  },
+  &quot;GeneralInformation&quot; : {
+    &quot;PrimaryContactInformation&quot; : {
+      &quot;PrimaryContactPhone&quot; : &quot;1321213131&quot;,
+      &quot;PrimaryContactEmail&quot; : &quot;ssvjuat1@yopmail.com&quot;,
+      &quot;PrimaryContactLastName&quot; : &quot;adsad&quot;,
+      &quot;PrimaryContactFirstName&quot; : &quot;asdsad&quot;
+    },
+    &quot;PersonalDetails&quot; : {
+      &quot;ZipCode&quot; : &quot;4478hhh&quot;,
+      &quot;StreetAddressLine2&quot; : &quot;Unit 2&quot;,
+      &quot;StreetAddressLine1&quot; : &quot;Alta Street&quot;,
+      &quot;City&quot; : &quot;St. Louis&quot;,
+      &quot;MobilePhone&quot; : &quot;2825553695&quot;,
+      &quot;ContactLastName&quot; : &quot;UAT1&quot;,
+      &quot;State&quot; : &quot;Alabama&quot;,
+      &quot;ContactEmail&quot; : &quot;ssvjuat1@yopmail.com&quot;,
+      &quot;ContactFirstName&quot; : &quot;Sudhanshu&quot;
+    },
+    &quot;IsHostPresent&quot; : &quot;Yes&quot;,
+    &quot;CompanyOrganizationInformation&quot; : {
+      &quot;CompanyOrganizationPhoneNumber&quot; : &quot;1321313131&quot;,
+      &quot;CompanyOrganizationAddress&quot; : &quot;asda&quot;,
+      &quot;CompanyOrganizationName&quot; : &quot;asdas&quot;
+    }
+  },
+  &quot;IsPersonAccount&quot; : &quot;Yes&quot;,
+  &quot;ParkDocumentTemplate&quot; : {
+    &quot;Type&quot; : &quot;MicrosoftWord&quot;,
+    &quot;parkPermitDocName&quot; : &quot;Park_Application&quot;,
+    &quot;Id&quot; : &quot;2dtcn0000000J5tAAE&quot;,
+    &quot;DocumentGenerationMechanism&quot; : &quot;ClientSide&quot;,
+    &quot;VersionNumber&quot; : 1
+  },
+  &quot;StreetDocumentTemplate&quot; : {
+    &quot;Type&quot; : &quot;MicrosoftWord&quot;,
+    &quot;streetPermitDocName&quot; : &quot;Street_Closing_Application&quot;,
+    &quot;Id&quot; : &quot;2dtcn0000000J7VAAU&quot;,
+    &quot;DocumentGenerationMechanism&quot; : &quot;ClientSide&quot;,
+    &quot;VersionNumber&quot; : 1
+  },
+  &quot;SpecialDocumentTemplate&quot; : {
+    &quot;Type&quot; : &quot;MicrosoftWord&quot;,
+    &quot;specialEventDocName&quot; : &quot;Special_Event_Application&quot;,
+    &quot;Id&quot; : &quot;2dtcn0000000J4HAAU&quot;,
+    &quot;DocumentGenerationMechanism&quot; : &quot;ClientSide&quot;,
+    &quot;VersionNumber&quot; : 1
+  },
+  &quot;nextClick&quot; : true,
+  &quot;AddressValidation&quot; : {
+    &quot;searchAddressLWC&quot; : {
+      &quot;key&quot; : &quot;896599.79852054222&quot;,
+      &quot;y&quot; : &quot;1019162.4250790704&quot;,
+      &quot;x&quot; : &quot;896599.79852054222&quot;,
+      &quot;address&quot; : &quot;300 S GRAND AVE, 63103&quot;
+    },
+    &quot;AddressErrorMessage&quot; : null,
+    &quot;AddressError&quot; : false
+  },
+  &quot;serviceRecordType&quot; : [ {
+    &quot;Id&quot; : &quot;012cn000000FNqlAAG&quot;,
+    &quot;DeveloperName&quot; : &quot;Permits&quot;
+  } ],
+  &quot;recordTypeID&quot; : &quot;Permits&quot;,
+  &quot;ContactIsPersonAccount&quot; : true,
+  &quot;Street&quot; : &quot;Alta Street, Unit 2&quot;,
+  &quot;ContactName&quot; : &quot;Sudhanshu UAT1&quot;,
+  &quot;StreetPreview&quot; : { },
+  &quot;ParkPermitPreview&quot; : { },
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userProfile&quot; : &quot;DFD Portal User Profile&quot;,
+  &quot;eventType&quot; : &quot;Special Event Permit&quot;,
+  &quot;confirmationPageUrl&quot; : null,
+  &quot;caseApplicationId&quot; : null,
+  &quot;applicationEmail&quot; : null,
+  &quot;streetDocumentTitle&quot; : null,
+  &quot;streetSelectedTemplate&quot; : null,
+  &quot;parkDocumentTitle&quot; : null,
+  &quot;parkSelectedTemplate&quot; : null,
+  &quot;specialDocumentTitle&quot; : null,
+  &quot;specialSelectedTemplate&quot; : null,
+  &quot;ContextId&quot; : null,
+  &quot;selectedStreet&quot; : &quot;300 S GRAND AVE, 63103&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <targetOutputFileName>Special_Event_Without_Park_Acknowledgements(Version 1)</targetOutputFileName>
+    <type>Transform</type>
+    <uniqueName>DFDFWGetSpecialEventTransform_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

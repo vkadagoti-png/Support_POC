@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Eligible Activity --></label>
+    <name>Eligible_Activity__c</name>
+    <picklistValues>
+        <masterLabel>Bus. Attraction/Fin. Incentives Food Access</masterLabel>
+        <translation><!-- Bus. Attraction/Fin. Incentives Food Access --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bus. Development</masterLabel>
+        <translation><!-- Bus. Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CDBG Broadband Infrastructure</masterLabel>
+        <translation><!-- CDBG Broadband Infrastructure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CDBG-Eligible Public Facilities</masterLabel>
+        <translation><!-- CDBG-Eligible Public Facilities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Child Care; Crime Prevention; Elderly</masterLabel>
+        <translation><!-- Child Care; Crime Prevention; Elderly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Early Childhood Education Centers</masterLabel>
+        <translation><!-- Early Childhood Education Centers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Energy Efficiency, Weatherization and Accessibility</masterLabel>
+        <translation><!-- Energy Efficiency, Weatherization and Accessibility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fair Housing; Financial Literacy/Financial Counseling</masterLabel>
+        <translation><!-- Fair Housing; Financial Literacy/Financial Counseling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food Access; Health; Homeless/At-Risk Homeless</masterLabel>
+        <translation><!-- Food Access; Health; Homeless/At-Risk Homeless --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food Distribution</masterLabel>
+        <translation><!-- Food Distribution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food Processing</masterLabel>
+        <translation><!-- Food Processing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food Production</masterLabel>
+        <translation><!-- Food Production --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grocery Store</masterLabel>
+        <translation><!-- Grocery Store --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Healthy Home Repair Construction Management</masterLabel>
+        <translation><!-- Healthy Home Repair Construction Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Job Training</masterLabel>
+        <translation><!-- Job Training --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Landlord Training Assistance Program</masterLabel>
+        <translation><!-- Landlord Training Assistance Program --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low/Mod Homebuyer Assistance Program</masterLabel>
+        <translation><!-- Low/Mod Homebuyer Assistance Program --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microenterprise Assistance / Incubator Assistance Program</masterLabel>
+        <translation><!-- Microenterprise Assistance / Incubator Assistance Program --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neighborhood Cleanups and Beautification</masterLabel>
+        <translation><!-- Neighborhood Cleanups and Beautification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Offender Reentry Services</masterLabel>
+        <translation><!-- Offender Reentry Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Health Related Services</masterLabel>
+        <translation><!-- Other Health Related Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pharmaceutical Services</masterLabel>
+        <translation><!-- Pharmaceutical Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planning</masterLabel>
+        <translation><!-- Planning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Program Administration</masterLabel>
+        <translation><!-- Program Administration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resident Leadership Training and Development (1)</masterLabel>
+        <translation><!-- Resident Leadership Training and Development (1) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resident Leadership Training and Development (2)</masterLabel>
+        <translation><!-- Resident Leadership Training and Development (2) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Street and Sidewalk Improvements</masterLabel>
+        <translation><!-- Street and Sidewalk Improvements --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Urban Agriculture</masterLabel>
+        <translation><!-- Urban Agriculture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Youth</masterLabel>
+        <translation><!-- Youth --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

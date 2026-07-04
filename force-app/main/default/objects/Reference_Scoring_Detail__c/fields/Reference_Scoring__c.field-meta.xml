@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reference_Scoring__c</fullName>
+    <description>MD to Reference Scoring</description>
+    <label>Reference Scoring</label>
+    <referenceTo>Reference_Scoring__c</referenceTo>
+    <relationshipLabel>Reference Scoring Details</relationshipLabel>
+    <relationshipName>Reference_Scoring_Details</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

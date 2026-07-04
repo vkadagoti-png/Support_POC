@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Actual Salary Per Pay Period*Percent of Time Charged to Block Grant*Number of Pay Periods --></help>
+    <label><!-- Block Grant Share(Rounded to whole $) --></label>
+    <name>Block_Grant_Share_Rounded_to_whole__c</name>
+</CustomFieldTranslation>

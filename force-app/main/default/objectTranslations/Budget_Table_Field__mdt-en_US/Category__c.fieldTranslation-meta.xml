@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Category --></label>
+    <name>Category__c</name>
+    <picklistValues>
+        <masterLabel>Accounting</masterLabel>
+        <translation><!-- Accounting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Administration</masterLabel>
+        <translation><!-- Administration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Building &amp; Property Acquisition</masterLabel>
+        <translation><!-- Building &amp; Property Acquisition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carrying &amp; Financial Costs</masterLabel>
+        <translation><!-- Carrying &amp; Financial Costs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>City of St. Louis CDBG</masterLabel>
+        <translation><!-- City of St. Louis CDBG --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Communications</masterLabel>
+        <translation><!-- Communications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Concrete</masterLabel>
+        <translation><!-- Concrete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction</masterLabel>
+        <translation><!-- Construction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction Costs</masterLabel>
+        <translation><!-- Construction Costs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultant and Contract Service</masterLabel>
+        <translation><!-- Consultant and Contract Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contractual / Professional Services</masterLabel>
+        <translation><!-- Contractual / Professional Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contractual and Other Services</masterLabel>
+        <translation><!-- Contractual and Other Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corporate Contributions</masterLabel>
+        <translation><!-- Corporate Contributions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Development Fee</masterLabel>
+        <translation><!-- Development Fee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Earthwork</masterLabel>
+        <translation><!-- Earthwork --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electrical</masterLabel>
+        <translation><!-- Electrical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Endowments</masterLabel>
+        <translation><!-- Endowments --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Equipment</masterLabel>
+        <translation><!-- Equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Existing Conditions</masterLabel>
+        <translation><!-- Existing Conditions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Exterior Improvements</masterLabel>
+        <translation><!-- Exterior Improvements --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Facilities Expenses</masterLabel>
+        <translation><!-- Facilities Expenses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Federal Grants</masterLabel>
+        <translation><!-- Federal Grants --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fee Revenue</masterLabel>
+        <translation><!-- Fee Revenue --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finishes</masterLabel>
+        <translation><!-- Finishes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fire Suppression Systems</masterLabel>
+        <translation><!-- Fire Suppression Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fringe Benefits</masterLabel>
+        <translation><!-- Fringe Benefits --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundraiser/Special Events</masterLabel>
+        <translation><!-- Fundraiser/Special Events --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundraisers / Special Events</masterLabel>
+        <translation><!-- Fundraisers / Special Events --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Furnishings</masterLabel>
+        <translation><!-- Furnishings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Requirements</masterLabel>
+        <translation><!-- General Requirements --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HVAC</masterLabel>
+        <translation><!-- HVAC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-Kind Expenses</masterLabel>
+        <translation><!-- In-Kind Expenses --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-Kind Income</masterLabel>
+        <translation><!-- In-Kind Income --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indirect Costs</masterLabel>
+        <translation><!-- Indirect Costs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infrastructure</masterLabel>
+        <translation><!-- Infrastructure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infrastructure - ADC</masterLabel>
+        <translation><!-- Infrastructure - ADC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infrastructure - CC</masterLabel>
+        <translation><!-- Infrastructure - CC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance</masterLabel>
+        <translation><!-- Insurance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interest Income</masterLabel>
+        <translation><!-- Interest Income --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investment Income</masterLabel>
+        <translation><!-- Investment Income --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal</masterLabel>
+        <translation><!-- Legal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loans - Commercial</masterLabel>
+        <translation><!-- Loans - Commercial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loans - Commercial (2)</masterLabel>
+        <translation><!-- Loans - Commercial (2) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Loans - Residential</masterLabel>
+        <translation><!-- Loans - Residential --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Local Travel Costs</masterLabel>
+        <translation><!-- Local Travel Costs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Masonry</masterLabel>
+        <translation><!-- Masonry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Material Supplies</masterLabel>
+        <translation><!-- Material Supplies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Materials and Supplies</masterLabel>
+        <translation><!-- Materials and Supplies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metals</masterLabel>
+        <translation><!-- Metals --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Office Supplies</masterLabel>
+        <translation><!-- Office Supplies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Openings</masterLabel>
+        <translation><!-- Openings --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Federal Grants</masterLabel>
+        <translation><!-- Other Federal Grants --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payroll Taxes and Fringe Benefits</masterLabel>
+        <translation><!-- Payroll Taxes and Fringe Benefits --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Per unit Services</masterLabel>
+        <translation><!-- Per unit Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personnel Costs</masterLabel>
+        <translation><!-- Personnel Costs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Personnel: Salaries and Wages</masterLabel>
+        <translation><!-- Personnel: Salaries and Wages --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plumbing</masterLabel>
+        <translation><!-- Plumbing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Postage</masterLabel>
+        <translation><!-- Postage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Predevelopment</masterLabel>
+        <translation><!-- Predevelopment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Printing</masterLabel>
+        <translation><!-- Printing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Printing and Copying</masterLabel>
+        <translation><!-- Printing and Copying --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professional Services</masterLabel>
+        <translation><!-- Professional Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rent/Lease/Mortgage</masterLabel>
+        <translation><!-- Rent/Lease/Mortgage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rental and Non-Capital Leases</masterLabel>
+        <translation><!-- Rental and Non-Capital Leases --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salaries</masterLabel>
+        <translation><!-- Salaries --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seller&apos;s Closing Costs</masterLabel>
+        <translation><!-- Seller&apos;s Closing Costs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special Construction</masterLabel>
+        <translation><!-- Special Construction --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Specialties</masterLabel>
+        <translation><!-- Specialties --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>State Grant</masterLabel>
+        <translation><!-- State Grant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>State Grants</masterLabel>
+        <translation><!-- State Grants --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supplies</masterLabel>
+        <translation><!-- Supplies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telephone</masterLabel>
+        <translation><!-- Telephone --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telephone / Communications</masterLabel>
+        <translation><!-- Telephone / Communications --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thermal &amp; Moisture Protection</masterLabel>
+        <translation><!-- Thermal &amp; Moisture Protection --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Total Project Contingency</masterLabel>
+        <translation><!-- Total Project Contingency --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Travel</masterLabel>
+        <translation><!-- Travel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utilities</masterLabel>
+        <translation><!-- Utilities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wood &amp; Composites</masterLabel>
+        <translation><!-- Wood &amp; Composites --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

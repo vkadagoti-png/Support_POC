@@ -1,0 +1,3 @@
+let styleDefinition =
+      {"state0element0block_element1":[{"conditions":"default","styleObject":{"class":"slds-col  condition-element  slds-size_2-of-12  ","style":"      \n         padding-top:5px;\nmargin:2px\nbackground-color: rgb(2, 122, 187);\nborder-radius: 5px;\ncolor: #ffffff\npadding-top: 5px;\nmargin: 2px;\nwidth: fit-content;\ntext-wrap: nowrap;\nmargin-left: 10px;","styleProperties":{}}}]};
+  export default styleDefinition

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Grant_Compact_CGA</fullName>
+    <fields>Name</fields>
+    <fields>BillingAddress</fields>
+    <fields>Federal_ID_No__c</fields>
+    <fields>UEI_Number__c</fields>
+    <label>Account Grant Compact CGA</label>
+</CompactLayout>

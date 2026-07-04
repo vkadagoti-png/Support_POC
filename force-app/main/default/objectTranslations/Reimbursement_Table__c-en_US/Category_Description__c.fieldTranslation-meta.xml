@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is the description of the category when per unit is selected. --></help>
+    <label><!-- Category Description --></label>
+    <name>Category_Description__c</name>
+</CustomFieldTranslation>

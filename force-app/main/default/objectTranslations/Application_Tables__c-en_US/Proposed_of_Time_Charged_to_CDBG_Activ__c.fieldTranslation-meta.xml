@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Proposed % of Time Charged to CDBG --></label>
+    <name>Proposed_of_Time_Charged_to_CDBG_Activ__c</name>
+</CustomFieldTranslation>

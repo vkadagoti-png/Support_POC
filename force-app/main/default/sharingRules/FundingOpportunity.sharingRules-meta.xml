@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>CDA_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>CDA Sharing</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>CDA</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <role>System_Admin</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CDA_funding_opp_sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>CDA Funding Opportunity</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>CDA</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>CDA</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

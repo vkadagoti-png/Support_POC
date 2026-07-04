@@ -1,0 +1,89 @@
+<template>
+    <!-- {recordValue} - {fieldAPIName} - {isEdit} -->
+
+    <!-- isCurrency: {isCurrency} -->
+    <!-- <template lwc:if={isEdit}> -->
+        <!-- {fieldAPIName} -->
+        <template lwc:if={isText}>
+            <c-radical-text
+                field-name={fieldAPIName}
+                record={record}
+                is-edit={isEdit}
+            ></c-radical-text>
+        </template>
+
+        <template lwc:if={isNumber}>
+            <c-radical-number
+                field-name={fieldAPIName}
+                record={record}
+                is-edit={isEdit}
+            ></c-radical-number>
+        </template>
+
+        <template lwc:if={isCurrency}>
+            <c-radical-currency
+                field-name={fieldAPIName}
+                record={record}
+                is-edit={isEdit}
+            ></c-radical-currency>
+        </template>
+
+        <template lwc:elseif={isCheckbox}>
+            <c-radical-checkbox
+                field-name={fieldAPIName}
+                record={record}
+                is-edit={isEdit}
+            ></c-radical-checkbox>
+        </template>
+
+        <template lwc:elseif={isDateTime}>
+            <c-radical-date-time
+                field-name={fieldAPIName}
+                record={record}
+                is-edit={isEdit}
+            ></c-radical-date-time>
+        </template>
+
+        <template lwc:elseif={isDate}>
+            <c-radical-date
+                field-name={fieldAPIName}
+                record={record}
+                is-edit={isEdit}
+            ></c-radical-date>
+        </template>
+
+        <template lwc:elseif={isPicklist}>
+            <c-radical-picklist
+                field-name={fieldAPIName}
+                options={options}
+                record={record}
+                is-edit={isEdit}
+            ></c-radical-picklist>
+        </template>
+
+        <template lwc:elseif={isRichText}>
+            <c-radical-rich-textarea
+                field-name={fieldAPIName}
+                record={record}
+                is-edit={isEdit}
+            ></c-radical-rich-textarea>
+        </template>
+
+        <template lwc:elseif={isTextarea}>
+            <c-radical-textarea
+                field-name={fieldAPIName}
+                record={record}
+                is-edit={isEdit}
+            ></c-radical-textarea>
+        </template>
+
+        <template lwc:elseif={isReference}>
+            <c-radical-reference
+                field-name={fieldAPIName}
+                record={record}
+                is-edit={isEdit}
+                child-sobject={childSobject}
+            ></c-radical-reference>
+        </template>
+
+</template>

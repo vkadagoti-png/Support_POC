@@ -1,0 +1,30 @@
+<template>
+    <template lwc:if={disabled}>
+        <lightning-record-view-form 
+            object-api-name={childSobject}
+            record-id={id}
+        >
+            <lightning-output-field 
+                field-name={fieldName} 
+                variant="label-hidden" 
+            ></lightning-output-field>
+        </lightning-record-view-form>
+    </template>
+
+    <template lwc:else>
+
+        <lightning-record-edit-form 
+            object-api-name={childSobject}
+            record-id={id}
+        >
+            <lightning-input-field 
+
+                field-name={fieldName} 
+                value={recordValue} 
+                variant="label-hidden" 
+                onchange={handleChange}>
+            </lightning-input-field>
+        </lightning-record-edit-form>
+
+    </template>
+</template>

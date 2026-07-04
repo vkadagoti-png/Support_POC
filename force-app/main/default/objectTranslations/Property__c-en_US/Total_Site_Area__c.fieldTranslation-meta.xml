@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Related to the purchase of this transaction. Specify sq ft or acres in the text box. --></help>
+    <label><!-- Total Site Area --></label>
+    <name>Total_Site_Area__c</name>
+</CustomFieldTranslation>

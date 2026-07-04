@@ -1,0 +1,56 @@
+<template>
+    <label class="slds-form-element__label" for="search-input">Please enter the nearest address or intersection to your event site</label>
+    <div class="slds-form-element__control">
+        <div class="slds-combobox-group">
+            <div class="slds-combobox_container">
+                <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+                    <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right">
+                        <input type="text" id="search-input" class="slds-input slds-combobox__input-value" value={street} placeholder="Search Addresses" oninput={handleSearchChange} style="margin-top: 5px;" required/>
+                        <button aria-label="Search" class="slds-button slds-button_icon slds-input__icon slds-input__icon_right" onclick={handleSearch}>
+                            <lightning-icon icon-name="utility:search" size="x-small"></lightning-icon>
+                        </button>
+                    </div>
+                    <div class="slds-dropdown slds-dropdown_length-with-icon-10" style="width: 100%;" role="listbox">
+                        <ul class="slds-listbox slds-listbox_vertical slds-dropdown_length-with-icon-10" role="presentation">
+                            <template if:true={addressList}>
+                                <template for:each={addressList} for:item="addressItem">
+                                    <li key={addressItem.key} role="presentation">
+                                        <div data-address={addressItem.address} data-key={addressItem.key} onclick={handleAddressSelect} class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta" role="option">
+                                            <span class="slds-media__figure">
+                                                <span class="slds-icon_container">
+                                                    <lightning-icon icon-name="standard:address" size="small"></lightning-icon>
+                                                </span>
+                                            </span>
+                                            <span class="slds-media__body">
+                                                <span class="slds-listbox__option-text slds-listbox__option-text_entity">{addressItem.address}</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </template>
+                            </template>
+                            <template if:true={error}>
+                                <li class="slds-listbox__item" role="presentation">
+                                    <div class="slds-media slds-listbox__option slds-listbox__option_entity">
+                                        <span class="slds-media__body">
+                                            <span class="slds-listbox__option-text slds-listbox__option-text_entity">{error}</span>
+                                        </span>
+                                    </div>
+                                </li>
+                            </template>
+                            <template if:false={addressList}>
+                                <li class="slds-listbox__item" role="presentation">
+                                    <div class="slds-media slds-listbox__option slds-listbox__option_entity">
+                                        <span class="slds-media__body">
+                                            <span class="slds-listbox__option-text slds-listbox__option-text_entity">No results found</span>
+                                        </span>
+                                    </div>
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</template>

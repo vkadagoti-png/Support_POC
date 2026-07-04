@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Eligible_Activity__c</fullName>
+    <description>pulled from Application</description>
+    <label>Eligible Activity</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Microenterprise Assistance / Incubator Assistance Program</fullName>
+                <default>false</default>
+                <label>Microenterprise Assistance / Incubator Assistance Program</label>
+            </value>
+            <value>
+                <fullName>Bus. Attraction/Fin. Incentives Food Access</fullName>
+                <default>false</default>
+                <label>Bus. Attraction/Fin. Incentives Food Access</label>
+            </value>
+            <value>
+                <fullName>Bus. Development</fullName>
+                <default>false</default>
+                <label>Bus. Development</label>
+            </value>
+            <value>
+                <fullName>Child Care; Crime Prevention; Elderly</fullName>
+                <default>false</default>
+                <label>Child Care; Crime Prevention; Elderly</label>
+            </value>
+            <value>
+                <fullName>Fair Housing; Financial Literacy/Financial Counseling</fullName>
+                <default>false</default>
+                <label>Fair Housing; Financial Literacy/Financial Counseling</label>
+            </value>
+            <value>
+                <fullName>Food Access; Health; Homeless/At-Risk Homeless</fullName>
+                <default>false</default>
+                <label>Food Access; Health; Homeless/At-Risk Homeless</label>
+            </value>
+            <value>
+                <fullName>Job Training</fullName>
+                <default>false</default>
+                <label>Job Training</label>
+            </value>
+            <value>
+                <fullName>Landlord Training Assistance Program</fullName>
+                <default>false</default>
+                <label>Landlord Training Assistance Program</label>
+            </value>
+            <value>
+                <fullName>Neighborhood Cleanups and Beautification</fullName>
+                <default>false</default>
+                <label>Neighborhood Cleanups and Beautification</label>
+            </value>
+            <value>
+                <fullName>Offender Reentry Services</fullName>
+                <default>false</default>
+                <label>Offender Reentry Services</label>
+            </value>
+            <value>
+                <fullName>Resident Leadership Training and Development (1)</fullName>
+                <default>false</default>
+                <label>Resident Leadership Training and Development (1)</label>
+            </value>
+            <value>
+                <fullName>Resident Leadership Training and Development (2)</fullName>
+                <default>false</default>
+                <label>Resident Leadership Training and Development (2)</label>
+            </value>
+            <value>
+                <fullName>Youth</fullName>
+                <default>false</default>
+                <label>Youth</label>
+            </value>
+            <value>
+                <fullName>Early Childhood Education Centers</fullName>
+                <default>false</default>
+                <label>Early Childhood Education Centers</label>
+            </value>
+            <value>
+                <fullName>Street and Sidewalk Improvements</fullName>
+                <default>false</default>
+                <label>Street and Sidewalk Improvements</label>
+            </value>
+            <value>
+                <fullName>CDBG Broadband Infrastructure</fullName>
+                <default>false</default>
+                <label>CDBG Broadband Infrastructure</label>
+            </value>
+            <value>
+                <fullName>CDBG-Eligible Public Facilities</fullName>
+                <default>false</default>
+                <label>CDBG-Eligible Public Facilities</label>
+            </value>
+            <value>
+                <fullName>Healthy Home Repair Construction Management</fullName>
+                <default>false</default>
+                <label>Healthy Home Repair Construction Management</label>
+            </value>
+            <value>
+                <fullName>Low/Mod Homebuyer Assistance Program</fullName>
+                <default>false</default>
+                <label>Low/Mod Homebuyer Assistance Program</label>
+            </value>
+            <value>
+                <fullName>Energy Efficiency, Weatherization and Accessibility</fullName>
+                <default>false</default>
+                <label>Energy Efficiency, Weatherization and Accessibility</label>
+            </value>
+            <value>
+                <fullName>Grocery Store</fullName>
+                <default>false</default>
+                <label>Grocery Store</label>
+            </value>
+            <value>
+                <fullName>Pharmaceutical Services</fullName>
+                <default>false</default>
+                <label>Pharmaceutical Services</label>
+            </value>
+            <value>
+                <fullName>Urban Agriculture</fullName>
+                <default>false</default>
+                <label>Urban Agriculture</label>
+            </value>
+            <value>
+                <fullName>Food Production</fullName>
+                <default>false</default>
+                <label>Food Production</label>
+            </value>
+            <value>
+                <fullName>Food Processing</fullName>
+                <default>false</default>
+                <label>Food Processing</label>
+            </value>
+            <value>
+                <fullName>Food Distribution</fullName>
+                <default>false</default>
+                <label>Food Distribution</label>
+            </value>
+            <value>
+                <fullName>Other Health Related Services</fullName>
+                <default>false</default>
+                <label>Other Health Related Services</label>
+            </value>
+            <value>
+                <fullName>Planning</fullName>
+                <default>false</default>
+                <label>Planning</label>
+            </value>
+            <value>
+                <fullName>Program Administration</fullName>
+                <default>false</default>
+                <label>Program Administration</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When a picture is loaded into the asset library, the link to the image can be added to this field, and the property image will show on the record. ONLY Part is needed:/servlet/servlet.FileDownload?file=01570000000Q6El --></help>
+    <label><!-- URL of Property Image --></label>
+    <name>URL_of_Property_Image__c</name>
+</CustomFieldTranslation>

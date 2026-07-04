@@ -1,0 +1,31 @@
+.upload {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 2px dashed #d0d0d0;
+  border-radius: 12px;
+  background-color: #f9fafb;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  text-align: center;
+}
+
+.upload:hover {
+  border-color: #1b96ff;
+  background-color: #f0f8ff;
+}
+
+.upload lightning-file-upload::part(drop-zone) {
+  background-color: transparent;
+  border: none;
+}
+
+.upload lightning-file-upload::part(file-selector-button) {
+  background-color: #1b96ff;
+  color: white;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+}
+
+.upload lightning-file-upload::part(file-selector-button):hover {
+  background-color: #0f75d3;
+}

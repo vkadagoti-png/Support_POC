@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Score_Summary_Complete__c</fullName>
+    <formula>Score_Summary__r.Status_frm__c = &quot;Complete&quot;</formula>
+    <label>Score Summary Complete</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

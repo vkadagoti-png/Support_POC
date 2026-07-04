@@ -1,0 +1,20 @@
+<template>
+    <!--<h2 class="full-row-heading"> {serviceType} </h2>-->
+    <lightning-layout multiple-rows>
+        <lightning-layout-item class="slds-p-right_small layoutItem">
+            <div class="tile-container">
+                <template for:each={tiles} for:item="tile">
+                    <div key={tile.id} class="tile" data-label={tile.label} onclick={handleTileClick} data-id={tile.id}>
+                        <div class="tile-content">
+                            <span><img src={tile.eventImageURL} alt="Event Image" class="tile-image" /></span>
+                        </div>
+                        <div class="tile-header">
+                            <h1 class="heading">{tile.label}</h1>
+                            <span class="sub-heading">{tile.subheading}</span>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Housing Type --></label>
+    <name>Housing_Type__c</name>
+    <picklistValues>
+        <masterLabel>Four-Family</masterLabel>
+        <translation><!-- Four-Family --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Multistory with Elevator</masterLabel>
+        <translation><!-- Multistory with Elevator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single Family Detached</masterLabel>
+        <translation><!-- Single Family Detached --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Three-Family</masterLabel>
+        <translation><!-- Three-Family --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Townhomes/Rowhouse</masterLabel>
+        <translation><!-- Townhomes/Rowhouse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two-Family</masterLabel>
+        <translation><!-- Two-Family --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

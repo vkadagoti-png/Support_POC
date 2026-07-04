@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Number of Low/Mod Units at 60% --></label>
+    <name>Number_of_Low_Mod_Units_at_60__c</name>
+</CustomFieldTranslation>

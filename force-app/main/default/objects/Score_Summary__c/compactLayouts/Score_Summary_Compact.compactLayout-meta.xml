@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Score_Summary_Compact</fullName>
+    <fields>Total_Points_Awarded__c</fields>
+    <fields>Status_frm__c</fields>
+    <fields>Total_Raters__c</fields>
+    <fields>Scorers_Completed__c</fields>
+    <fields>Start_Date__c</fields>
+    <fields>End_Date__c</fields>
+    <label>Score Summary Compact</label>
+</CompactLayout>

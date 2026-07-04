@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Other_Funding__c</fullName>
+    <inlineHelpText>This is the total of &apos;Other Funding&apos; column in the Budget Categories.</inlineHelpText>
+    <label>Total Other Funding</label>
+    <summarizedField>BudgetCategory.Other_Funding__c</summarizedField>
+    <summaryForeignKey>BudgetCategory.BudgetId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

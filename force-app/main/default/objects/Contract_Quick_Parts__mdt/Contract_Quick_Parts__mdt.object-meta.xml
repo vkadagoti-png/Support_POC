@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>These are options for feeding the contract document with language that lines up with specific contract terems.</description>
+    <label>Contract Quick Parts</label>
+    <pluralLabel>Contract Quick Parts</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

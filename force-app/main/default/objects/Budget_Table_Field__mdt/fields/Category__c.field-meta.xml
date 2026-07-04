@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <defaultValue>&quot;Salaries&quot;</defaultValue>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Category</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>City of St. Louis CDBG</fullName>
+                <default>false</default>
+                <label>City of St. Louis CDBG</label>
+            </value>
+            <value>
+                <fullName>Consultant and Contract Service</fullName>
+                <default>false</default>
+                <label>Consultant and Contract Service</label>
+            </value>
+            <value>
+                <fullName>Corporate Contributions</fullName>
+                <default>false</default>
+                <label>Corporate Contributions</label>
+            </value>
+            <value>
+                <fullName>Endowments</fullName>
+                <default>false</default>
+                <label>Endowments</label>
+            </value>
+            <value>
+                <fullName>Equipment</fullName>
+                <default>false</default>
+                <label>Equipment</label>
+            </value>
+            <value>
+                <fullName>Fee Revenue</fullName>
+                <default>false</default>
+                <label>Fee Revenue</label>
+            </value>
+            <value>
+                <fullName>Fundraiser/Special Events</fullName>
+                <default>false</default>
+                <label>Fundraiser/Special Events</label>
+            </value>
+            <value>
+                <fullName>In-Kind Expenses</fullName>
+                <default>false</default>
+                <label>In-Kind Expenses</label>
+            </value>
+            <value>
+                <fullName>In-Kind Income</fullName>
+                <default>false</default>
+                <label>In-Kind Income</label>
+            </value>
+            <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>Interest Income</fullName>
+                <default>false</default>
+                <label>Interest Income</label>
+            </value>
+            <value>
+                <fullName>Investment Income</fullName>
+                <default>false</default>
+                <label>Investment Income</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>Office Supplies</fullName>
+                <default>false</default>
+                <label>Office Supplies</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Other Federal Grants</fullName>
+                <default>false</default>
+                <label>Other Federal Grants</label>
+            </value>
+            <value>
+                <fullName>Payroll Taxes and Fringe Benefits</fullName>
+                <default>false</default>
+                <label>Payroll Taxes and Fringe Benefits</label>
+            </value>
+            <value>
+                <fullName>Personnel: Salaries and Wages</fullName>
+                <default>false</default>
+                <label>Personnel: Salaries and Wages</label>
+            </value>
+            <value>
+                <fullName>Personnel Costs</fullName>
+                <default>false</default>
+                <label>Personnel Costs</label>
+            </value>
+            <value>
+                <fullName>Postage</fullName>
+                <default>false</default>
+                <label>Postage</label>
+            </value>
+            <value>
+                <fullName>Printing and Copying</fullName>
+                <default>false</default>
+                <label>Printing and Copying</label>
+            </value>
+            <value>
+                <fullName>Rent/Lease/Mortgage</fullName>
+                <default>false</default>
+                <label>Rent/Lease/Mortgage</label>
+            </value>
+            <value>
+                <fullName>State Grant</fullName>
+                <default>false</default>
+                <label>State Grant</label>
+            </value>
+            <value>
+                <fullName>Supplies</fullName>
+                <default>false</default>
+                <label>Supplies</label>
+            </value>
+            <value>
+                <fullName>Telephone</fullName>
+                <default>false</default>
+                <label>Telephone</label>
+            </value>
+            <value>
+                <fullName>Travel</fullName>
+                <default>false</default>
+                <label>Travel</label>
+            </value>
+            <value>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+                <label>Utilities</label>
+            </value>
+            <value>
+                <fullName>General Requirements</fullName>
+                <default>false</default>
+                <label>General Requirements</label>
+            </value>
+            <value>
+                <fullName>Existing Conditions</fullName>
+                <default>false</default>
+                <label>Existing Conditions</label>
+            </value>
+            <value>
+                <fullName>Concrete</fullName>
+                <default>false</default>
+                <label>Concrete</label>
+            </value>
+            <value>
+                <fullName>Masonry</fullName>
+                <default>false</default>
+                <label>Masonry</label>
+            </value>
+            <value>
+                <fullName>Metals</fullName>
+                <default>false</default>
+                <label>Metals</label>
+            </value>
+            <value>
+                <fullName>Wood &amp; Composites</fullName>
+                <default>false</default>
+                <label>Wood &amp; Composites</label>
+            </value>
+            <value>
+                <fullName>Thermal &amp; Moisture Protection</fullName>
+                <default>false</default>
+                <label>Thermal &amp; Moisture Protection</label>
+            </value>
+            <value>
+                <fullName>Openings</fullName>
+                <default>false</default>
+                <label>Openings</label>
+            </value>
+            <value>
+                <fullName>Finishes</fullName>
+                <default>false</default>
+                <label>Finishes</label>
+            </value>
+            <value>
+                <fullName>Specialties</fullName>
+                <default>false</default>
+                <label>Specialties</label>
+            </value>
+            <value>
+                <fullName>Furnishings</fullName>
+                <default>false</default>
+                <label>Furnishings</label>
+            </value>
+            <value>
+                <fullName>Special Construction</fullName>
+                <default>false</default>
+                <label>Special Construction</label>
+            </value>
+            <value>
+                <fullName>Fire Suppression Systems</fullName>
+                <default>false</default>
+                <label>Fire Suppression Systems</label>
+            </value>
+            <value>
+                <fullName>Plumbing</fullName>
+                <default>false</default>
+                <label>Plumbing</label>
+            </value>
+            <value>
+                <fullName>HVAC</fullName>
+                <default>false</default>
+                <label>HVAC</label>
+            </value>
+            <value>
+                <fullName>Electrical</fullName>
+                <default>false</default>
+                <label>Electrical</label>
+            </value>
+            <value>
+                <fullName>Communications</fullName>
+                <default>false</default>
+                <label>Communications</label>
+            </value>
+            <value>
+                <fullName>Earthwork</fullName>
+                <default>false</default>
+                <label>Earthwork</label>
+            </value>
+            <value>
+                <fullName>Exterior Improvements</fullName>
+                <default>false</default>
+                <label>Exterior Improvements</label>
+            </value>
+            <value>
+                <fullName>Total Project Contingency</fullName>
+                <default>false</default>
+                <label>Total Project Contingency</label>
+            </value>
+            <value>
+                <fullName>Predevelopment</fullName>
+                <default>false</default>
+                <label>Predevelopment</label>
+            </value>
+            <value>
+                <fullName>Building &amp; Property Acquisition</fullName>
+                <default>false</default>
+                <label>Building &amp; Property Acquisition</label>
+            </value>
+            <value>
+                <fullName>Construction Costs</fullName>
+                <default>false</default>
+                <label>Construction Costs</label>
+            </value>
+            <value>
+                <fullName>Professional Services</fullName>
+                <default>false</default>
+                <label>Professional Services</label>
+            </value>
+            <value>
+                <fullName>Carrying &amp; Financial Costs</fullName>
+                <default>false</default>
+                <label>Carrying &amp; Financial Costs</label>
+            </value>
+            <value>
+                <fullName>Seller&apos;s Closing Costs</fullName>
+                <default>false</default>
+                <label>Seller&apos;s Closing Costs</label>
+            </value>
+            <value>
+                <fullName>Development Fee</fullName>
+                <default>false</default>
+                <label>Development Fee</label>
+            </value>
+            <value>
+                <fullName>Telephone / Communications</fullName>
+                <default>false</default>
+                <label>Telephone / Communications</label>
+            </value>
+            <value>
+                <fullName>State Grants</fullName>
+                <default>false</default>
+                <label>State Grants</label>
+            </value>
+            <value>
+                <fullName>Printing</fullName>
+                <default>false</default>
+                <label>Printing</label>
+            </value>
+            <value>
+                <fullName>Local Travel Costs</fullName>
+                <default>false</default>
+                <label>Local Travel Costs</label>
+            </value>
+            <value>
+                <fullName>Facilities Expenses</fullName>
+                <default>false</default>
+                <label>Facilities Expenses</label>
+            </value>
+            <value>
+                <fullName>Contractual / Professional Services</fullName>
+                <default>false</default>
+                <label>Contractual / Professional Services</label>
+            </value>
+            <value>
+                <fullName>Fundraisers / Special Events</fullName>
+                <default>false</default>
+                <label>Fundraisers / Special Events</label>
+            </value>
+            <value>
+                <fullName>Federal Grants</fullName>
+                <default>false</default>
+                <label>Federal Grants</label>
+            </value>
+            <value>
+                <fullName>Salaries</fullName>
+                <default>false</default>
+                <label>Salaries</label>
+            </value>
+            <value>
+                <fullName>Rental and Non-Capital Leases</fullName>
+                <default>false</default>
+                <label>Rental and Non-Capital Leases</label>
+            </value>
+            <value>
+                <fullName>Materials and Supplies</fullName>
+                <default>false</default>
+                <label>Materials and Supplies</label>
+            </value>
+            <value>
+                <fullName>Indirect Costs</fullName>
+                <default>false</default>
+                <label>Indirect Costs</label>
+            </value>
+            <value>
+                <fullName>Fringe Benefits</fullName>
+                <default>false</default>
+                <label>Fringe Benefits</label>
+            </value>
+            <value>
+                <fullName>Contractual and Other Services</fullName>
+                <default>false</default>
+                <label>Contractual and Other Services</label>
+            </value>
+            <value>
+                <fullName>Administration</fullName>
+                <default>false</default>
+                <label>Administration</label>
+            </value>
+            <value>
+                <fullName>Construction</fullName>
+                <default>false</default>
+                <label>Construction</label>
+            </value>
+            <value>
+                <fullName>Infrastructure</fullName>
+                <default>false</default>
+                <label>Infrastructure</label>
+            </value>
+            <value>
+                <fullName>Infrastructure - ADC</fullName>
+                <default>false</default>
+                <label>Infrastructure - ADC</label>
+            </value>
+            <value>
+                <fullName>Loans - Commercial</fullName>
+                <default>false</default>
+                <label>Loans - Commercial</label>
+            </value>
+            <value>
+                <fullName>Per unit Services</fullName>
+                <default>false</default>
+                <label>Per unit Services</label>
+            </value>
+            <value>
+                <fullName>Loans - Commercial (2)</fullName>
+                <default>false</default>
+                <label>Loans - Commercial (2)</label>
+            </value>
+            <value>
+                <fullName>Loans - Residential</fullName>
+                <default>false</default>
+                <label>Loans - Residential</label>
+            </value>
+            <value>
+                <fullName>Infrastructure - CC</fullName>
+                <default>false</default>
+                <label>Infrastructure - CC</label>
+            </value>
+            <value>
+                <fullName>Material Supplies</fullName>
+                <default>false</default>
+                <label>Material Supplies</label>
+            </value>
+            <value>
+                <fullName>Capital Purchase</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Capital Purchase</label>
+            </value>
+            <value>
+                <fullName>Depreciation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Depreciation</label>
+            </value>
+            <value>
+                <fullName>Facilities</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Facilities</label>
+            </value>
+            <value>
+                <fullName>In-Kind Expense</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>In-Kind Expense</label>
+            </value>
+            <value>
+                <fullName>Other Non-Personnel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other Non-Personnel</label>
+            </value>
+            <value>
+                <fullName>Professional Fee, Grant &amp; Award</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Professional Fee, Grant &amp; Award</label>
+            </value>
+            <value>
+                <fullName>Purchased Services</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Purchased Services</label>
+            </value>
+            <value>
+                <fullName>Renovation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Renovation</label>
+            </value>
+            <value>
+                <fullName>Salaries, Benefits &amp; Taxes</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Salaries, Benefits &amp; Taxes</label>
+            </value>
+            <value>
+                <fullName>Specific Assistance To Individuals</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Specific Assistance To Individuals</label>
+            </value>
+            <value>
+                <fullName>Strategic Communications</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Strategic Communications</label>
+            </value>
+            <value>
+                <fullName>Supplies, Telephone, Postage &amp; Shipping, Occupancy, Equipment Rental &amp; Maintenance, Printing &amp; Publications</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Supplies, Telephone, Postage &amp; Shipping, Occupancy, Equipment Rental &amp; Maintenance, Printing &amp; Publications</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>Travel, Conferences &amp; Meetings</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Travel, Conferences &amp; Meetings</label>
+            </value>
+            <value>
+                <fullName>Travel/Per Diem, In-State</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Travel/Per Diem, In-State</label>
+            </value>
+            <value>
+                <fullName>Travel/Per Diem, Out-of-State</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Travel/Per Diem, Out-of-State</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

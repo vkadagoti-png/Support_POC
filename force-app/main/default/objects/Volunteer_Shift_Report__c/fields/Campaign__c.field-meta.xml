@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The partner-specific campaign for the disaster</description>
+    <label>Campaign</label>
+    <referenceTo>Campaign</referenceTo>
+    <relationshipLabel>Volunteer Shift Reports</relationshipLabel>
+    <relationshipName>Volunteer_Shift_Reports</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disbursed_Amount__c</fullName>
+    <description>Displays the combined total of funds already disbursed, currently pending disbursement, and any prior disbursed amounts.</description>
+    <inlineHelpText>This is the actual amount allocated and spend via the Financial Activity Cost Category Details that have been already disbursed or currently pending disbursement.</inlineHelpText>
+    <label>Disbursed Amount</label>
+    <summarizedField>BudgetCategoryValue.Disbursed_Amount__c</summarizedField>
+    <summaryForeignKey>BudgetCategoryValue.BudgetCategoryId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

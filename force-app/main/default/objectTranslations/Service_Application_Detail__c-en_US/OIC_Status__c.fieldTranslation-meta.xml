@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- OIC Status --></label>
+    <name>OIC_Status__c</name>
+    <picklistValues>
+        <masterLabel>ACTIVE</masterLabel>
+        <translation><!-- ACTIVE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLOSED</masterLabel>
+        <translation><!-- CLOSED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DENIED</masterLabel>
+        <translation><!-- DENIED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DONE</masterLabel>
+        <translation><!-- DONE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DRAFT</masterLabel>
+        <translation><!-- DRAFT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EXPIRED</masterLabel>
+        <translation><!-- EXPIRED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FILE</masterLabel>
+        <translation><!-- FILE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HEARING</masterLabel>
+        <translation><!-- HEARING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HOLD</masterLabel>
+        <translation><!-- HOLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INCOMPLETE</masterLabel>
+        <translation><!-- INCOMPLETE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ISSUED</masterLabel>
+        <translation><!-- ISSUED --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OPEN</masterLabel>
+        <translation><!-- OPEN --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PENDING</masterLabel>
+        <translation><!-- PENDING --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RESUBMIT</masterLabel>
+        <translation><!-- RESUBMIT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>REVIEW</masterLabel>
+        <translation><!-- REVIEW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WITHDRAWN</masterLabel>
+        <translation><!-- WITHDRAWN --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

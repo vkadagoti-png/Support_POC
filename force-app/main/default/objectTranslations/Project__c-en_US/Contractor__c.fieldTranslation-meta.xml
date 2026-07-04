@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This is the account for the general contractor on this project. --></help>
+    <label><!-- General Contractor --></label>
+    <name>Contractor__c</name>
+    <relationshipLabel><!-- Projects (Contractor of) --></relationshipLabel>
+</CustomFieldTranslation>

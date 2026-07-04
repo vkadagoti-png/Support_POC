@@ -1,0 +1,55 @@
+.info-red {
+
+	margin: 50px 0 48px;
+
+	padding: 20px;
+	position: relative;
+	background-color: #DBB0A480;
+    border-left: 8px solid #C03221;
+	span {
+		width: 52px;
+		height:52px;
+		position: absolute;
+		top: 50%;
+		left: 38px;
+		transform: translateY(-50%);
+	}
+
+	label {
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 36px;
+		color: #1A1A1A;
+		margin: 0 0 0 120px;
+		display: block;
+
+		&:focus,
+		&:focus-visible,
+		&.addFocus {
+
+			border: 2px solid #000;
+
+			border-radius: 5px;
+
+		}
+
+		@media screen and (min-width: 960px) {
+
+			font-size: 24px;
+
+			line-height: 36px;
+
+		}
+
+	}
+
+	p {
+		font-family: opensans400;
+		font-size: 16px;
+		line-height: 25.6px;
+		color: #1A1A1A;
+		margin: 9px 0 0 120px;
+
+	}
+
+}

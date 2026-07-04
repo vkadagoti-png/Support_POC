@@ -1,0 +1,113 @@
+<template>
+    <div class="CategoryLabel">{Category}</div>
+    <table data-id="mainTable" class="tableStyle">
+        <thead>
+            <tr class="tableHeaderRow">
+                <template for:each={fields} for:item="field">
+                    <th key={field.fieldAPI} style={field.columnStyle}>
+                        {field.fieldLabel}
+                    </th>
+                </template>
+                <template lwc:if={hasTotals}>
+                    <th>Total</th>
+                </template>
+
+                <template lwc:if={showAddRowButton}>
+                    <th>
+                        <lightning-button-icon 
+                            icon-name="utility:add_below" 
+                            alternative-text="add" 
+                            class="slds-m-left_xx-small" 
+                            title="Add Row"
+                            variant="brand"
+                            onclick={addRow}
+                        ></lightning-button-icon>
+                    </th>
+                </template>
+            </tr>
+        </thead>
+        <tbody>
+            <template for:each={rows} for:item="row">
+                <tr class="tableRow" key={row.Id}>
+                    <template for:each={fields} for:item="field">
+                        <td key={field.fieldAPI}>
+                            <c-custom-dynamic-input
+                                field-info={field.fieldInfo}
+                                required={field.required}
+                                disabled={field.disabled}
+                                record={row.record}
+                                custom-key={row.Id}
+                                data-key={row.Id}
+                                data-api={field.fieldAPI}
+                                data-roll-up={field.rollupTotal}
+                                onchange={handleDynamicFieldInputChange}
+                            ></c-custom-dynamic-input>
+                        </td>
+                    </template>
+                    <template lwc:if={hasTotals}>
+                    <td>
+                        <lightning-formatted-number 
+                            data-tag="rowTotal"
+                            data-key={row.Id}
+                            format-style="currency" 
+                            currency-code="USD"
+                            value="0"
+                        ></lightning-formatted-number>
+                    </td>
+                    </template>
+                    <template lwc:if={showAddRowButton}>
+                        <td>
+                            <template lwc:if={showDeleteButton}>
+                                <lightning-button-icon 
+                                    data-key={row.Id}
+                                    icon-name="utility:delete" 
+                                    alternative-text="Delete" 
+                                    class="slds-m-left_xx-small" 
+                                    title="Delete"
+                                    onclick={clearRow}
+                                ></lightning-button-icon>
+                            </template>
+                        </td>
+                    </template>
+                </tr>
+            </template>
+            <template lwc:if={hasTotals}>
+                <tr class="tableRow">
+                    <template for:each={fields} for:item="field">
+                        <td key={field.fieldAPI}>
+                            <template lwc:if={field.rollupTotal}>
+                                <lightning-formatted-number 
+                                    data-tag="columnTotal"
+                                    data-api={field.fieldAPI}
+                                    format-style="currency" 
+                                    currency-code="USD"
+                                    value="0"
+                                ></lightning-formatted-number>
+                            </template>
+                        </td>
+                    </template>
+                    <td> 
+                        <lightning-formatted-number 
+                            data-tag="grandTotal"
+                            format-style="currency" 
+                            currency-code="USD"
+                            value="0"
+                        ></lightning-formatted-number>
+                    </td>
+                    <template lwc:if={showAddRowButton}>
+                        <td>
+                            <lightning-button-icon 
+                                icon-name="utility:add_below" 
+                                alternative-text="add" 
+                                class="slds-m-left_xx-small" 
+                                title="Add Row"
+                                variant="brand"
+                                onclick={addRow}
+                            ></lightning-button-icon>
+                        </td>
+                    </template>
+                </tr>
+            </template>
+        </tbody>
+    </table>
+</template>

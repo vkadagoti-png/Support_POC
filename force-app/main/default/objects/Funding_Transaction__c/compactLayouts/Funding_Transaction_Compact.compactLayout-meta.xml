@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Transaction_Compact</fullName>
+    <fields>Type_of_Transaction__c</fields>
+    <fields>Entry_Type__c</fields>
+    <fields>Amount__c</fields>
+    <label>Funding Transaction Compact</label>
+</CompactLayout>

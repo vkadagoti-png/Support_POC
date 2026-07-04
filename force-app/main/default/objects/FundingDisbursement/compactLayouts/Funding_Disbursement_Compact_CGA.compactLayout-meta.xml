@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Disbursement_Compact_CGA</fullName>
+    <fields>Name</fields>
+    <fields>Total_Amount__c</fields>
+    <fields>Status</fields>
+    <fields>DisbursementName</fields>
+    <fields>PaymentMethodType</fields>
+    <fields>FundingAwardId</fields>
+    <label>Funding Disbursement Compact CGA</label>
+</CompactLayout>

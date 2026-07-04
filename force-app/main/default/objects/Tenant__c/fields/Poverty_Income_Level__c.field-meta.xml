@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Poverty_Income_Level__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+ HouseholdSize__c =1,$CustomMetadata.PovertyIncomeLevels__mdt.X2024_Poverty_income_levels.X1_Hhd_Member__c, 
+IF(
+ HouseholdSize__c =2,$CustomMetadata.PovertyIncomeLevels__mdt.X2024_Poverty_income_levels.X2_Hhd_Member__c, 
+IF(
+ HouseholdSize__c =3,$CustomMetadata.PovertyIncomeLevels__mdt.X2024_Poverty_income_levels.X3_Hhd_Member__c, 
+IF(
+ HouseholdSize__c =4,$CustomMetadata.PovertyIncomeLevels__mdt.X2024_Poverty_income_levels.X4_Hhd_Member__c, 
+IF(
+ HouseholdSize__c =5,$CustomMetadata.PovertyIncomeLevels__mdt.X2024_Poverty_income_levels.X5_Hhd_Member__c, 
+IF(
+ HouseholdSize__c =6,$CustomMetadata.PovertyIncomeLevels__mdt.X2024_Poverty_income_levels.X6_hhd_Member__c, 
+IF(
+ HouseholdSize__c =7,$CustomMetadata.PovertyIncomeLevels__mdt.X2024_Poverty_income_levels.X7_Hhd_Member__c, 
+IF(
+ HouseholdSize__c =8,$CustomMetadata.PovertyIncomeLevels__mdt.X2024_Poverty_income_levels.X8_Hhd_Member__c, 
+0
+
+
+) )))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Poverty Income Level</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>used to launch the flow Internal Document Checklist Items: Create [Screen-Flow]</description>
+    <flowDefinition>Internal_Document_Checklist_Items_Create_Screen_Flow</flowDefinition>
+    <label>Create Document Checklist Items</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Explain the relationship between buyer and seller.  Provide sales contract from last arms-length transaction.  If the sales contract cannot be provided at the initial application stage, it will be a requirement to receive a firm Financing Commitment. --></help>
+    <label><!-- Explain the relationship --></label>
+    <name>Explain_the_relationship__c</name>
+</CustomFieldTranslation>

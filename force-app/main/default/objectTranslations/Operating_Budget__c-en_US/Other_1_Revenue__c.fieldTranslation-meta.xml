@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Other 1 Revenue --></label>
+    <name>Other_1_Revenue__c</name>
+</CustomFieldTranslation>

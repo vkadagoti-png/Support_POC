@@ -1,0 +1,104 @@
+.tile-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures tiles stay in one row */
+    gap: 20px; /* Adds spacing between tiles */
+    justify-content: center;
+    padding: 20px;
+    overflow-x: hidden; /* Allows horizontal scrolling on smaller screens */
+}
+
+.tile {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+    cursor: pointer;
+    flex-shrink: 0; /* Prevents tiles from shrinking */
+    display: flex;
+    width: 100%;;
+}
+
+.tile:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tile-content {
+    width: 50%;
+}
+
+
+.tile-content span {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.tile .tile-content {
+    background-color: #164054;
+    border-radius: 15px 0 0 15px;
+    position: relative;
+    transition: background-color 1000ms linear;
+}
+
+.tile:hover h1 {
+    color: #a61c00;
+}
+
+
+.tile .tile-content span img{
+    filter: brightness(0) saturate(100%) invert(89%) sepia(58%) saturate(0%) hue-rotate(73deg) brightness(112%) contrast(104%);
+    width: 77px;
+    height: 77px;
+}
+
+.tile-header {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #1e526b;
+}
+
+.sub-heading {
+    font-size: 16px;
+    color: #444444;
+    
+}
+
+h1, h2 {
+    text-decoration: underline;
+}
+
+.full-row-heading {
+    font-size: 24px;
+    color: #1e526b;
+    margin-left: 1rem;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 1024px) {
+    .tile {
+        flex-direction: column;
+        text-align: center;
+    }
+    .tile-content {
+        width: 100%;
+        height: 200px;
+        border-radius: 15px 15px 0 0 !important;
+    }
+}

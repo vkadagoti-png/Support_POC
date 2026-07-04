@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Air Conditioning System --></label>
+    <name>Air_Conditioning_System__c</name>
+    <picklistValues>
+        <masterLabel>Central Forced Air</masterLabel>
+        <translation><!-- Central Forced Air --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None Provided</masterLabel>
+        <translation><!-- None Provided --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Window Units</masterLabel>
+        <translation><!-- Window Units --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

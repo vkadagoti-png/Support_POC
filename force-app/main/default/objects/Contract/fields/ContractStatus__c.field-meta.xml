@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContractStatus__c</fullName>
+    <label>Contract Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pending</fullName>
+                <default>true</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Document checklist Started</fullName>
+                <default>false</default>
+                <label>Document checklist Started</label>
+            </value>
+            <value>
+                <fullName>Contract Document Checklist Complete</fullName>
+                <default>false</default>
+                <label>Contract Document Checklist Complete</label>
+            </value>
+            <value>
+                <fullName>Routing</fullName>
+                <default>false</default>
+                <label>Routing</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

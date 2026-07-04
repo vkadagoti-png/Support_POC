@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application_submitted_Unassigned</fullName>
+    <booleanFilter>1 AND 2 AND 3</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Project_Status__c</columns>
+    <columns>Application__c</columns>
+    <columns>Developer__c</columns>
+    <columns>Award_Recommendation__c</columns>
+    <columns>Award_Amount__c</columns>
+    <columns>GrantMonitor__c</columns>
+    <columns>Analyst__c</columns>
+    <columns>Reference_Application__c</columns>
+    <columns>Account__c</columns>
+    <columns>CDA_App_Review_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Application_Status__c</field>
+        <operation>equals</operation>
+        <value>Submitted</value>
+    </filters>
+    <filters>
+        <field>Analyst__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>GrantMonitor__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Application submitted Unassigned</label>
+    <sharedTo>
+        <group>CDBG_Internal_Users</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- NRSA --></label>
+    <name>NRSA__c</name>
+    <picklistValues>
+        <masterLabel>Choice</masterLabel>
+        <translation><!-- Choice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North</masterLabel>
+        <translation><!-- North --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North Central</masterLabel>
+        <translation><!-- North Central --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North west</masterLabel>
+        <translation><!-- North west --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Southeast Proposed</masterLabel>
+        <translation><!-- Southeast Proposed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

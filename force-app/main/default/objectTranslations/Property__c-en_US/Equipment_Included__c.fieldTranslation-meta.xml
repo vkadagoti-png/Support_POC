@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Equipment Included with Income Restricted Units --></help>
+    <label><!-- Equipment Included --></label>
+    <name>Equipment_Included__c</name>
+    <picklistValues>
+        <masterLabel>Blinds/Drapes</masterLabel>
+        <translation><!-- Blinds/Drapes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ceiling Fans</masterLabel>
+        <translation><!-- Ceiling Fans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Common On-site Laundry</masterLabel>
+        <translation><!-- Common On-site Laundry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dishwasher</masterLabel>
+        <translation><!-- Dishwasher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fireplace</masterLabel>
+        <translation><!-- Fireplace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Garbage Disposal</masterLabel>
+        <translation><!-- Garbage Disposal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kitchen Exhaust Duct</masterLabel>
+        <translation><!-- Kitchen Exhaust Duct --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Laundry Equipment</masterLabel>
+        <translation><!-- Laundry Equipment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Microwave</masterLabel>
+        <translation><!-- Microwave --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Range &amp; Oven</masterLabel>
+        <translation><!-- Range &amp; Oven --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Refrigerator</masterLabel>
+        <translation><!-- Refrigerator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Security Alarm</masterLabel>
+        <translation><!-- Security Alarm --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

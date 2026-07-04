@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipment_Included__c</fullName>
+    <inlineHelpText>Equipment Included with Income Restricted Units</inlineHelpText>
+    <label>Equipment Included</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Microwave</fullName>
+                <default>false</default>
+                <label>Microwave</label>
+            </value>
+            <value>
+                <fullName>Refrigerator</fullName>
+                <default>false</default>
+                <label>Refrigerator</label>
+            </value>
+            <value>
+                <fullName>Kitchen Exhaust Duct</fullName>
+                <default>false</default>
+                <label>Kitchen Exhaust Duct</label>
+            </value>
+            <value>
+                <fullName>Range &amp; Oven</fullName>
+                <default>false</default>
+                <label>Range &amp; Oven</label>
+            </value>
+            <value>
+                <fullName>Ceiling Fans</fullName>
+                <default>false</default>
+                <label>Ceiling Fans</label>
+            </value>
+            <value>
+                <fullName>Common On-site Laundry</fullName>
+                <default>false</default>
+                <label>Common On-site Laundry</label>
+            </value>
+            <value>
+                <fullName>Garbage Disposal</fullName>
+                <default>false</default>
+                <label>Garbage Disposal</label>
+            </value>
+            <value>
+                <fullName>Fireplace</fullName>
+                <default>false</default>
+                <label>Fireplace</label>
+            </value>
+            <value>
+                <fullName>Security Alarm</fullName>
+                <default>false</default>
+                <label>Security Alarm</label>
+            </value>
+            <value>
+                <fullName>Dishwasher</fullName>
+                <default>false</default>
+                <label>Dishwasher</label>
+            </value>
+            <value>
+                <fullName>Blinds/Drapes</fullName>
+                <default>false</default>
+                <label>Blinds/Drapes</label>
+            </value>
+            <value>
+                <fullName>Laundry Equipment</fullName>
+                <default>false</default>
+                <label>Laundry Equipment</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>8</visibleLines>
+</CustomField>

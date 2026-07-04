@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Points_Awarded__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(Weight_This_Scorer__c),Total_Points__c ,
+
+
+(Total_Points__c *  Weight_This_Scorer__c)+Total_Points__c)</formula>
+    <inlineHelpText>This is calculated based on points awarded on the details or completed scoring details, and add&apos;s the % of weighting for the total.</inlineHelpText>
+    <label>Points Awarded</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

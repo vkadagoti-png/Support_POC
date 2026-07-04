@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Opp_compact_CGA</fullName>
+    <fields>Name</fields>
+    <fields>Allocation__c</fields>
+    <fields>Total_Reserved__c</fields>
+    <fields>Total_Obligation__c</fields>
+    <fields>Total_Disbursed__c</fields>
+    <fields>Available_Funds__c</fields>
+    <fields>Status</fields>
+    <fields>StartDate</fields>
+    <fields>EndDate</fields>
+    <label>Funding Opp compact CGA</label>
+</CompactLayout>

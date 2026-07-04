@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProgramParticipantcompact</fullName>
+    <fields>Ethnicity__c</fields>
+    <fields>Race__c</fields>
+    <fields>NRSA__c</fields>
+    <fields>Income_AMI__c</fields>
+    <fields>EligibilityVerifiedHomeless__c</fields>
+    <label>Program Participant compact</label>
+</CompactLayout>

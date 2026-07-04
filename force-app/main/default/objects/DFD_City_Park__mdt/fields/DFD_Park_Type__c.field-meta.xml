@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DFD_Park_Type__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Park Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>City Park</fullName>
+                <default>true</default>
+                <label>City Park</label>
+            </value>
+            <value>
+                <fullName>Independent Park</fullName>
+                <default>false</default>
+                <label>Independent Park</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

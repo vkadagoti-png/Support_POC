@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>National_Objective_Contract__c</fullName>
+    <inlineHelpText>Select the National Objective option to drive the clause langage on the contract.</inlineHelpText>
+    <label>National Objective (Contract)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>LMC – Family Size and Income (Public)</fullName>
+                <default>false</default>
+                <label>LMC – Family Size and Income (Public)</label>
+            </value>
+            <value>
+                <fullName>LMC – Family Size and Income (Econ)</fullName>
+                <default>false</default>
+                <label>LMC – Family Size and Income (Econ)</label>
+            </value>
+            <value>
+                <fullName>LMC – Presumed</fullName>
+                <default>false</default>
+                <label>LMC – Presumed</label>
+            </value>
+            <value>
+                <fullName>LMA – City Wide</fullName>
+                <default>false</default>
+                <label>LMA – City Wide</label>
+            </value>
+            <value>
+                <fullName>LMA – Neighborhood-Based</fullName>
+                <default>false</default>
+                <label>LMA – Neighborhood-Based</label>
+            </value>
+            <value>
+                <fullName>LMJ  - Creation/Retention</fullName>
+                <default>false</default>
+                <label>LMJ  - Creation/Retention</label>
+            </value>
+            <value>
+                <fullName>Planning/Admin</fullName>
+                <default>false</default>
+                <label>Planning/Admin</label>
+            </value>
+            <value>
+                <fullName>Public Improvements</fullName>
+                <default>false</default>
+                <label>Public Improvements</label>
+            </value>
+            <value>
+                <fullName>LMC - Nature</fullName>
+                <default>false</default>
+                <label>LMC - Nature</label>
+            </value>
+            <value>
+                <fullName>Low-Mod Income - Area Benefit</fullName>
+                <default>false</default>
+                <label>Low-Mod Income - Area Benefit</label>
+            </value>
+            <value>
+                <fullName>Low/Mod Income-Assumption</fullName>
+                <default>false</default>
+                <label>Low/Mod Income-Assumption</label>
+            </value>
+            <value>
+                <fullName>LMI-Limited Clientele (Presumed)</fullName>
+                <default>false</default>
+                <label>LMI-Limited Clientele (Presumed)</label>
+            </value>
+            <value>
+                <fullName>Low/Mod Income – Limited Clientele</fullName>
+                <default>false</default>
+                <label>Low/Mod Income – Limited Clientele</label>
+            </value>
+            <value>
+                <fullName>Low/Mod Housing</fullName>
+                <default>false</default>
+                <label>Low/Mod Housing</label>
+            </value>
+            <value>
+                <fullName>Urgent Needs</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Urgent Needs</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Budget_Match__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Box is checked when the revenue and expense budgets Match, and unchecked when they do not match. This field is then used in a formula field to prevent submission when budgets do not match. Update logic is performed in the Application_Budget_Display flow.</description>
+    <inlineHelpText>Box is checked when the revenue and expense budgets Match, and unchecked when they do not match.</inlineHelpText>
+    <label>Budget Match</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

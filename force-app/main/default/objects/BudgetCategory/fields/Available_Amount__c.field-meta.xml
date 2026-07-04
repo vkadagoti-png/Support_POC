@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Available_Amount__c</fullName>
+    <inlineHelpText>This is a sum of the available amount on all the Budget Category Detail.</inlineHelpText>
+    <label>Available Amount</label>
+    <summarizedField>BudgetCategoryValue.Available_Amount__c</summarizedField>
+    <summaryForeignKey>BudgetCategoryValue.BudgetCategoryId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

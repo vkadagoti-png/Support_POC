@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SLFRF_Contracts</fullName>
+    <columns>CONTRACT.CONTRACT_NUMBER</columns>
+    <columns>ProgramMonitor__c</columns>
+    <columns>Analyst__c</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>CONTRACT.START_DATE</columns>
+    <columns>CONTRACT.END_DATE</columns>
+    <columns>CONTRACT.STATUS</columns>
+    <columns>Program__c</columns>
+    <columns>ParentProgram__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ParentProgram__c</field>
+        <operation>equals</operation>
+        <value>SLFRF (ARPA)</value>
+    </filters>
+    <label>SLFRF Contracts</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Census Tract --></label>
+    <name>Census_Track__c</name>
+    <picklistValues>
+        <masterLabel>1015.00</masterLabel>
+        <translation><!-- 1015.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1018.00</masterLabel>
+        <translation><!-- 1018.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1053.00</masterLabel>
+        <translation><!-- 1053.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1054.00</masterLabel>
+        <translation><!-- 1054.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1061.00</masterLabel>
+        <translation><!-- 1061.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1063.00</masterLabel>
+        <translation><!-- 1063.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1064.00</masterLabel>
+        <translation><!-- 1064.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1065.00</masterLabel>
+        <translation><!-- 1065.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1067.00</masterLabel>
+        <translation><!-- 1067.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1072.00</masterLabel>
+        <translation><!-- 1072.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1073.00</masterLabel>
+        <translation><!-- 1073.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1074.00</masterLabel>
+        <translation><!-- 1074.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1075.00</masterLabel>
+        <translation><!-- 1075.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1076.00</masterLabel>
+        <translation><!-- 1076.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1081.00</masterLabel>
+        <translation><!-- 1081.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1082.00</masterLabel>
+        <translation><!-- 1082.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1083.00</masterLabel>
+        <translation><!-- 1083.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1096.00</masterLabel>
+        <translation><!-- 1096.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1097.00</masterLabel>
+        <translation><!-- 1097.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1101.00</masterLabel>
+        <translation><!-- 1101.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1102.00</masterLabel>
+        <translation><!-- 1102.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1103.00</masterLabel>
+        <translation><!-- 1103.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1104.00</masterLabel>
+        <translation><!-- 1104.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1105.00</masterLabel>
+        <translation><!-- 1105.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1111.00</masterLabel>
+        <translation><!-- 1111.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1112.00</masterLabel>
+        <translation><!-- 1112.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1113.00</masterLabel>
+        <translation><!-- 1113.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1122.00</masterLabel>
+        <translation><!-- 1122.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1123.00</masterLabel>
+        <translation><!-- 1123.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1151.00</masterLabel>
+        <translation><!-- 1151.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1152.00</masterLabel>
+        <translation><!-- 1152.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1153.00</masterLabel>
+        <translation><!-- 1153.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1154.00</masterLabel>
+        <translation><!-- 1154.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1155.00</masterLabel>
+        <translation><!-- 1155.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1156.00</masterLabel>
+        <translation><!-- 1156.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1157.00</masterLabel>
+        <translation><!-- 1157.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1161.00</masterLabel>
+        <translation><!-- 1161.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1163.02</masterLabel>
+        <translation><!-- 1163.02 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1164.00</masterLabel>
+        <translation><!-- 1164.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1191.01</masterLabel>
+        <translation><!-- 1191.01 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1193.00</masterLabel>
+        <translation><!-- 1193.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1202.00</masterLabel>
+        <translation><!-- 1202.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1212.00</masterLabel>
+        <translation><!-- 1212.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1241.00</masterLabel>
+        <translation><!-- 1241.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1242.00</masterLabel>
+        <translation><!-- 1242.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1246.00</masterLabel>
+        <translation><!-- 1246.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1257.00</masterLabel>
+        <translation><!-- 1257.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1266.00</masterLabel>
+        <translation><!-- 1266.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1267.00</masterLabel>
+        <translation><!-- 1267.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1269.00</masterLabel>
+        <translation><!-- 1269.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1270.00</masterLabel>
+        <translation><!-- 1270.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1271.00</masterLabel>
+        <translation><!-- 1271.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1275.00</masterLabel>
+        <translation><!-- 1275.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1277.00</masterLabel>
+        <translation><!-- 1277.00 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1278.00</masterLabel>
+        <translation><!-- 1278.00 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

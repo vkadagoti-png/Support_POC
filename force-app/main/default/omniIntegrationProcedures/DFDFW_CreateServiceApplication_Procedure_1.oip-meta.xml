@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniIntegrationProcedure xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customJavaScript>{
+    &quot;applicationId&quot;: &quot;a1ccp000000iNs9AAE&quot;,
+    &quot;DFDDRCreateServiceApplicationStatus&quot;: true,
+    &quot;getOmniInstanceId&quot;: [],
+    &quot;getOmniInstanceIdStatus&quot;: true,
+    &quot;getAccountDetails&quot;: {
+        &quot;ContactLastName&quot;: &quot;Dev2Pro2&quot;,
+        &quot;ContactName&quot;: &quot;Sudhanshu Dev2Pro2&quot;,
+        &quot;ContactFirstName&quot;: &quot;Sudhanshu&quot;,
+        &quot;ContactEmail&quot;: &quot;ssvjdev2pro2@yopmail.com&quot;,
+        &quot;userAccountId&quot;: &quot;001cp000009gbIzAAI&quot;
+    },
+    &quot;getAccountDetailsStatus&quot;: true,
+    &quot;sInstanceId&quot;: &quot;&quot;,
+    &quot;Acknowledgement&quot;: {
+        &quot;VendorPermitsAcknowledgement&quot;: {
+            &quot;VendorPermitsAcknowledgementInitials&quot;: &quot;asd&quot;
+        },
+        &quot;ADAAcknowledgement&quot;: {
+            &quot;ADAAcknowledgementInitials&quot;: &quot;ads&quot;
+        },
+        &quot;NotifyingofImpact&quot;: {
+            &quot;NotifyingofImpactInitials&quot;: &quot;dad&quot;
+        },
+        &quot;CityAgreement&quot;: null,
+        &quot;ParkPermitsAcknowledgement&quot;: null
+    },
+    &quot;DocumentUpload&quot;: {
+        &quot;FileUpload&quot;: {},
+        &quot;DynamicFileText&quot;: &quot;&lt;li&gt;Approval Letter from Alderperson&lt;/li&gt; &lt;li&gt;Certificate of Insurance&lt;/li&gt; &lt;li&gt;Emergency Plan&lt;/li&gt; &lt;li&gt;Event Site Map&lt;/li&gt;&lt;li&gt;Alcohol Vendor Names&lt;/li&gt;&lt;li&gt;Food and Food Truck Vendor Names&lt;/li&gt;&lt;li&gt;Map of your Parade, Run/Walk/Ride Route&lt;/li&gt;&lt;li&gt;Traffic Control Plan&lt;/li&gt;&quot;
+    },
+    &quot;MapRoute&quot;: true,
+    &quot;Publicity&quot;: {
+        &quot;FinancialInfo&quot;: {
+            &quot;AdmissionCharged&quot;: &quot;Yes&quot;
+        },
+        &quot;InquiryPhone&quot;: &quot;1313123112&quot;,
+        &quot;InquiryEmail&quot;: &quot;asda@asdas.asda&quot;,
+        &quot;PublicizeEvent&quot;: &quot;asd&quot;
+    },
+    &quot;SecuritySafetyProcedures&quot;: {
+        &quot;EmergencyMedicalServices&quot;: &quot;Yes&quot;,
+        &quot;OffDutyOfficer&quot;: &quot;Yes&quot;,
+        &quot;SecurityEvent&quot;: &quot;Yes&quot;,
+        &quot;EmergencyPhoneNumber&quot;: &quot;2313131231&quot;,
+        &quot;EmergencyContactPerson&quot;: &quot;asda&quot;,
+        &quot;EmergencyAgencyName&quot;: &quot;adas&quot;,
+        &quot;Messaging9&quot;: null,
+        &quot;Policearmed&quot;: &quot;Yes&quot;,
+        &quot;overnightSecurity&quot;: &quot;Yes&quot;,
+        &quot;NumberOfPolicePersonnel&quot;: 12,
+        &quot;offdutypoliceofficerPhone&quot;: &quot;1213123123&quot;,
+        &quot;offdutypoliceofficerLastName&quot;: &quot;asdas&quot;,
+        &quot;offdutypoliceofficerFirstName&quot;: &quot;asdsad&quot;,
+        &quot;NumberSecurityPersonnel&quot;: 12,
+        &quot;SecurityCompanyPhone&quot;: &quot;1231321312&quot;,
+        &quot;SecurityCompanyName&quot;: &quot;asdsa&quot;,
+        &quot;Messaging11&quot;: null,
+        &quot;Messaging10&quot;: null
+    },
+    &quot;TrashandSanitationRecycling&quot;: {
+        &quot;ResponsiblePartyForRecycling&quot;: {
+            &quot;RecyclingPersonLastName&quot;: &quot;asds&quot;,
+            &quot;RecyclingPersonFirstName&quot;: &quot;asd&quot;,
+            &quot;RecyclingPersonEmail&quot;: &quot;asda@asdas.asda&quot;,
+            &quot;RecyclingPersonPhone&quot;: &quot;1231232131&quot;
+        },
+        &quot;ResponsiblePartyForTrash&quot;: {
+            &quot;TrashPersonPhone&quot;: &quot;1231321312&quot;,
+            &quot;TrashPersonEmail&quot;: &quot;asda@asdas.asda&quot;,
+            &quot;TrashPersonLastName&quot;: &quot;asda&quot;,
+            &quot;TrashPersonFirstName&quot;: &quot;asdad&quot;
+        },
+        &quot;ResponsiblePartyForCleaning&quot;: {
+            &quot;CleaningPersonPhone&quot;: &quot;1321231231&quot;,
+            &quot;CleaningPersonEmail&quot;: &quot;asda@asdas.asda&quot;,
+            &quot;CleaningPersonLastName&quot;: &quot;asd&quot;,
+            &quot;CleaningPersonFirstName&quot;: &quot;asdas&quot;
+        },
+        &quot;PortableRestrooms&quot;: &quot;Yes&quot;,
+        &quot;Location&quot;: &quot;asd&quot;,
+        &quot;VendorInformation&quot;: &quot;asda&quot;,
+        &quot;HowManyRooms&quot;: &quot;sada&quot;
+    },
+    &quot;ClosureofInterstatesHighwaysRoutes&quot;: {
+        &quot;EventRampHighways&quot;: &quot;Yes&quot;
+    },
+    &quot;UsePublicStreets&quot;: {
+        &quot;EventClose&quot;: &quot;Yes&quot;,
+        &quot;NameTrafficControlCompany&quot;: &quot;sad&quot;,
+        &quot;ContactTrafficControlCompany&quot;: &quot;asd&quot;,
+        &quot;StreetDataRepeatableBlock&quot;: {
+            &quot;NumberOfDays&quot;: &quot;asd&quot;,
+            &quot;Blocks&quot;: &quot;asda&quot;,
+            &quot;Blockswithparkingmeters&quot;: &quot;adsdsa&quot;,
+            &quot;TrafficLanes&quot;: &quot;adasd&quot;,
+            &quot;ParkingLanes&quot;: &quot;asda&quot;,
+            &quot;StreettoReopenTime&quot;: &quot;01:30 am&quot;,
+            &quot;StreettoReopenDate&quot;: &quot;2024-12-01&quot;,
+            &quot;StreettoCloseTime&quot;: &quot;12:00 am&quot;,
+            &quot;StreettoCloseDate&quot;: &quot;2024-12-01&quot;,
+            &quot;Reasonforblocking&quot;: &quot;asd&quot;,
+            &quot;CrossStreet2&quot;: &quot;asd&quot;,
+            &quot;BetweenCrossStreet1&quot;: &quot;asda&quot;,
+            &quot;StreetToBeBlocked&quot;: &quot;asdsa&quot;
+        },
+        &quot;DescribeParadeWalkDirection&quot;: &quot;asdad&quot;,
+        &quot;Messaging24&quot;: null
+    },
+    &quot;UseOfPublicPark&quot;: {
+        &quot;EventParkSpaceRequire&quot;: &quot;No&quot;,
+        &quot;ParksDivisionEquipmentRequest&quot;: null,
+        &quot;EquipmentDeparmentRequest&quot;: null,
+        &quot;LocationinPark&quot;: null,
+        &quot;ParkList-Block&quot;: null,
+        &quot;Messaging25&quot;: true
+    },
+    &quot;EventDetails&quot;: {
+        &quot;Food&quot;: {
+            &quot;FoodSold&quot;: &quot;Yes, sell&quot;,
+            &quot;FoodPropane&quot;: &quot;Yes&quot;
+        },
+        &quot;OtherDetails&quot;: {
+            &quot;NotifiedAlderManforEvent&quot;: &quot;Yes&quot;,
+            &quot;volunteersEvent&quot;: &quot;Yes&quot;,
+            &quot;merchandisesold&quot;: &quot;Yes&quot;,
+            &quot;NameCoordinator&quot;: &quot;asdas&quot;,
+            &quot;volunteersRole&quot;: &quot;asdsd&quot;
+        },
+        &quot;Beverage&quot;: {
+            &quot;AlcoholicBeverages&quot;: &quot;Yes, sell&quot;,
+            &quot;acholicFormula&quot;: true
+        },
+        &quot;BuildingDetails&quot;: {
+            &quot;TemporaryEvent&quot;: &quot;Yes&quot;,
+            &quot;WilltentsErected&quot;: &quot;Yes&quot;,
+            &quot;WillConstructed&quot;: &quot;Yes&quot;,
+            &quot;WillGeneratorsUsed&quot;: &quot;Yes&quot;,
+            &quot;TemporaryContactName&quot;: &quot;asdas&quot;,
+            &quot;TemporaryEventSize&quot;: &quot;12&quot;,
+            &quot;Typeoftent&quot;: &quot;Self Standing&quot;,
+            &quot;HowmanyTents&quot;: 12,
+            &quot;TentProviderName&quot;: &quot;asd&quot;,
+            &quot;TentFootage&quot;: &quot;12&quot;,
+            &quot;StageSize&quot;: &quot;12&quot;,
+            &quot;ProvideName&quot;: &quot;casda&quot;,
+            &quot;Providevendorname&quot;: &quot;czca&quot;,
+            &quot;HowManyGenerator&quot;: &quot;12&quot;,
+            &quot;GeneratorSize&quot;: &quot;122&quot;,
+            &quot;EventActivites&quot;: &quot;Pyrotechnics_Fireworks;Carnival_Rides&quot;
+        },
+        &quot;EventTypeEstimateAttendanceFormula&quot;: false,
+        &quot;HowManyPeopleAttendEvent&quot;: 121,
+        &quot;largeNumberOfPeople&quot;: &quot;Yes&quot;,
+        &quot;StreetFormulaforRunAndParade&quot;: true,
+        &quot;ParkEventTypeFormula&quot;: false,
+        &quot;EventTypeRunWalkRideFormula&quot;: true,
+        &quot;EventType&quot;: &quot;Run_Walk_Ride;Parade&quot;
+    },
+    &quot;EventDateTimeDetails&quot;: {
+        &quot;LiabilityInsuranceCoverage&quot;: {
+            &quot;InitialAgree&quot;: &quot;sff&quot;
+        },
+        &quot;EventBreakdownEndTime&quot;: &quot;02:00 am&quot;,
+        &quot;EventBreakdownEndDate&quot;: &quot;2025-01-23&quot;,
+        &quot;EventBreakdownStartTime&quot;: &quot;12:00 am&quot;,
+        &quot;EventBreakdownStartDate&quot;: &quot;2025-01-23&quot;,
+        &quot;EventDateTime&quot;: [
+            {
+                &quot;EndTime1&quot;: &quot;01:30 am&quot;,
+                &quot;StartTime1&quot;: &quot;12:30 am&quot;,
+                &quot;StartDate1&quot;: &quot;2025-01-16&quot;
+            },
+            {
+                &quot;EndTime1&quot;: &quot;01:00 am&quot;,
+                &quot;StartTime1&quot;: &quot;12:00 am&quot;,
+                &quot;StartDate1&quot;: &quot;2025-01-17&quot;
+            },
+            {
+                &quot;EndTime1&quot;: &quot;01:00 am&quot;,
+                &quot;StartTime1&quot;: &quot;12:00 am&quot;,
+                &quot;StartDate1&quot;: &quot;2025-01-18&quot;
+            },
+            {
+                &quot;StartTime1&quot;: &quot;12:00 am&quot;,
+                &quot;EndTime1&quot;: &quot;01:00 am&quot;,
+                &quot;StartDate1&quot;: &quot;2025-01-19&quot;
+            },
+            {
+                &quot;EndTime1&quot;: &quot;01:00 am&quot;,
+                &quot;StartTime1&quot;: &quot;12:00 am&quot;,
+                &quot;StartDate1&quot;: &quot;2025-01-20&quot;
+            }
+        ],
+        &quot;EventSetupEndTime&quot;: &quot;01:00 am&quot;,
+        &quot;EventSetupEndDate&quot;: &quot;2025-01-23&quot;,
+        &quot;EventSetupStartTime&quot;: &quot;12:00 am&quot;,
+        &quot;EventSetupStartDate&quot;: &quot;2025-01-16&quot;,
+        &quot;Messaging7&quot;: true,
+        &quot;ValidateBreakdownEndDatewithEventStartDate&quot;: false,
+        &quot;Messaging21&quot;: true,
+        &quot;ValidateBreakdownDatewithStart&quot;: false,
+        &quot;Messaging5&quot;: true,
+        &quot;ValidateBreakdownEndDateSetupStartDate&quot;: false,
+        &quot;Messaging1&quot;: true,
+        &quot;ValidateBreakdownEndStartDate&quot;: false,
+        &quot;Messaging3&quot;: true,
+        &quot;ValidateDateForSetupBreakdown&quot;: false,
+        &quot;Messaging34&quot;: true,
+        &quot;ValidateSameBreakdownStratTimeEventStartTime&quot;: false,
+        &quot;Messaging31&quot;: true,
+        &quot;ValidateGreaterTimeForBreakdown&quot;: false,
+        &quot;eventMoreThanFiveDays&quot;: true,
+        &quot;EventDateBlockformula&quot;: true,
+        &quot;Messaging29&quot;: true,
+        &quot;ValidateSetupDatewithEventEndDate&quot;: false,
+        &quot;Messaging6&quot;: true,
+        &quot;ValidateSetupDatewithEventStartDate&quot;: false,
+        &quot;Messaging33&quot;: true,
+        &quot;ValidatSetStartTimeEventStartTime&quot;: true,
+        &quot;Messaging38&quot;: true,
+        &quot;ValidateEventTime5&quot;: false,
+        &quot;Messaging37&quot;: true,
+        &quot;ValidateEventTime4&quot;: false,
+        &quot;Messaging36&quot;: true,
+        &quot;ValidateEventTime3&quot;: false,
+        &quot;Messaging32&quot;: true,
+        &quot;ValidateEventTime2&quot;: false,
+        &quot;Messaging35&quot;: true,
+        &quot;ValidateEventTime1&quot;: false,
+        &quot;Messaging28&quot;: true,
+        &quot;ValidateGreaterTimeForSetup&quot;: false,
+        &quot;Messaging2&quot;: true,
+        &quot;ValidateSetupEndandStartDateFormula&quot;: false
+    },
+    &quot;EventInformation&quot;: {
+        &quot;EventDescription&quot;: &quot;asdasd&quot;,
+        &quot;AttendanceTime&quot;: &quot;12:00 am&quot;,
+        &quot;EstimatedAttendance&quot;: &quot;0 – 200&quot;,
+        &quot;EventHeldPast&quot;: &quot;Yes&quot;,
+        &quot;EventName&quot;: &quot;adad&quot;,
+        &quot;EstimatedAttendanceRange5000&quot;: false,
+        &quot;EstimatedAttendanceRange500&quot;: false,
+        &quot;PastEventLocation&quot;: &quot;adad&quot;,
+        &quot;PastEventDate&quot;: &quot;2024-12-02&quot;
+    },
+    &quot;GeneralInformation&quot;: {
+        &quot;PrimaryContactInformation&quot;: {
+            &quot;PrimaryContactPhone&quot;: &quot;1313213213&quot;,
+            &quot;PrimaryContactEmail&quot;: &quot;asads@dd.sad&quot;,
+            &quot;PrimaryContactLastName&quot;: &quot;adad&quot;,
+            &quot;PrimaryContactFirstName&quot;: &quot;adada&quot;
+        },
+        &quot;PersonalDetails&quot;: {
+            &quot;ZipCode&quot;: &quot;4478hh&quot;,
+            &quot;StreetAddressLine2&quot;: &quot;Street Line 2&quot;,
+            &quot;StreetAddressLine1&quot;: &quot;Street line 1&quot;,
+            &quot;City&quot;: &quot;Los Santos&quot;,
+            &quot;MobilePhone&quot;: &quot;2825553695&quot;,
+            &quot;ContactLastName&quot;: &quot;Dev2Pro2&quot;,
+            &quot;State&quot;: &quot;Missouri&quot;,
+            &quot;ContactEmail&quot;: &quot;ssvjdev2pro2@yopmail.com&quot;,
+            &quot;ContactFirstName&quot;: &quot;Sudhanshu&quot;
+        },
+        &quot;IsHostPresent&quot;: &quot;Yes&quot;,
+        &quot;CompanyOrganizationInformation&quot;: {
+            &quot;CompanyOrganizationPhoneNumber&quot;: &quot;1313131312&quot;,
+            &quot;CompanyOrganizationAddress&quot;: &quot;ad&quot;,
+            &quot;CompanyOrganizationName&quot;: &quot;NXT Cloud Synapps&quot;
+        }
+    },
+    &quot;IsPersonAccount&quot;: &quot;No&quot;,
+    &quot;ParkDocumentTemplate&quot;: {
+        &quot;Type&quot;: &quot;MicrosoftWord&quot;,
+        &quot;parkPermitDocName&quot;: &quot;Park_Application&quot;,
+        &quot;Id&quot;: &quot;2dtcp00000018LJAAY&quot;,
+        &quot;DocumentGenerationMechanism&quot;: &quot;ClientSide&quot;,
+        &quot;VersionNumber&quot;: 1
+    },
+    &quot;StreetDocumentTemplate&quot;: {
+        &quot;Type&quot;: &quot;MicrosoftWord&quot;,
+        &quot;Id&quot;: &quot;2dtcp00000018MvAAI&quot;,
+        &quot;streetPermitDocName&quot;: &quot;Street_Closing_Application&quot;,
+        &quot;DocumentGenerationMechanism&quot;: &quot;ClientSide&quot;,
+        &quot;VersionNumber&quot;: 1
+    },
+    &quot;SpecialDocumentTemplate&quot;: {
+        &quot;Type&quot;: &quot;MicrosoftWord&quot;,
+        &quot;specialEventDocName&quot;: &quot;Special_Event_Application&quot;,
+        &quot;Id&quot;: &quot;2dtcp00000018JhAAI&quot;,
+        &quot;DocumentGenerationMechanism&quot;: &quot;ClientSide&quot;,
+        &quot;VersionNumber&quot;: 1
+    },
+    &quot;nextClick&quot;: true,
+    &quot;AddressValidation&quot;: {
+        &quot;searchAddressLWC&quot;: {
+            &quot;key&quot;: &quot;896599.79852054222&quot;,
+            &quot;y&quot;: &quot;1019162.4250790704&quot;,
+            &quot;x&quot;: &quot;896599.79852054222&quot;,
+            &quot;address&quot;: &quot;300 S GRAND AVE, 63103&quot;
+        },
+        &quot;AddressErrorMessage&quot;: null,
+        &quot;AddressError&quot;: false
+    },
+    &quot;serviceRecordType&quot;: [
+        {
+            &quot;Id&quot;: &quot;012cp000002rsdrAAA&quot;,
+            &quot;DeveloperName&quot;: &quot;Permits&quot;
+        }
+    ],
+    &quot;recordTypeID&quot;: &quot;Permits&quot;,
+    &quot;ContactIsPersonAccount&quot;: false,
+    &quot;Street&quot;: &quot;Street line 1, Street Line 2&quot;,
+    &quot;ContactName&quot;: &quot;Sudhanshu Dev2Pro2&quot;,
+    &quot;StreetPreview&quot;: {},
+    &quot;ParkPermitPreview&quot;: null,
+    &quot;userCurrencyCode&quot;: &quot;USD&quot;,
+    &quot;userProfile&quot;: &quot;DFD Portal User Profile&quot;,
+    &quot;eventType&quot;: &quot;Special Event Permit&quot;,
+    &quot;confirmationPageUrl&quot;: null,
+    &quot;caseApplicationId&quot;: null,
+    &quot;applicationEmail&quot;: null,
+    &quot;streetDocumentTitle&quot;: null,
+    &quot;streetSelectedTemplate&quot;: null,
+    &quot;parkDocumentTitle&quot;: null,
+    &quot;parkSelectedTemplate&quot;: null,
+    &quot;specialDocumentTitle&quot;: null,
+    &quot;specialSelectedTemplate&quot;: null,
+    &quot;ContextId&quot;: null,
+    &quot;selectedStreet&quot;: &quot;300 S GRAND AVE, 63103&quot;
+}</customJavaScript>
+    <elementTypeComponentMapping>{&quot;ElementTypeToHTMLTemplateList&quot;:[]}</elementTypeComponentMapping>
+    <isActive>true</isActive>
+    <isIntegProcdSignatureAvl>false</isIntegProcdSignatureAvl>
+    <isIntegrationProcedure>true</isIntegrationProcedure>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <isMetadataCacheDisabled>false</isMetadataCacheDisabled>
+    <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+    <isTestProcedure>false</isTestProcedure>
+    <isWebCompEnabled>false</isWebCompEnabled>
+    <language>Procedure</language>
+    <name>DFDFW Create Service Application</name>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>DFDDRCreateServiceApplication</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;omniInput:MainAccountId&quot; : &quot;=%getAccountDetails:userAccountId%&quot;,
+    &quot;omniInput:ContactEmail&quot; : &quot;=%getAccountDetails:ContactEmail%&quot;,
+    &quot;selectedStreet&quot; : &quot;=IF(ISNOTBLANK(%selectedStreet%),%selectedStreet%,\&quot;\&quot;)&quot;,
+    &quot;instanceId&quot; : &quot;=IF(ISNOTBLANK(%instanceId%),%instanceId%,\&quot;\&quot;)&quot;,
+    &quot;applicationId&quot; : &quot;=%getOmniInstanceId:applicationId%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;Service_Application_Detail__c_1:Id&quot;,
+  &quot;responseJSONNode&quot; : &quot;applicationId&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;omniInput&quot;,
+  &quot;bundle&quot; : &quot;DFDFWCreateServiceApplicationRecord&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperPostAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>3.0</sequenceNumber>
+        <type>DataRaptor Post Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>DFDDRGetServiceApplicationId</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DFDFWGetServiceApplicationId&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ {
+    &quot;inputParam&quot; : &quot;applicationId&quot;,
+    &quot;element&quot; : &quot;applicationId&quot;
+  } ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperExtractAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>5.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>getAccountDetails</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DFDFWGetUserDetails&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperExtractAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>1.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>getOmniInstanceId</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : { },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DFDFWGetOmniscriptSavedSession&quot;,
+  &quot;dataRaptor Input Parameters&quot; : [ {
+    &quot;inputParam&quot; : &quot;instanceId&quot;,
+    &quot;element&quot; : &quot;sInstanceId&quot;
+  } ],
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperExtractAction3&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>2.0</sequenceNumber>
+        <type>DataRaptor Extract Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>ResponseAction1</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalOutput&quot; : {
+    &quot;serviceResponseId&quot; : &quot;=IF(ISNOTBLANK(%DFDDRGetServiceApplicationId%),%DFDDRGetServiceApplicationId%,\&quot;\&quot;)&quot;
+  },
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnFullDataJSON&quot; : false,
+  &quot;responseFormat&quot; : &quot;JSON&quot;,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;DFDDRGetServiceApplicationId&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;responseDefaultData&quot; : { },
+  &quot;vlcResponseHeaders&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;ResponseAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>8.0</sequenceNumber>
+        <type>Response Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>TransformOmniInputForAPIPayload</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;&quot; : &quot;&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;DFDDRGetServiceApplicationId:applicationFormDetails&quot;,
+  &quot;sendJSONNode&quot; : &quot;&quot;,
+  &quot;bundle&quot; : &quot;DFDFWGetSpecialEventTransform&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;ignoreCache&quot; : false,
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;DataMapperTransformAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>6.0</sequenceNumber>
+        <type>DataRaptor Transform Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>updateServiceApplicationJSON</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;applicationId&quot; : &quot;%applicationId%&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;omniInput&quot;,
+  &quot;remoteClass&quot; : &quot;DFDFW_OMNI_CustomFunctions&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;remoteMethod&quot; : &quot;UpdateServiceApplicationOmniJson&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;RemoteAction1&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>4.0</sequenceNumber>
+        <type>Remote Action</type>
+    </omniProcessElements>
+    <omniProcessElements>
+        <isActive>true</isActive>
+        <isOmniScriptEmbeddable>false</isOmniScriptEmbeddable>
+        <level>0.0</level>
+        <name>updateServiceApplicationPayloadMappingJSON</name>
+        <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
+        <propertySetConfig>{
+  &quot;executionConditionalFormula&quot; : &quot;&quot;,
+  &quot;failureConditionalFormula&quot; : &quot;&quot;,
+  &quot;failOnStepError&quot; : true,
+  &quot;useFormulas&quot; : true,
+  &quot;additionalInput&quot; : {
+    &quot;applicationId&quot; : &quot;%applicationId%&quot;,
+    &quot;businessRuleName&quot; : &quot;Create Permit&quot;
+  },
+  &quot;additionalOutput&quot; : { },
+  &quot;failureResponse&quot; : { },
+  &quot;sendOnlyAdditionalInput&quot; : false,
+  &quot;returnOnlyAdditionalOutput&quot; : false,
+  &quot;returnOnlyFailureResponse&quot; : false,
+  &quot;responseJSONPath&quot; : &quot;&quot;,
+  &quot;responseJSONNode&quot; : &quot;&quot;,
+  &quot;sendJSONPath&quot; : &quot;&quot;,
+  &quot;sendJSONNode&quot; : &quot;TransformOmniInputForAPIPayload&quot;,
+  &quot;remoteClass&quot; : &quot;DFDFW_OMNI_CustomFunctions&quot;,
+  &quot;remoteOptions&quot; : { },
+  &quot;remoteMethod&quot; : &quot;updatePayloadMappingJSON&quot;,
+  &quot;chainOnStep&quot; : false,
+  &quot;actionMessage&quot; : &quot;&quot;,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;show&quot; : null,
+  &quot;label&quot; : &quot;RemoteAction2&quot;,
+  &quot;disOnTplt&quot; : false
+}</propertySetConfig>
+        <sequenceNumber>7.0</sequenceNumber>
+        <type>Remote Action</type>
+    </omniProcessElements>
+    <omniProcessKey>DFDFW_CreateServiceApplication</omniProcessKey>
+    <omniProcessType>Integration Procedure</omniProcessType>
+    <propertySetConfig>{
+  &quot;linkToExternalObject&quot; : &quot;&quot;,
+  &quot;trackingCustomData&quot; : { },
+  &quot;includeAllActionsInResponse&quot; : false,
+  &quot;columnsPropertyMap&quot; : [ ],
+  &quot;relationshipFieldsMap&quot; : [ ],
+  &quot;labelSingular&quot; : &quot;&quot;,
+  &quot;labelPlural&quot; : &quot;&quot;,
+  &quot;description&quot; : &quot;&quot;,
+  &quot;nameColumn&quot; : &quot;&quot;,
+  &quot;rollbackOnError&quot; : false,
+  &quot;chainableQueriesLimit&quot; : 50,
+  &quot;chainableDMLStatementsLimit&quot; : null,
+  &quot;chainableCpuLimit&quot; : 2000,
+  &quot;chainableHeapSizeLimit&quot; : null,
+  &quot;chainableDMLRowsLimit&quot; : null,
+  &quot;chainableQueryRowsLimit&quot; : null,
+  &quot;chainableSoslQueriesLimit&quot; : null,
+  &quot;chainableActualTimeLimit&quot; : null,
+  &quot;additionalChainableResponse&quot; : { },
+  &quot;queueableChainableQueriesLimit&quot; : 120,
+  &quot;queueableChainableCpuLimit&quot; : 40000,
+  &quot;queueableChainableHeapSizeLimit&quot; : 6,
+  &quot;ttlMinutes&quot; : 5,
+  &quot;mockResponseMap&quot; : { }
+}</propertySetConfig>
+    <subType>CreateServiceApplication</subType>
+    <type>DFDFW</type>
+    <uniqueName>DFDFW_CreateServiceApplication_Procedure_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <webComponentKey>a73ff9bc-bf58-24cd-ab36-236178b03f17</webComponentKey>
+</OmniIntegrationProcedure>

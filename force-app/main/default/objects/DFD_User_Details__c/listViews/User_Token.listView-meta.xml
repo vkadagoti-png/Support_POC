@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_Token</fullName>
+    <columns>SETUP_OWNER_NAME</columns>
+    <columns>SETUP_TYPE</columns>
+    <columns>isRegistered__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <label>User Token</label>
+</ListView>

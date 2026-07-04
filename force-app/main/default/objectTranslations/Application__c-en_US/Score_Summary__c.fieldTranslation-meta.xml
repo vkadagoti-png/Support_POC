@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This record is created when the raters are assigned.  It holds the related summaries of scroing for each rater when they are complete. --></help>
+    <label><!-- Rating Summary --></label>
+    <name>Score_Summary__c</name>
+    <relationshipLabel><!-- Applications --></relationshipLabel>
+</CustomFieldTranslation>

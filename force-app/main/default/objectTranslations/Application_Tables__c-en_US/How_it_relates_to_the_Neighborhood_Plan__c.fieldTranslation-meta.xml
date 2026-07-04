@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please describe how the activity relates to the neighborhood plan. --></help>
+    <label><!-- How it relates to the Neighborhood Plan --></label>
+    <name>How_it_relates_to_the_Neighborhood_Plan__c</name>
+</CustomFieldTranslation>

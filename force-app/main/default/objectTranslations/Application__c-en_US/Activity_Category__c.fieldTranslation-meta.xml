@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Activity Category --></label>
+    <name>Activity_Category__c</name>
+    <picklistValues>
+        <masterLabel>Economic Development</masterLabel>
+        <translation><!-- Economic Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Administration</masterLabel>
+        <translation><!-- General Administration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Housing</masterLabel>
+        <translation><!-- Housing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Improvements or Facility Activity</masterLabel>
+        <translation><!-- Public Improvements or Facility Activity --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Services</masterLabel>
+        <translation><!-- Public Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tornado Disaster Recovery</masterLabel>
+        <translation><!-- Tornado Disaster Recovery --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

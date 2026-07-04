@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Volunteer_Shift_Report__c.Total_Hours__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Volunteer_Shift_Report__c.Total_Attendance__c</field>
+    </columns>
+    <columns>
+        <field>Volunteer_Shift_Report__c.Submission_Date__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Volunteer_Shift_Report__c.Submitted_By__c</field>
+    </columns>
+    <columns>
+        <field>Volunteer_Shift_Report__c.Account__c</field>
+    </columns>
+    <columns>
+        <field>Volunteer_Shift_Attendance__c.Time_In__c</field>
+    </columns>
+    <columns>
+        <field>Volunteer_Shift_Attendance__c.Time_Out__c</field>
+    </columns>
+    <columns>
+        <field>Volunteer_Shift_Attendance__c.Date_In__c</field>
+    </columns>
+    <columns>
+        <field>Volunteer_Shift_Attendance__c.Date_Out__c</field>
+    </columns>
+    <columns>
+        <field>Volunteer_Shift_Attendance__c.Volunteer_Name__c</field>
+    </columns>
+    <description>Total Volunteer Hours by Partner Organization</description>
+    <format>Tabular</format>
+    <name>Volunteer Shift Reports by Partner Org</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Volunteer_Shift_Report__c$Volunteer_Shift_Attendance__c@Volunteer_Shift_Attendance__c.Campaign__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Volunteer_Shift_Report__c.Submission_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_CDL_Variable</name>
+        <label>Assign CDL Variable</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>ContentDocumentLinkForUpdated.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Content_Document_Link_for_File.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ContentDocumentLinkForUpdated.ShareType</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>I</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ContentDocumentLinkForUpdated.Visibility</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>AllUsers</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_CDL_Visible</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_CDL_Variable_Hidden</name>
+        <label>Assign CDL Variable - Hidden</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>ContentDocumentLinkForUpdated.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Content_Document_Link_for_File.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ContentDocumentLinkForUpdated.ShareType</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>I</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ContentDocumentLinkForUpdated.Visibility</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>InternalUsers</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_CDL_Hidden</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns the updated status for display on the Confirmation Screen</description>
+        <name>Assign_New_Status</name>
+        <label>Assign New Status Visible</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>newStatus</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Visible</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Was_the_Content_Document_Link_Found_Visible</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns the updated status variable for display on the confirmation screen</description>
+        <name>Assign_New_Status_Not_Visible</name>
+        <label>Assign New Status Not Visible</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>newStatus</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Not Visible</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Was_the_Content_Document_Link_Found_Hidden</targetReference>
+        </connector>
+    </assignments>
+    <customProperties>
+        <name>ScreenProgressIndicator</name>
+        <value>
+            <stringValue>{&quot;location&quot;:&quot;top&quot;,&quot;type&quot;:&quot;simple&quot;}</stringValue>
+        </value>
+    </customProperties>
+    <decisions>
+        <description>Checks whether the DCI is related to a contract. If not, show an error screen.</description>
+        <name>Is_the_DCI_Related_to_a_Contract</name>
+        <label>Is the DCI Related to a Contract?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Not_Related_to_Contract_Screen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Related to Contract</defaultConnectorLabel>
+        <rules>
+            <name>Related_to_Contract</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Document_Checklist_Item.Contract__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Remove_External_Access_Screen</targetReference>
+            </connector>
+            <label>Related to Contract</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks the state of the toggle and updates the Contract_External__c lookup on the document checklist item as necessary to control visibility</description>
+        <name>Toggle_Decision</name>
+        <label>Toggle Decision</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Update_to_Not_Visible</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Visible Externally</defaultConnectorLabel>
+        <rules>
+            <name>Visible_Externally</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>externalVisibilityToggle.value</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_to_Visible</targetReference>
+            </connector>
+            <label>Visible Externally</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Routes the flow based on if the CDL was found</description>
+        <name>Was_the_Content_Document_Link_Found_Hidden</name>
+        <label>Was the Content Document Link Found - Hidden</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Status_Updated_Screen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>CDL Not Found</defaultConnectorLabel>
+        <rules>
+            <name>CDL_Found_Hidden</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Content_Document_Link_for_File</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_CDL_Variable_Hidden</targetReference>
+            </connector>
+            <label>CDL Found - Hidden</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Routes the flow based on if the CDL was found</description>
+        <name>Was_the_Content_Document_Link_Found_Visible</name>
+        <label>Was the Content Document Link Found - Visible</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Status_Updated_Screen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>CDL Not Found</defaultConnectorLabel>
+        <rules>
+            <name>CDL_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Content_Document_Link_for_File</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_CDL_Variable</targetReference>
+            </connector>
+            <label>CDL Found</label>
+        </rules>
+    </decisions>
+    <description>Screen flow to allow internal users to control the external visibility of a Document Checklist Item. This is done by populating or depopulating the Contract_External__c lookup on the document checklist item.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Formula to display the current Visibility of the Document Checklist Item</description>
+        <name>visibilityFormula</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    NOT(ISBLANK({!Get_Document_Checklist_Item.Contract_External__c})),
+   &quot;Visible&quot;,
+    &quot;Not Visible&quot;
+)</expression>
+    </formulas>
+    <formulas>
+        <name>visibilityToggleDefault</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+    NOT(ISBLANK({!Get_Document_Checklist_Item.Contract_External__c})),
+    true,
+    false
+)</expression>
+    </formulas>
+    <interviewLabel>[Screen Flow] Adjust Document Checklist Item External Visibility {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>[Screen Flow] Adjust Document Checklist Item External Visibility</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <description>Gets the Content Document Link for the Uploaded file so that the file visibility can be updated</description>
+        <name>Get_Content_Document_Link_for_File</name>
+        <label>Get Content Document Link for File</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Toggle_Decision</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LinkedEntityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>ContentDocumentLink</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Gets the Document Checklist Item from the input recordId</description>
+        <name>Get_Document_Checklist_Item</name>
+        <label>Get Document Checklist Item</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_the_DCI_Related_to_a_Contract</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Error_Screen</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>DocumentChecklistItem</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_CDL_Hidden</name>
+        <label>Update CDL - Hidden</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Status_Updated_Screen</targetReference>
+        </connector>
+        <inputReference>ContentDocumentLinkForUpdated</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_CDL_Visible</name>
+        <label>Update CDL - Visible</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Status_Updated_Screen</targetReference>
+        </connector>
+        <inputReference>ContentDocumentLinkForUpdated</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Clears the Contract_External__c lookup field so that the Document Checklist Item no longer appears in the related list on the contract</description>
+        <name>Update_to_Not_Visible</name>
+        <label>Update to Not Visible</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Assign_New_Status_Not_Visible</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Error_Screen</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Contract_External__c</field>
+        </inputAssignments>
+        <object>DocumentChecklistItem</object>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Populates the Contract_External__c lookup field so that the Document Checklist appears in the related list on the contract</description>
+        <name>Update_to_Visible</name>
+        <label>Update to Visible</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Assign_New_Status</targetReference>
+        </connector>
+        <faultConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Error_Screen</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Contract_External__c</field>
+            <value>
+                <elementReference>Get_Document_Checklist_Item.Contract__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>DocumentChecklistItem</object>
+    </recordUpdates>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <screens>
+        <description>Screen to display of an error occurs</description>
+        <name>Error_Screen</name>
+        <label>Error Screen</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>dspErrorMessage</name>
+            <fieldText>&lt;p&gt;An Error Occured:&lt;/p&gt;&lt;p&gt;{!$Flow.FaultMessage}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <nextOrFinishButtonLabel>Close</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <description>Screen to display when the DCI does not have its Contract__c lookup populated.</description>
+        <name>Not_Related_to_Contract_Screen</name>
+        <label>Not Related to Contract Screen</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>dspNoContractMessage</name>
+            <fieldText>&lt;p&gt;No contract was found. User access can only be managed for Document Checklist Items that are linked to Contract records.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <nextOrFinishButtonLabel>Close</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Remove_External_Access_Screen</name>
+        <label>Remove External Access Screen</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Get_Content_Document_Link_for_File</targetReference>
+        </connector>
+        <fields>
+            <name>dsp_RemoveVisability</name>
+            <fieldText>&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;This Document Checklist Item is currently &lt;strong&gt;{!visibilityFormula} &lt;/strong&gt;for external users. Use the toggle below to change its visibility, and click &lt;strong&gt;Save&lt;/strong&gt; to apply your changes.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>externalVisibilityToggle</name>
+            <extensionName>flowruntime:toggle</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>External Visibility</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>messageToggleActive</name>
+                <value>
+                    <stringValue>Visible</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>messageToggleInactive</name>
+                <value>
+                    <stringValue>Not Visible</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>value</name>
+                <value>
+                    <elementReference>visibilityToggleDefault</elementReference>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <nextOrFinishButtonLabel>Save</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Status_Updated_Screen</name>
+        <label>Status Updated Screen</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>dspStatusUpdatedMessage</name>
+            <fieldText>&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Visibility updated to &lt;strong&gt;{!newStatus}.&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <nextOrFinishButtonLabel>Close</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Document_Checklist_Item</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>ContentDocumentLinkForUpdated</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>ContentDocumentLink</objectType>
+    </variables>
+    <variables>
+        <description>The updated visibility status. Used for display on the confirmation screen.</description>
+        <name>newStatus</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The recordId of the Triggering Document Checklist Item</description>
+        <name>recordId</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>DocumentChecklistItem</objectType>
+    </variables>
+</Flow>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Accepted File Types --></label>
+    <name>Accepted_File_Types__c</name>
+    <picklistValues>
+        <masterLabel>.csv</masterLabel>
+        <translation><!-- .csv --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>.doc</masterLabel>
+        <translation><!-- .doc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>.docx</masterLabel>
+        <translation><!-- .docx --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>.jpeg</masterLabel>
+        <translation><!-- .jpeg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>.jpg</masterLabel>
+        <translation><!-- .jpg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>.m4v</masterLabel>
+        <translation><!-- .m4v --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>.mov</masterLabel>
+        <translation><!-- .mov --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>.mp4</masterLabel>
+        <translation><!-- .mp4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>.pdf</masterLabel>
+        <translation><!-- .pdf --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>.png</masterLabel>
+        <translation><!-- .png --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>.pps</masterLabel>
+        <translation><!-- .pps --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>.ppt</masterLabel>
+        <translation><!-- .ppt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>.pptx</masterLabel>
+        <translation><!-- .pptx --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>.webp</masterLabel>
+        <translation><!-- .webp --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>.xls</masterLabel>
+        <translation><!-- .xls --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>.xlsm</masterLabel>
+        <translation><!-- .xlsm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>.xlsx</masterLabel>
+        <translation><!-- .xlsx --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
