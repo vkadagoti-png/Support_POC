@@ -441,3 +441,5 @@ public with sharing class ApplicationHelperTest {
         Test.stopTest();
     }
 }
+
+<!--Test message-->
