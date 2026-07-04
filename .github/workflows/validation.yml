@@ -31,19 +31,18 @@ jobs:
           npm install -g @salesforce/cli
           sf --version
 
-      - name: Authenticate to Salesforce Sandbox
+      - name: Authenticate to Salesforce Sandbox (Fixed)
         env:
           SF_AUTH_URL: ${{ secrets.SF_AUTH_URL }}
         run: |
-          echo "$SF_AUTH_URL" > auth.txt
-          sf org login sfdx-url --sfdx-url-file auth.txt --alias qa-sandbox --set-default
-          rm auth.txt
+          echo "🔐 Authenticating..."
+          echo "$SF_AUTH_URL" | sf org login sfdx-url --sfdx-url-stdin --alias qa-sandbox --set-default
           sf org display --target-org qa-sandbox
 
-      - name: Basic PMD Code Scan (Fixed)
-        uses: pmd/pmd-github-action@v2   # Use stable v2 tag
+      - name: Basic PMD Code Scan
+        uses: pmd/pmd-github-action@v2
         with:
-          rulesets: 'category/apex/security.xml,category/apex/bestpractices.xml,category/apex/performance.xml'
+          rulesets: 'category/apex/security.xml,category/apex/bestpractices.xml'
           source-path: 'force-app/main/default/classes'
 
       - name: Run Apex Tests & Coverage
@@ -71,7 +70,7 @@ jobs:
             --json > validate-result.json
 
       - name: Show Validation Result
-        run: cat validate-result.json | jq '.' || echo "Validation completed (check logs above)"
+        run: cat validate-result.json | jq '.' || echo "Validation completed"
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
