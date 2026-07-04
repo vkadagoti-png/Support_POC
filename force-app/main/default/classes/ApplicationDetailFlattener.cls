@@ -139,5 +139,4 @@ req.targetObjectRecordId = '001DE000039YX2SYAW';
 reqList.add(req);
 ApplicationDetailFlattener.setFields(reqList);
 */
-
 <!--Test message-->
